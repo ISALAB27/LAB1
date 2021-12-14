@@ -1,0 +1,37 @@
+ 
+****************************************
+Report : resources
+Design : wrapped
+Version: O-2018.06-SP4
+Date   : Sun Nov 14 21:05:26 2021
+****************************************
+
+Resource Sharing Report for design wrapped in file
+        ../modelsim/src/multiplier/fpmul_stage1_struct.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r120     | DW01_add     | width=8    |               | add_1_root_mult/I2/add_126_2 |
+| r122     | DW02_mult    | A_width=32 |               | mult/I2/mult_134     |
+|          |              | B_width=32 |               |                      |
+| r124     | DW01_add     | width=8    |               | mult/I3/I9/add_41_aco |
+| r126     | DW01_inc     | width=25   |               | mult/I3/I11/add_45   |
+| r128     | DW01_add     | width=8    |               | mult/I4/I1/add_41_aco |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| mult/I2/mult_134   | DW02_mult        | pparch (area,speed) | pparch        |
+|                    |                  | mult_arch: benc_radix8              |
+| add_1_root_mult/I2/add_126_2          |                    |                |
+|                    | DW01_add         | rpl                |                |
+| mult/I3/I11/add_45 | DW01_inc         | rpl                |                |
+===============================================================================
+
+1

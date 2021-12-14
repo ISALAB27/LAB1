@@ -1,0 +1,33 @@
+ 
+****************************************
+Report : resources
+Design : wrapped
+Version: O-2018.06-SP4
+Date   : Sun Dec  5 14:35:13 2021
+****************************************
+
+Resource Sharing Report for design wrapped in file
+        ../modelsim/src/multiplier/fpmul_stage1_struct.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r338     | DW01_add     | width=8    |               | add_1_root_mult/I2/stage2/add_132_2 |
+| r340     | DW01_add     | width=8    |               | mult/I3/I9/add_41_aco |
+| r342     | DW01_inc     | width=25   |               | mult/I3/I11/add_45   |
+| r344     | DW01_add     | width=8    |               | mult/I4/I1/add_41_aco |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_1_root_mult/I2/stage2/add_132_2   |                    |                |
+|                    | DW01_add         | rpl                |                |
+| mult/I3/I11/add_45 | DW01_inc         | rpl                |                |
+===============================================================================
+
+1
