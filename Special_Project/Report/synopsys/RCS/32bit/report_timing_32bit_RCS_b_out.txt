@@ -1,0 +1,164 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RCS
+Version: O-2018.06-SP4
+Date   : Sat Jan  8 20:49:07 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: x[0] (input port)
+  Endpoint: b_out (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RCS                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  x[0] (in)                                0.00       0.00 f
+  FSx_0/x (full_subtractor_31)             0.00       0.00 f
+  FSx_0/U4/ZN (INV_X1)                     0.03       0.03 r
+  FSx_0/U1/ZN (AND2_X1)                    0.04       0.07 r
+  FSx_0/U2/ZN (OAI22_X1)                   0.03       0.10 f
+  FSx_0/U3/ZN (INV_X1)                     0.03       0.13 r
+  FSx_0/b_out (full_subtractor_31)         0.00       0.13 r
+  FSx_1/b_in (full_subtractor_30)          0.00       0.13 r
+  FSx_1/U3/ZN (OAI22_X1)                   0.03       0.16 f
+  FSx_1/U4/ZN (INV_X1)                     0.03       0.19 r
+  FSx_1/b_out (full_subtractor_30)         0.00       0.19 r
+  FSx_2/b_in (full_subtractor_29)          0.00       0.19 r
+  FSx_2/U3/ZN (OAI22_X1)                   0.03       0.22 f
+  FSx_2/U4/ZN (INV_X1)                     0.03       0.25 r
+  FSx_2/b_out (full_subtractor_29)         0.00       0.25 r
+  FSx_3/b_in (full_subtractor_28)          0.00       0.25 r
+  FSx_3/U3/ZN (OAI22_X1)                   0.03       0.28 f
+  FSx_3/U4/ZN (INV_X1)                     0.03       0.31 r
+  FSx_3/b_out (full_subtractor_28)         0.00       0.31 r
+  FSx_4/b_in (full_subtractor_27)          0.00       0.31 r
+  FSx_4/U3/ZN (OAI22_X1)                   0.03       0.34 f
+  FSx_4/U4/ZN (INV_X1)                     0.03       0.37 r
+  FSx_4/b_out (full_subtractor_27)         0.00       0.37 r
+  FSx_5/b_in (full_subtractor_26)          0.00       0.37 r
+  FSx_5/U3/ZN (OAI22_X1)                   0.03       0.40 f
+  FSx_5/U4/ZN (INV_X1)                     0.03       0.43 r
+  FSx_5/b_out (full_subtractor_26)         0.00       0.43 r
+  FSx_6/b_in (full_subtractor_25)          0.00       0.43 r
+  FSx_6/U3/ZN (OAI22_X1)                   0.03       0.46 f
+  FSx_6/U4/ZN (INV_X1)                     0.03       0.49 r
+  FSx_6/b_out (full_subtractor_25)         0.00       0.49 r
+  FSx_7/b_in (full_subtractor_24)          0.00       0.49 r
+  FSx_7/U3/ZN (OAI22_X1)                   0.03       0.52 f
+  FSx_7/U4/ZN (INV_X1)                     0.03       0.55 r
+  FSx_7/b_out (full_subtractor_24)         0.00       0.55 r
+  FSx_8/b_in (full_subtractor_23)          0.00       0.55 r
+  FSx_8/U3/ZN (OAI22_X1)                   0.03       0.58 f
+  FSx_8/U4/ZN (INV_X1)                     0.03       0.61 r
+  FSx_8/b_out (full_subtractor_23)         0.00       0.61 r
+  FSx_9/b_in (full_subtractor_22)          0.00       0.61 r
+  FSx_9/U3/ZN (OAI22_X1)                   0.03       0.64 f
+  FSx_9/U4/ZN (INV_X1)                     0.03       0.67 r
+  FSx_9/b_out (full_subtractor_22)         0.00       0.67 r
+  FSx_10/b_in (full_subtractor_21)         0.00       0.67 r
+  FSx_10/U3/ZN (OAI22_X1)                  0.03       0.70 f
+  FSx_10/U4/ZN (INV_X1)                    0.03       0.73 r
+  FSx_10/b_out (full_subtractor_21)        0.00       0.73 r
+  FSx_11/b_in (full_subtractor_20)         0.00       0.73 r
+  FSx_11/U3/ZN (OAI22_X1)                  0.03       0.76 f
+  FSx_11/U4/ZN (INV_X1)                    0.03       0.79 r
+  FSx_11/b_out (full_subtractor_20)        0.00       0.79 r
+  FSx_12/b_in (full_subtractor_19)         0.00       0.79 r
+  FSx_12/U3/ZN (OAI22_X1)                  0.03       0.82 f
+  FSx_12/U4/ZN (INV_X1)                    0.03       0.85 r
+  FSx_12/b_out (full_subtractor_19)        0.00       0.85 r
+  FSx_13/b_in (full_subtractor_18)         0.00       0.85 r
+  FSx_13/U3/ZN (OAI22_X1)                  0.03       0.88 f
+  FSx_13/U4/ZN (INV_X1)                    0.03       0.90 r
+  FSx_13/b_out (full_subtractor_18)        0.00       0.90 r
+  FSx_14/b_in (full_subtractor_17)         0.00       0.90 r
+  FSx_14/U3/ZN (OAI22_X1)                  0.03       0.94 f
+  FSx_14/U4/ZN (INV_X1)                    0.03       0.96 r
+  FSx_14/b_out (full_subtractor_17)        0.00       0.96 r
+  FSx_15/b_in (full_subtractor_16)         0.00       0.96 r
+  FSx_15/U3/ZN (OAI22_X1)                  0.03       1.00 f
+  FSx_15/U4/ZN (INV_X1)                    0.03       1.02 r
+  FSx_15/b_out (full_subtractor_16)        0.00       1.02 r
+  FSx_16/b_in (full_subtractor_15)         0.00       1.02 r
+  FSx_16/U3/ZN (OAI22_X1)                  0.03       1.06 f
+  FSx_16/U4/ZN (INV_X1)                    0.03       1.08 r
+  FSx_16/b_out (full_subtractor_15)        0.00       1.08 r
+  FSx_17/b_in (full_subtractor_14)         0.00       1.08 r
+  FSx_17/U3/ZN (OAI22_X1)                  0.03       1.12 f
+  FSx_17/U4/ZN (INV_X1)                    0.03       1.14 r
+  FSx_17/b_out (full_subtractor_14)        0.00       1.14 r
+  FSx_18/b_in (full_subtractor_13)         0.00       1.14 r
+  FSx_18/U3/ZN (OAI22_X1)                  0.03       1.18 f
+  FSx_18/U4/ZN (INV_X1)                    0.03       1.20 r
+  FSx_18/b_out (full_subtractor_13)        0.00       1.20 r
+  FSx_19/b_in (full_subtractor_12)         0.00       1.20 r
+  FSx_19/U3/ZN (OAI22_X1)                  0.03       1.24 f
+  FSx_19/U4/ZN (INV_X1)                    0.03       1.26 r
+  FSx_19/b_out (full_subtractor_12)        0.00       1.26 r
+  FSx_20/b_in (full_subtractor_11)         0.00       1.26 r
+  FSx_20/U7/ZN (INV_X1)                    0.02       1.28 f
+  FSx_20/U9/ZN (AOI22_X1)                  0.04       1.33 r
+  FSx_20/b_out (full_subtractor_11)        0.00       1.33 r
+  FSx_21/b_in (full_subtractor_10)         0.00       1.33 r
+  FSx_21/U5/ZN (INV_X1)                    0.02       1.35 f
+  FSx_21/U8/ZN (AOI22_X1)                  0.05       1.40 r
+  FSx_21/b_out (full_subtractor_10)        0.00       1.40 r
+  FSx_22/b_in (full_subtractor_9)          0.00       1.40 r
+  FSx_22/U7/ZN (INV_X1)                    0.02       1.42 f
+  FSx_22/U9/ZN (AOI22_X1)                  0.05       1.47 r
+  FSx_22/b_out (full_subtractor_9)         0.00       1.47 r
+  FSx_23/b_in (full_subtractor_8)          0.00       1.47 r
+  FSx_23/U5/ZN (INV_X1)                    0.02       1.49 f
+  FSx_23/U8/ZN (AOI22_X1)                  0.05       1.54 r
+  FSx_23/b_out (full_subtractor_8)         0.00       1.54 r
+  FSx_24/b_in (full_subtractor_7)          0.00       1.54 r
+  FSx_24/U7/ZN (INV_X1)                    0.02       1.56 f
+  FSx_24/U9/ZN (AOI22_X1)                  0.05       1.61 r
+  FSx_24/b_out (full_subtractor_7)         0.00       1.61 r
+  FSx_25/b_in (full_subtractor_6)          0.00       1.61 r
+  FSx_25/U5/ZN (INV_X1)                    0.02       1.63 f
+  FSx_25/U8/ZN (AOI22_X1)                  0.05       1.68 r
+  FSx_25/b_out (full_subtractor_6)         0.00       1.68 r
+  FSx_26/b_in (full_subtractor_5)          0.00       1.68 r
+  FSx_26/U5/ZN (INV_X1)                    0.02       1.70 f
+  FSx_26/U8/ZN (AOI22_X1)                  0.05       1.75 r
+  FSx_26/b_out (full_subtractor_5)         0.00       1.75 r
+  FSx_27/b_in (full_subtractor_4)          0.00       1.75 r
+  FSx_27/U7/ZN (INV_X1)                    0.02       1.77 f
+  FSx_27/U9/ZN (AOI22_X1)                  0.05       1.82 r
+  FSx_27/b_out (full_subtractor_4)         0.00       1.82 r
+  FSx_28/b_in (full_subtractor_3)          0.00       1.82 r
+  FSx_28/U7/ZN (INV_X1)                    0.02       1.84 f
+  FSx_28/U9/ZN (AOI22_X1)                  0.05       1.89 r
+  FSx_28/b_out (full_subtractor_3)         0.00       1.89 r
+  FSx_29/b_in (full_subtractor_2)          0.00       1.89 r
+  FSx_29/U7/ZN (INV_X1)                    0.02       1.92 f
+  FSx_29/U9/ZN (AOI22_X1)                  0.05       1.96 r
+  FSx_29/b_out (full_subtractor_2)         0.00       1.96 r
+  FSx_30/b_in (full_subtractor_1)          0.00       1.96 r
+  FSx_30/U7/ZN (INV_X1)                    0.02       1.99 f
+  FSx_30/U9/ZN (AOI22_X1)                  0.05       2.03 r
+  FSx_30/b_out (full_subtractor_1)         0.00       2.03 r
+  FSx_31/b_in (full_subtractor_0)          0.00       2.03 r
+  FSx_31/U4/ZN (INV_X1)                    0.02       2.06 f
+  FSx_31/U8/ZN (AOI22_X1)                  0.05       2.11 r
+  FSx_31/b_out (full_subtractor_0)         0.00       2.11 r
+  b_out (out)                              0.02       2.13 r
+  data arrival time                                   2.13
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

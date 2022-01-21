@@ -1,0 +1,67 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RCS
+Version: O-2018.06-SP4
+Date   : Sat Jan  8 20:40:27 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: x[0] (input port)
+  Endpoint: b_out (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RCS                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  x[0] (in)                                0.00       0.00 f
+  FSx_0/x (full_subtractor_7)              0.00       0.00 f
+  FSx_0/U5/ZN (INV_X1)                     0.02       0.02 r
+  FSx_0/U4/ZN (OAI21_X1)                   0.03       0.05 f
+  FSx_0/U3/ZN (OAI21_X1)                   0.04       0.09 r
+  FSx_0/b_out (full_subtractor_7)          0.00       0.09 r
+  FSx_1/b_in (full_subtractor_6)           0.00       0.09 r
+  FSx_1/U6/ZN (INV_X1)                     0.03       0.12 f
+  FSx_1/U3/ZN (OAI21_X1)                   0.07       0.19 r
+  FSx_1/b_out (full_subtractor_6)          0.00       0.19 r
+  FSx_2/b_in (full_subtractor_5)           0.00       0.19 r
+  FSx_2/U6/ZN (INV_X1)                     0.03       0.22 f
+  FSx_2/U3/ZN (OAI21_X1)                   0.07       0.29 r
+  FSx_2/b_out (full_subtractor_5)          0.00       0.29 r
+  FSx_3/b_in (full_subtractor_4)           0.00       0.29 r
+  FSx_3/U6/ZN (INV_X1)                     0.03       0.31 f
+  FSx_3/U3/ZN (OAI21_X1)                   0.07       0.38 r
+  FSx_3/b_out (full_subtractor_4)          0.00       0.38 r
+  FSx_4/b_in (full_subtractor_3)           0.00       0.38 r
+  FSx_4/U6/ZN (INV_X1)                     0.03       0.41 f
+  FSx_4/U3/ZN (OAI21_X1)                   0.07       0.48 r
+  FSx_4/b_out (full_subtractor_3)          0.00       0.48 r
+  FSx_5/b_in (full_subtractor_2)           0.00       0.48 r
+  FSx_5/U6/ZN (INV_X1)                     0.03       0.51 f
+  FSx_5/U3/ZN (OAI21_X1)                   0.07       0.58 r
+  FSx_5/b_out (full_subtractor_2)          0.00       0.58 r
+  FSx_6/b_in (full_subtractor_1)           0.00       0.58 r
+  FSx_6/U6/ZN (INV_X1)                     0.03       0.60 f
+  FSx_6/U3/ZN (OAI21_X1)                   0.07       0.67 r
+  FSx_6/b_out (full_subtractor_1)          0.00       0.67 r
+  FSx_7/b_in (full_subtractor_0)           0.00       0.67 r
+  FSx_7/U6/ZN (INV_X1)                     0.03       0.70 f
+  FSx_7/U3/ZN (OAI21_X1)                   0.05       0.75 r
+  FSx_7/b_out (full_subtractor_0)          0.00       0.75 r
+  b_out (out)                              0.02       0.78 r
+  data arrival time                                   0.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

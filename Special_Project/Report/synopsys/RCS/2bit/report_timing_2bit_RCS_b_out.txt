@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RCS
+Version: O-2018.06-SP4
+Date   : Sat Jan  8 20:35:19 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: x[0] (input port)
+  Endpoint: b_out (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RCS                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  x[0] (in)                                0.00       0.00 f
+  FSx_0/x (full_subtractor_1)              0.00       0.00 f
+  FSx_0/U4/ZN (INV_X1)                     0.03       0.03 r
+  FSx_0/U1/ZN (AND2_X1)                    0.04       0.07 r
+  FSx_0/U2/ZN (OAI22_X1)                   0.03       0.10 f
+  FSx_0/U3/ZN (INV_X1)                     0.03       0.12 r
+  FSx_0/b_out (full_subtractor_1)          0.00       0.12 r
+  FSx_1/b_in (full_subtractor_0)           0.00       0.12 r
+  FSx_1/U4/ZN (INV_X1)                     0.02       0.15 f
+  FSx_1/U7/ZN (AOI22_X1)                   0.05       0.20 r
+  FSx_1/b_out (full_subtractor_0)          0.00       0.20 r
+  b_out (out)                              0.02       0.22 r
+  data arrival time                                   0.22
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

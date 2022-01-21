@@ -1,0 +1,57 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : RCS
+Version: O-2018.06-SP4
+Date   : Sat Jan  8 20:43:43 2022
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+RCS                    5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  44.5993 uW   (55%)
+  Net Switching Power  =  36.3155 uW   (45%)
+                         ---------
+Total Dynamic Power    =  80.9149 uW  (100%)
+
+Cell Leakage Power     =   2.8820 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     44.5993           36.3155        2.8820e+03           83.7969  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total             44.5993 uW        36.3155 uW     2.8820e+03 nW        83.7969 uW
+1
