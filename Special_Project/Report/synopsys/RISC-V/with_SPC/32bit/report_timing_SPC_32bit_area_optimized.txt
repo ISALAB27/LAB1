@@ -1,0 +1,1440 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RISC_V_lite' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISC_V_lite
+Version: O-2018.06-SP4
+Date   : Sun Jan 16 12:39:26 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: data_read[29]
+              (input port clocked by MY_CLK)
+  Endpoint: S3/Alu_result_regN/pout_reg[15]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISC_V_lite        5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  data_read[29] (in)                                      0.00       0.50 f
+  S4/ReadData_in[29] (stage4)                             0.00       0.50 f
+  S4/U3/Z (MUX2_X1)                                       0.07       0.57 f
+  S4/ALURes_MEM[29] (stage4)                              0.00       0.57 f
+  S3/ALURes_MEM[29] (stage3)                              0.00       0.57 f
+  S3/fu_mux1/B[29] (mux3to1_N32_1)                        0.00       0.57 f
+  S3/fu_mux1/U6/ZN (NAND2_X1)                             0.03       0.59 r
+  S3/fu_mux1/U8/ZN (AND3_X1)                              0.05       0.64 r
+  S3/fu_mux1/U85/ZN (INV_X1)                              0.02       0.67 f
+  S3/fu_mux1/Y[29] (mux3to1_N32_1)                        0.00       0.67 f
+  S3/U29/ZN (NAND2_X1)                                    0.02       0.69 r
+  S3/U31/ZN (NAND2_X1)                                    0.03       0.72 f
+  S3/Special_Unit_instance/x[29] (Special_Unit)           0.00       0.72 f
+  S3/Special_Unit_instance/SR/rad[29] (square_root_N32)
+                                                          0.00       0.72 f
+  S3/Special_Unit_instance/SR/stageX_1/r_int_in[1] (square_root_stage_N4)
+                                                          0.00       0.72 f
+  S3/Special_Unit_instance/SR/stageX_1/U7/ZN (NOR2_X1)
+                                                          0.05       0.77 r
+  S3/Special_Unit_instance/SR/stageX_1/subtractor/b_in (CSS_bits1_block_bits1)
+                                                          0.00       0.77 r
+  S3/Special_Unit_instance/SR/stageX_1/subtractor/RCS0/b_in (RCS_N1)
+                                                          0.00       0.77 r
+  S3/Special_Unit_instance/SR/stageX_1/subtractor/RCS0/FSx_0/b_in (full_subtractor_119)
+                                                          0.00       0.77 r
+  S3/Special_Unit_instance/SR/stageX_1/subtractor/RCS0/FSx_0/U4/ZN (INV_X1)
+                                                          0.03       0.80 f
+  S3/Special_Unit_instance/SR/stageX_1/subtractor/RCS0/FSx_0/U8/ZN (OAI21_X1)
+                                                          0.05       0.84 r
+  S3/Special_Unit_instance/SR/stageX_1/subtractor/RCS0/FSx_0/b_out (full_subtractor_119)
+                                                          0.00       0.84 r
+  S3/Special_Unit_instance/SR/stageX_1/subtractor/RCS0/b_out (RCS_N1)
+                                                          0.00       0.84 r
+  S3/Special_Unit_instance/SR/stageX_1/subtractor/b_out (CSS_bits1_block_bits1)
+                                                          0.00       0.84 r
+  S3/Special_Unit_instance/SR/stageX_1/U6/ZN (NAND2_X1)
+                                                          0.03       0.88 f
+  S3/Special_Unit_instance/SR/stageX_1/mux/S (mux2to1_N4)
+                                                          0.00       0.88 f
+  S3/Special_Unit_instance/SR/stageX_1/mux/mux_x_0/S (mux2to1_comb_164)
+                                                          0.00       0.88 f
+  S3/Special_Unit_instance/SR/stageX_1/mux/mux_x_0/U1/Z (MUX2_X1)
+                                                          0.07       0.95 r
+  S3/Special_Unit_instance/SR/stageX_1/mux/mux_x_0/Y (mux2to1_comb_164)
+                                                          0.00       0.95 r
+  S3/Special_Unit_instance/SR/stageX_1/mux/Y[0] (mux2to1_N4)
+                                                          0.00       0.95 r
+  S3/Special_Unit_instance/SR/stageX_1/r_int_out[0] (square_root_stage_N4)
+                                                          0.00       0.95 r
+  S3/Special_Unit_instance/SR/stageX_2/r_int_in[2] (square_root_stage_N5)
+                                                          0.00       0.95 r
+  S3/Special_Unit_instance/SR/stageX_2/subtractor/a[0] (CSS_bits2_block_bits2)
+                                                          0.00       0.95 r
+  S3/Special_Unit_instance/SR/stageX_2/subtractor/RCS0/x[0] (RCS_N2)
+                                                          0.00       0.95 r
+  S3/Special_Unit_instance/SR/stageX_2/subtractor/RCS0/FSx_0/x (full_subtractor_118)
+                                                          0.00       0.95 r
+  S3/Special_Unit_instance/SR/stageX_2/subtractor/RCS0/FSx_0/U8/ZN (INV_X1)
+                                                          0.03       0.98 f
+  S3/Special_Unit_instance/SR/stageX_2/subtractor/RCS0/FSx_0/U9/ZN (OAI21_X1)
+                                                          0.04       1.02 r
+  S3/Special_Unit_instance/SR/stageX_2/subtractor/RCS0/FSx_0/U4/ZN (NAND2_X1)
+                                                          0.03       1.05 f
+  S3/Special_Unit_instance/SR/stageX_2/subtractor/RCS0/FSx_0/b_out (full_subtractor_118)
+                                                          0.00       1.05 f
+  S3/Special_Unit_instance/SR/stageX_2/subtractor/RCS0/FSx_1/b_in (full_subtractor_117)
+                                                          0.00       1.05 f
+  S3/Special_Unit_instance/SR/stageX_2/subtractor/RCS0/FSx_1/U8/ZN (OAI21_X1)
+                                                          0.04       1.09 r
+  S3/Special_Unit_instance/SR/stageX_2/subtractor/RCS0/FSx_1/U4/ZN (OAI21_X1)
+                                                          0.04       1.13 f
+  S3/Special_Unit_instance/SR/stageX_2/subtractor/RCS0/FSx_1/b_out (full_subtractor_117)
+                                                          0.00       1.13 f
+  S3/Special_Unit_instance/SR/stageX_2/subtractor/RCS0/b_out (RCS_N2)
+                                                          0.00       1.13 f
+  S3/Special_Unit_instance/SR/stageX_2/subtractor/b_out (CSS_bits2_block_bits2)
+                                                          0.00       1.13 f
+  S3/Special_Unit_instance/SR/stageX_2/U3/ZN (NAND2_X1)
+                                                          0.04       1.16 r
+  S3/Special_Unit_instance/SR/stageX_2/mux/S (mux2to1_N5)
+                                                          0.00       1.16 r
+  S3/Special_Unit_instance/SR/stageX_2/mux/mux_x_0/S (mux2to1_comb_160)
+                                                          0.00       1.16 r
+  S3/Special_Unit_instance/SR/stageX_2/mux/mux_x_0/U1/Z (MUX2_X1)
+                                                          0.08       1.25 f
+  S3/Special_Unit_instance/SR/stageX_2/mux/mux_x_0/Y (mux2to1_comb_160)
+                                                          0.00       1.25 f
+  S3/Special_Unit_instance/SR/stageX_2/mux/Y[0] (mux2to1_N5)
+                                                          0.00       1.25 f
+  S3/Special_Unit_instance/SR/stageX_2/r_int_out[0] (square_root_stage_N5)
+                                                          0.00       1.25 f
+  S3/Special_Unit_instance/SR/stageX_3/r_int_in[2] (square_root_stage_N6)
+                                                          0.00       1.25 f
+  S3/Special_Unit_instance/SR/stageX_3/subtractor/a[0] (CSS_bits3_block_bits3)
+                                                          0.00       1.25 f
+  S3/Special_Unit_instance/SR/stageX_3/subtractor/RCS0/x[0] (RCS_N3)
+                                                          0.00       1.25 f
+  S3/Special_Unit_instance/SR/stageX_3/subtractor/RCS0/FSx_0/x (full_subtractor_116)
+                                                          0.00       1.25 f
+  S3/Special_Unit_instance/SR/stageX_3/subtractor/RCS0/FSx_0/U9/ZN (INV_X1)
+                                                          0.03       1.28 r
+  S3/Special_Unit_instance/SR/stageX_3/subtractor/RCS0/FSx_0/U8/ZN (OAI21_X1)
+                                                          0.03       1.31 f
+  S3/Special_Unit_instance/SR/stageX_3/subtractor/RCS0/FSx_0/U4/ZN (NAND2_X1)
+                                                          0.04       1.35 r
+  S3/Special_Unit_instance/SR/stageX_3/subtractor/RCS0/FSx_0/b_out (full_subtractor_116)
+                                                          0.00       1.35 r
+  S3/Special_Unit_instance/SR/stageX_3/subtractor/RCS0/FSx_1/b_in (full_subtractor_115)
+                                                          0.00       1.35 r
+  S3/Special_Unit_instance/SR/stageX_3/subtractor/RCS0/FSx_1/U8/ZN (INV_X1)
+                                                          0.03       1.37 f
+  S3/Special_Unit_instance/SR/stageX_3/subtractor/RCS0/FSx_1/U7/ZN (OAI21_X1)
+                                                          0.05       1.42 r
+  S3/Special_Unit_instance/SR/stageX_3/subtractor/RCS0/FSx_1/b_out (full_subtractor_115)
+                                                          0.00       1.42 r
+  S3/Special_Unit_instance/SR/stageX_3/subtractor/RCS0/FSx_2/b_in (full_subtractor_114)
+                                                          0.00       1.42 r
+  S3/Special_Unit_instance/SR/stageX_3/subtractor/RCS0/FSx_2/U7/ZN (INV_X1)
+                                                          0.03       1.45 f
+  S3/Special_Unit_instance/SR/stageX_3/subtractor/RCS0/FSx_2/U4/ZN (OAI21_X1)
+                                                          0.06       1.51 r
+  S3/Special_Unit_instance/SR/stageX_3/subtractor/RCS0/FSx_2/b_out (full_subtractor_114)
+                                                          0.00       1.51 r
+  S3/Special_Unit_instance/SR/stageX_3/subtractor/RCS0/b_out (RCS_N3)
+                                                          0.00       1.51 r
+  S3/Special_Unit_instance/SR/stageX_3/subtractor/b_out (CSS_bits3_block_bits3)
+                                                          0.00       1.51 r
+  S3/Special_Unit_instance/SR/stageX_3/U4/ZN (NAND2_X1)
+                                                          0.04       1.54 f
+  S3/Special_Unit_instance/SR/stageX_3/mux/S (mux2to1_N6)
+                                                          0.00       1.54 f
+  S3/Special_Unit_instance/SR/stageX_3/mux/mux_x_0/S (mux2to1_comb_155)
+                                                          0.00       1.54 f
+  S3/Special_Unit_instance/SR/stageX_3/mux/mux_x_0/U1/Z (MUX2_X1)
+                                                          0.08       1.62 r
+  S3/Special_Unit_instance/SR/stageX_3/mux/mux_x_0/Y (mux2to1_comb_155)
+                                                          0.00       1.62 r
+  S3/Special_Unit_instance/SR/stageX_3/mux/Y[0] (mux2to1_N6)
+                                                          0.00       1.62 r
+  S3/Special_Unit_instance/SR/stageX_3/r_int_out[0] (square_root_stage_N6)
+                                                          0.00       1.62 r
+  S3/Special_Unit_instance/SR/stageX_4/r_int_in[2] (square_root_stage_N7)
+                                                          0.00       1.62 r
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/a[0] (CSS_bits4_block_bits4)
+                                                          0.00       1.62 r
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/x[0] (RCS_N4)
+                                                          0.00       1.62 r
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/FSx_0/x (full_subtractor_113)
+                                                          0.00       1.62 r
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/FSx_0/U7/ZN (INV_X1)
+                                                          0.03       1.65 f
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/FSx_0/U8/ZN (OAI21_X1)
+                                                          0.04       1.69 r
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/FSx_0/U3/ZN (NAND2_X1)
+                                                          0.03       1.72 f
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/FSx_0/b_out (full_subtractor_113)
+                                                          0.00       1.72 f
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/FSx_1/b_in (full_subtractor_112)
+                                                          0.00       1.72 f
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/FSx_1/U8/ZN (OAI21_X1)
+                                                          0.04       1.76 r
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/FSx_1/U4/ZN (OAI21_X1)
+                                                          0.04       1.80 f
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/FSx_1/b_out (full_subtractor_112)
+                                                          0.00       1.80 f
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/FSx_2/b_in (full_subtractor_111)
+                                                          0.00       1.80 f
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/FSx_2/U8/ZN (OAI21_X1)
+                                                          0.04       1.84 r
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/FSx_2/U7/ZN (OAI21_X1)
+                                                          0.04       1.88 f
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/FSx_2/b_out (full_subtractor_111)
+                                                          0.00       1.88 f
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/FSx_3/b_in (full_subtractor_110)
+                                                          0.00       1.88 f
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/FSx_3/U8/ZN (OAI21_X1)
+                                                          0.04       1.93 r
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/FSx_3/U4/ZN (OAI21_X1)
+                                                          0.04       1.96 f
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/FSx_3/b_out (full_subtractor_110)
+                                                          0.00       1.96 f
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/RCS0/b_out (RCS_N4)
+                                                          0.00       1.96 f
+  S3/Special_Unit_instance/SR/stageX_4/subtractor/b_out (CSS_bits4_block_bits4)
+                                                          0.00       1.96 f
+  S3/Special_Unit_instance/SR/stageX_4/U8/ZN (NAND2_X1)
+                                                          0.04       2.00 r
+  S3/Special_Unit_instance/SR/stageX_4/mux/S (mux2to1_N7)
+                                                          0.00       2.00 r
+  S3/Special_Unit_instance/SR/stageX_4/mux/mux_x_0/S (mux2to1_comb_149)
+                                                          0.00       2.00 r
+  S3/Special_Unit_instance/SR/stageX_4/mux/mux_x_0/U1/Z (MUX2_X1)
+                                                          0.09       2.09 f
+  S3/Special_Unit_instance/SR/stageX_4/mux/mux_x_0/Y (mux2to1_comb_149)
+                                                          0.00       2.09 f
+  S3/Special_Unit_instance/SR/stageX_4/mux/Y[0] (mux2to1_N7)
+                                                          0.00       2.09 f
+  S3/Special_Unit_instance/SR/stageX_4/r_int_out[0] (square_root_stage_N7)
+                                                          0.00       2.09 f
+  S3/Special_Unit_instance/SR/stageX_5/r_int_in[2] (square_root_stage_N8)
+                                                          0.00       2.09 f
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/a[0] (CSS_bits5_block_bits5)
+                                                          0.00       2.09 f
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/x[0] (RCS_N5)
+                                                          0.00       2.09 f
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_0/x (full_subtractor_109)
+                                                          0.00       2.09 f
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_0/U7/ZN (INV_X1)
+                                                          0.03       2.12 r
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_0/U8/ZN (OAI21_X1)
+                                                          0.03       2.14 f
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_0/U3/ZN (NAND2_X1)
+                                                          0.04       2.18 r
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_0/b_out (full_subtractor_109)
+                                                          0.00       2.18 r
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_1/b_in (full_subtractor_108)
+                                                          0.00       2.18 r
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_1/U4/ZN (INV_X1)
+                                                          0.03       2.20 f
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_1/U8/ZN (OAI21_X1)
+                                                          0.05       2.25 r
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_1/b_out (full_subtractor_108)
+                                                          0.00       2.25 r
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_2/b_in (full_subtractor_107)
+                                                          0.00       2.25 r
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_2/U8/ZN (INV_X1)
+                                                          0.03       2.28 f
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_2/U4/ZN (OAI21_X1)
+                                                          0.05       2.33 r
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_2/b_out (full_subtractor_107)
+                                                          0.00       2.33 r
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_3/b_in (full_subtractor_106)
+                                                          0.00       2.33 r
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_3/U7/ZN (INV_X1)
+                                                          0.03       2.36 f
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_3/U3/ZN (OAI21_X1)
+                                                          0.05       2.41 r
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_3/b_out (full_subtractor_106)
+                                                          0.00       2.41 r
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_4/b_in (full_subtractor_105)
+                                                          0.00       2.41 r
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_4/U8/ZN (INV_X1)
+                                                          0.03       2.44 f
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_4/U4/ZN (OAI21_X1)
+                                                          0.05       2.49 r
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/FSx_4/b_out (full_subtractor_105)
+                                                          0.00       2.49 r
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/RCS0/b_out (RCS_N5)
+                                                          0.00       2.49 r
+  S3/Special_Unit_instance/SR/stageX_5/subtractor/b_out (CSS_bits5_block_bits5)
+                                                          0.00       2.49 r
+  S3/Special_Unit_instance/SR/stageX_5/U8/ZN (NAND2_X1)
+                                                          0.04       2.52 f
+  S3/Special_Unit_instance/SR/stageX_5/mux/S (mux2to1_N8)
+                                                          0.00       2.52 f
+  S3/Special_Unit_instance/SR/stageX_5/mux/mux_x_0/S (mux2to1_comb_142)
+                                                          0.00       2.52 f
+  S3/Special_Unit_instance/SR/stageX_5/mux/mux_x_0/U1/Z (MUX2_X1)
+                                                          0.08       2.60 r
+  S3/Special_Unit_instance/SR/stageX_5/mux/mux_x_0/Y (mux2to1_comb_142)
+                                                          0.00       2.60 r
+  S3/Special_Unit_instance/SR/stageX_5/mux/Y[0] (mux2to1_N8)
+                                                          0.00       2.60 r
+  S3/Special_Unit_instance/SR/stageX_5/r_int_out[0] (square_root_stage_N8)
+                                                          0.00       2.60 r
+  S3/Special_Unit_instance/SR/stageX_6/r_int_in[2] (square_root_stage_N9)
+                                                          0.00       2.60 r
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/a[0] (CSS_bits6_block_bits6)
+                                                          0.00       2.60 r
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/x[0] (RCS_N6)
+                                                          0.00       2.60 r
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_0/x (full_subtractor_104)
+                                                          0.00       2.60 r
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_0/U9/ZN (INV_X1)
+                                                          0.03       2.63 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_0/U8/ZN (OAI21_X1)
+                                                          0.04       2.67 r
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_0/U4/ZN (NAND2_X1)
+                                                          0.03       2.70 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_0/b_out (full_subtractor_104)
+                                                          0.00       2.70 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_1/b_in (full_subtractor_103)
+                                                          0.00       2.70 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_1/U9/ZN (OAI21_X1)
+                                                          0.05       2.75 r
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_1/U7/ZN (OAI21_X1)
+                                                          0.04       2.79 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_1/b_out (full_subtractor_103)
+                                                          0.00       2.79 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_2/b_in (full_subtractor_102)
+                                                          0.00       2.79 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_2/U7/ZN (OAI21_X1)
+                                                          0.04       2.83 r
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_2/U3/ZN (OAI21_X1)
+                                                          0.04       2.87 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_2/b_out (full_subtractor_102)
+                                                          0.00       2.87 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_3/b_in (full_subtractor_101)
+                                                          0.00       2.87 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_3/U7/ZN (OAI21_X1)
+                                                          0.04       2.91 r
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_3/U4/ZN (OAI21_X1)
+                                                          0.04       2.95 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_3/b_out (full_subtractor_101)
+                                                          0.00       2.95 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_4/b_in (full_subtractor_100)
+                                                          0.00       2.95 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_4/U7/ZN (OAI21_X1)
+                                                          0.04       2.99 r
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_4/U8/ZN (OAI21_X1)
+                                                          0.04       3.03 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_4/b_out (full_subtractor_100)
+                                                          0.00       3.03 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_5/b_in (full_subtractor_99)
+                                                          0.00       3.03 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_5/U7/ZN (OAI21_X1)
+                                                          0.04       3.07 r
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_5/U2/ZN (OAI21_X1)
+                                                          0.04       3.11 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/FSx_5/b_out (full_subtractor_99)
+                                                          0.00       3.11 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/RCS0/b_out (RCS_N6)
+                                                          0.00       3.11 f
+  S3/Special_Unit_instance/SR/stageX_6/subtractor/b_out (CSS_bits6_block_bits6)
+                                                          0.00       3.11 f
+  S3/Special_Unit_instance/SR/stageX_6/U4/ZN (NAND2_X1)
+                                                          0.04       3.15 r
+  S3/Special_Unit_instance/SR/stageX_6/mux/S (mux2to1_N9)
+                                                          0.00       3.15 r
+  S3/Special_Unit_instance/SR/stageX_6/mux/mux_x_0/S (mux2to1_comb_134)
+                                                          0.00       3.15 r
+  S3/Special_Unit_instance/SR/stageX_6/mux/mux_x_0/U1/Z (MUX2_X1)
+                                                          0.06       3.21 r
+  S3/Special_Unit_instance/SR/stageX_6/mux/mux_x_0/Y (mux2to1_comb_134)
+                                                          0.00       3.21 r
+  S3/Special_Unit_instance/SR/stageX_6/mux/Y[0] (mux2to1_N9)
+                                                          0.00       3.21 r
+  S3/Special_Unit_instance/SR/stageX_6/r_int_out[0] (square_root_stage_N9)
+                                                          0.00       3.21 r
+  S3/Special_Unit_instance/SR/stageX_7/r_int_in[2] (square_root_stage_N10)
+                                                          0.00       3.21 r
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/a[0] (CSS_bits7_block_bits7)
+                                                          0.00       3.21 r
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/x[0] (RCS_N7)
+                                                          0.00       3.21 r
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_0/x (full_subtractor_98)
+                                                          0.00       3.21 r
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_0/U8/ZN (INV_X1)
+                                                          0.03       3.24 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_0/U7/ZN (OAI21_X1)
+                                                          0.04       3.28 r
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_0/U3/ZN (NAND2_X1)
+                                                          0.03       3.31 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_0/b_out (full_subtractor_98)
+                                                          0.00       3.31 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_1/b_in (full_subtractor_97)
+                                                          0.00       3.31 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_1/U8/ZN (OAI21_X1)
+                                                          0.05       3.36 r
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_1/U4/ZN (OAI21_X1)
+                                                          0.04       3.39 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_1/b_out (full_subtractor_97)
+                                                          0.00       3.39 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_2/b_in (full_subtractor_96)
+                                                          0.00       3.39 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_2/U8/ZN (OAI21_X1)
+                                                          0.04       3.44 r
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_2/U3/ZN (OAI21_X1)
+                                                          0.04       3.48 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_2/b_out (full_subtractor_96)
+                                                          0.00       3.48 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_3/b_in (full_subtractor_95)
+                                                          0.00       3.48 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_3/U7/ZN (OAI21_X1)
+                                                          0.04       3.52 r
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_3/U4/ZN (OAI21_X1)
+                                                          0.04       3.56 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_3/b_out (full_subtractor_95)
+                                                          0.00       3.56 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_4/b_in (full_subtractor_94)
+                                                          0.00       3.56 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_4/U7/ZN (OAI21_X1)
+                                                          0.04       3.60 r
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_4/U4/ZN (OAI21_X1)
+                                                          0.04       3.64 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_4/b_out (full_subtractor_94)
+                                                          0.00       3.64 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_5/b_in (full_subtractor_93)
+                                                          0.00       3.64 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_5/U7/ZN (OAI21_X1)
+                                                          0.04       3.68 r
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_5/U2/ZN (OAI21_X1)
+                                                          0.04       3.72 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_5/b_out (full_subtractor_93)
+                                                          0.00       3.72 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_6/b_in (full_subtractor_92)
+                                                          0.00       3.72 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_6/U8/ZN (OAI21_X1)
+                                                          0.04       3.77 r
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_6/U4/ZN (OAI21_X1)
+                                                          0.04       3.80 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/FSx_6/b_out (full_subtractor_92)
+                                                          0.00       3.80 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/RCS0/b_out (RCS_N7)
+                                                          0.00       3.80 f
+  S3/Special_Unit_instance/SR/stageX_7/subtractor/b_out (CSS_bits7_block_bits7)
+                                                          0.00       3.80 f
+  S3/Special_Unit_instance/SR/stageX_7/U2/ZN (NAND2_X1)
+                                                          0.04       3.84 r
+  S3/Special_Unit_instance/SR/stageX_7/mux/S (mux2to1_N10)
+                                                          0.00       3.84 r
+  S3/Special_Unit_instance/SR/stageX_7/mux/mux_x_0/S (mux2to1_comb_125)
+                                                          0.00       3.84 r
+  S3/Special_Unit_instance/SR/stageX_7/mux/mux_x_0/U1/Z (MUX2_X1)
+                                                          0.09       3.92 f
+  S3/Special_Unit_instance/SR/stageX_7/mux/mux_x_0/Y (mux2to1_comb_125)
+                                                          0.00       3.92 f
+  S3/Special_Unit_instance/SR/stageX_7/mux/Y[0] (mux2to1_N10)
+                                                          0.00       3.92 f
+  S3/Special_Unit_instance/SR/stageX_7/r_int_out[0] (square_root_stage_N10)
+                                                          0.00       3.92 f
+  S3/Special_Unit_instance/SR/stageX_8/r_int_in[2] (square_root_stage_N11)
+                                                          0.00       3.92 f
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/a[0] (CSS_bits8_block_bits8)
+                                                          0.00       3.92 f
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/x[0] (RCS_N8)
+                                                          0.00       3.92 f
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_0/x (full_subtractor_91)
+                                                          0.00       3.92 f
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_0/U8/ZN (INV_X1)
+                                                          0.03       3.96 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_0/U7/ZN (OAI21_X1)
+                                                          0.03       3.98 f
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_0/U3/ZN (NAND2_X1)
+                                                          0.04       4.02 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_0/b_out (full_subtractor_91)
+                                                          0.00       4.02 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_1/b_in (full_subtractor_90)
+                                                          0.00       4.02 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_1/U7/ZN (INV_X1)
+                                                          0.03       4.04 f
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_1/U4/ZN (OAI21_X1)
+                                                          0.05       4.09 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_1/b_out (full_subtractor_90)
+                                                          0.00       4.09 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_2/b_in (full_subtractor_89)
+                                                          0.00       4.09 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_2/U8/ZN (INV_X1)
+                                                          0.03       4.12 f
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_2/U4/ZN (OAI21_X1)
+                                                          0.05       4.17 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_2/b_out (full_subtractor_89)
+                                                          0.00       4.17 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_3/b_in (full_subtractor_88)
+                                                          0.00       4.17 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_3/U8/ZN (INV_X1)
+                                                          0.03       4.20 f
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_3/U4/ZN (OAI21_X1)
+                                                          0.05       4.25 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_3/b_out (full_subtractor_88)
+                                                          0.00       4.25 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_4/b_in (full_subtractor_87)
+                                                          0.00       4.25 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_4/U8/ZN (INV_X1)
+                                                          0.03       4.28 f
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_4/U4/ZN (OAI21_X1)
+                                                          0.05       4.33 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_4/b_out (full_subtractor_87)
+                                                          0.00       4.33 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_5/b_in (full_subtractor_86)
+                                                          0.00       4.33 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_5/U7/ZN (INV_X1)
+                                                          0.03       4.36 f
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_5/U4/ZN (OAI21_X1)
+                                                          0.05       4.41 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_5/b_out (full_subtractor_86)
+                                                          0.00       4.41 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_6/b_in (full_subtractor_85)
+                                                          0.00       4.41 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_6/U8/ZN (INV_X1)
+                                                          0.03       4.44 f
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_6/U4/ZN (OAI21_X1)
+                                                          0.05       4.49 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_6/b_out (full_subtractor_85)
+                                                          0.00       4.49 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_7/b_in (full_subtractor_84)
+                                                          0.00       4.49 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_7/U8/ZN (INV_X1)
+                                                          0.03       4.51 f
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_7/U4/ZN (OAI21_X1)
+                                                          0.05       4.57 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/FSx_7/b_out (full_subtractor_84)
+                                                          0.00       4.57 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/RCS0/b_out (RCS_N8)
+                                                          0.00       4.57 r
+  S3/Special_Unit_instance/SR/stageX_8/subtractor/b_out (CSS_bits8_block_bits8)
+                                                          0.00       4.57 r
+  S3/Special_Unit_instance/SR/stageX_8/U5/ZN (NAND2_X1)
+                                                          0.04       4.61 f
+  S3/Special_Unit_instance/SR/stageX_8/mux/S (mux2to1_N11)
+                                                          0.00       4.61 f
+  S3/Special_Unit_instance/SR/stageX_8/mux/mux_x_0/S (mux2to1_comb_115)
+                                                          0.00       4.61 f
+  S3/Special_Unit_instance/SR/stageX_8/mux/mux_x_0/U1/Z (MUX2_X1)
+                                                          0.08       4.68 r
+  S3/Special_Unit_instance/SR/stageX_8/mux/mux_x_0/Y (mux2to1_comb_115)
+                                                          0.00       4.68 r
+  S3/Special_Unit_instance/SR/stageX_8/mux/Y[0] (mux2to1_N11)
+                                                          0.00       4.68 r
+  S3/Special_Unit_instance/SR/stageX_8/r_int_out[0] (square_root_stage_N11)
+                                                          0.00       4.68 r
+  S3/Special_Unit_instance/SR/stageX_9/r_int_in[2] (square_root_stage_N12)
+                                                          0.00       4.68 r
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/a[0] (CSS_bits9_block_bits9)
+                                                          0.00       4.68 r
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/x[0] (RCS_N9)
+                                                          0.00       4.68 r
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_0/x (full_subtractor_83)
+                                                          0.00       4.68 r
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_0/U8/ZN (INV_X1)
+                                                          0.03       4.71 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_0/U7/ZN (OAI21_X1)
+                                                          0.04       4.75 r
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_0/U3/ZN (NAND2_X1)
+                                                          0.03       4.78 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_0/b_out (full_subtractor_83)
+                                                          0.00       4.78 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_1/b_in (full_subtractor_82)
+                                                          0.00       4.78 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_1/U1/ZN (OAI21_X1)
+                                                          0.04       4.82 r
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_1/U8/ZN (OAI21_X1)
+                                                          0.04       4.86 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_1/b_out (full_subtractor_82)
+                                                          0.00       4.86 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_2/b_in (full_subtractor_81)
+                                                          0.00       4.86 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_2/U7/ZN (OAI21_X1)
+                                                          0.04       4.90 r
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_2/U4/ZN (OAI21_X1)
+                                                          0.04       4.94 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_2/b_out (full_subtractor_81)
+                                                          0.00       4.94 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_3/b_in (full_subtractor_80)
+                                                          0.00       4.94 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_3/U7/ZN (OAI21_X1)
+                                                          0.04       4.98 r
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_3/U4/ZN (OAI21_X1)
+                                                          0.04       5.02 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_3/b_out (full_subtractor_80)
+                                                          0.00       5.02 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_4/b_in (full_subtractor_79)
+                                                          0.00       5.02 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_4/U7/ZN (OAI21_X1)
+                                                          0.04       5.07 r
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_4/U3/ZN (OAI21_X1)
+                                                          0.04       5.10 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_4/b_out (full_subtractor_79)
+                                                          0.00       5.10 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_5/b_in (full_subtractor_78)
+                                                          0.00       5.10 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_5/U7/ZN (OAI21_X1)
+                                                          0.04       5.15 r
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_5/U4/ZN (OAI21_X1)
+                                                          0.04       5.19 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_5/b_out (full_subtractor_78)
+                                                          0.00       5.19 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_6/b_in (full_subtractor_77)
+                                                          0.00       5.19 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_6/U8/ZN (OAI21_X1)
+                                                          0.04       5.23 r
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_6/U3/ZN (OAI21_X1)
+                                                          0.04       5.27 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_6/b_out (full_subtractor_77)
+                                                          0.00       5.27 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_7/b_in (full_subtractor_76)
+                                                          0.00       5.27 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_7/U8/ZN (OAI21_X1)
+                                                          0.04       5.31 r
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_7/U4/ZN (OAI21_X1)
+                                                          0.04       5.35 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_7/b_out (full_subtractor_76)
+                                                          0.00       5.35 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_8/b_in (full_subtractor_75)
+                                                          0.00       5.35 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_8/U7/ZN (OAI21_X1)
+                                                          0.04       5.39 r
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_8/U4/ZN (OAI21_X1)
+                                                          0.04       5.43 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/FSx_8/b_out (full_subtractor_75)
+                                                          0.00       5.43 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/RCS0/b_out (RCS_N9)
+                                                          0.00       5.43 f
+  S3/Special_Unit_instance/SR/stageX_9/subtractor/b_out (CSS_bits9_block_bits9)
+                                                          0.00       5.43 f
+  S3/Special_Unit_instance/SR/stageX_9/U3/ZN (NAND2_X1)
+                                                          0.04       5.47 r
+  S3/Special_Unit_instance/SR/stageX_9/mux/S (mux2to1_N12)
+                                                          0.00       5.47 r
+  S3/Special_Unit_instance/SR/stageX_9/mux/mux_x_0/S (mux2to1_comb_104)
+                                                          0.00       5.47 r
+  S3/Special_Unit_instance/SR/stageX_9/mux/mux_x_0/U1/Z (MUX2_X1)
+                                                          0.08       5.55 f
+  S3/Special_Unit_instance/SR/stageX_9/mux/mux_x_0/Y (mux2to1_comb_104)
+                                                          0.00       5.55 f
+  S3/Special_Unit_instance/SR/stageX_9/mux/Y[0] (mux2to1_N12)
+                                                          0.00       5.55 f
+  S3/Special_Unit_instance/SR/stageX_9/r_int_out[0] (square_root_stage_N12)
+                                                          0.00       5.55 f
+  S3/Special_Unit_instance/SR/stageX_10/r_int_in[2] (square_root_stage_N13)
+                                                          0.00       5.55 f
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/a[0] (CSS_bits10_block_bits10)
+                                                          0.00       5.55 f
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/x[0] (RCS_N10)
+                                                          0.00       5.55 f
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_0/x (full_subtractor_74)
+                                                          0.00       5.55 f
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_0/U8/ZN (INV_X1)
+                                                          0.03       5.58 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_0/U7/ZN (OAI21_X1)
+                                                          0.03       5.61 f
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_0/U4/ZN (OAI21_X1)
+                                                          0.04       5.65 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_0/b_out (full_subtractor_74)
+                                                          0.00       5.65 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_1/b_in (full_subtractor_73)
+                                                          0.00       5.65 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_1/U9/ZN (INV_X1)
+                                                          0.03       5.68 f
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_1/U7/ZN (OAI21_X1)
+                                                          0.06       5.73 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_1/b_out (full_subtractor_73)
+                                                          0.00       5.73 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_2/b_in (full_subtractor_72)
+                                                          0.00       5.73 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_2/U8/ZN (INV_X1)
+                                                          0.03       5.76 f
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_2/U4/ZN (OAI21_X1)
+                                                          0.05       5.81 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_2/b_out (full_subtractor_72)
+                                                          0.00       5.81 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_3/b_in (full_subtractor_71)
+                                                          0.00       5.81 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_3/U8/ZN (INV_X1)
+                                                          0.03       5.84 f
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_3/U3/ZN (OAI21_X1)
+                                                          0.05       5.89 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_3/b_out (full_subtractor_71)
+                                                          0.00       5.89 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_4/b_in (full_subtractor_70)
+                                                          0.00       5.89 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_4/U8/ZN (INV_X1)
+                                                          0.03       5.92 f
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_4/U3/ZN (OAI21_X1)
+                                                          0.05       5.97 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_4/b_out (full_subtractor_70)
+                                                          0.00       5.97 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_5/b_in (full_subtractor_69)
+                                                          0.00       5.97 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_5/U8/ZN (INV_X1)
+                                                          0.03       6.00 f
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_5/U4/ZN (OAI21_X1)
+                                                          0.05       6.05 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_5/b_out (full_subtractor_69)
+                                                          0.00       6.05 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_6/b_in (full_subtractor_68)
+                                                          0.00       6.05 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_6/U8/ZN (INV_X1)
+                                                          0.03       6.07 f
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_6/U3/ZN (OAI21_X1)
+                                                          0.05       6.13 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_6/b_out (full_subtractor_68)
+                                                          0.00       6.13 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_7/b_in (full_subtractor_67)
+                                                          0.00       6.13 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_7/U8/ZN (INV_X1)
+                                                          0.03       6.15 f
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_7/U4/ZN (OAI21_X1)
+                                                          0.05       6.20 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_7/b_out (full_subtractor_67)
+                                                          0.00       6.20 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_8/b_in (full_subtractor_66)
+                                                          0.00       6.20 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_8/U8/ZN (INV_X1)
+                                                          0.03       6.23 f
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_8/U4/ZN (OAI21_X1)
+                                                          0.05       6.28 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_8/b_out (full_subtractor_66)
+                                                          0.00       6.28 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_9/b_in (full_subtractor_65)
+                                                          0.00       6.28 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_9/U7/ZN (INV_X1)
+                                                          0.03       6.31 f
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_9/U4/ZN (OAI21_X1)
+                                                          0.05       6.36 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/FSx_9/b_out (full_subtractor_65)
+                                                          0.00       6.36 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/RCS0/b_out (RCS_N10)
+                                                          0.00       6.36 r
+  S3/Special_Unit_instance/SR/stageX_10/subtractor/b_out (CSS_bits10_block_bits10)
+                                                          0.00       6.36 r
+  S3/Special_Unit_instance/SR/stageX_10/U4/ZN (NAND2_X1)
+                                                          0.03       6.39 f
+  S3/Special_Unit_instance/SR/stageX_10/mux/S (mux2to1_N13)
+                                                          0.00       6.39 f
+  S3/Special_Unit_instance/SR/stageX_10/mux/mux_x_0/S (mux2to1_comb_92)
+                                                          0.00       6.39 f
+  S3/Special_Unit_instance/SR/stageX_10/mux/mux_x_0/U1/Z (MUX2_X1)
+                                                          0.08       6.47 r
+  S3/Special_Unit_instance/SR/stageX_10/mux/mux_x_0/Y (mux2to1_comb_92)
+                                                          0.00       6.47 r
+  S3/Special_Unit_instance/SR/stageX_10/mux/Y[0] (mux2to1_N13)
+                                                          0.00       6.47 r
+  S3/Special_Unit_instance/SR/stageX_10/r_int_out[0] (square_root_stage_N13)
+                                                          0.00       6.47 r
+  S3/Special_Unit_instance/SR/stageX_11/r_int_in[2] (square_root_stage_N14)
+                                                          0.00       6.47 r
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/a[0] (CSS_bits11_block_bits11)
+                                                          0.00       6.47 r
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/x[0] (RCS_N11)
+                                                          0.00       6.47 r
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_0/x (full_subtractor_64)
+                                                          0.00       6.47 r
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_0/U7/ZN (INV_X1)
+                                                          0.03       6.50 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_0/U8/ZN (OAI21_X1)
+                                                          0.04       6.53 r
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_0/U3/ZN (NAND2_X1)
+                                                          0.03       6.57 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_0/b_out (full_subtractor_64)
+                                                          0.00       6.57 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_1/b_in (full_subtractor_63)
+                                                          0.00       6.57 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_1/U8/ZN (OAI21_X1)
+                                                          0.04       6.61 r
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_1/U4/ZN (OAI21_X1)
+                                                          0.04       6.65 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_1/b_out (full_subtractor_63)
+                                                          0.00       6.65 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_2/b_in (full_subtractor_62)
+                                                          0.00       6.65 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_2/U8/ZN (OAI21_X1)
+                                                          0.04       6.69 r
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_2/U7/ZN (OAI21_X1)
+                                                          0.04       6.73 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_2/b_out (full_subtractor_62)
+                                                          0.00       6.73 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_3/b_in (full_subtractor_61)
+                                                          0.00       6.73 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_3/U7/ZN (OAI21_X1)
+                                                          0.04       6.77 r
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_3/U4/ZN (OAI21_X1)
+                                                          0.04       6.81 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_3/b_out (full_subtractor_61)
+                                                          0.00       6.81 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_4/b_in (full_subtractor_60)
+                                                          0.00       6.81 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_4/U7/ZN (OAI21_X1)
+                                                          0.04       6.85 r
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_4/U3/ZN (OAI21_X1)
+                                                          0.04       6.89 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_4/b_out (full_subtractor_60)
+                                                          0.00       6.89 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_5/b_in (full_subtractor_59)
+                                                          0.00       6.89 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_5/U7/ZN (OAI21_X1)
+                                                          0.04       6.93 r
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_5/U4/ZN (OAI21_X1)
+                                                          0.04       6.97 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_5/b_out (full_subtractor_59)
+                                                          0.00       6.97 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_6/b_in (full_subtractor_58)
+                                                          0.00       6.97 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_6/U7/ZN (OAI21_X1)
+                                                          0.04       7.01 r
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_6/U2/ZN (OAI21_X1)
+                                                          0.04       7.05 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_6/b_out (full_subtractor_58)
+                                                          0.00       7.05 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_7/b_in (full_subtractor_57)
+                                                          0.00       7.05 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_7/U7/ZN (OAI21_X1)
+                                                          0.04       7.10 r
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_7/U3/ZN (OAI21_X1)
+                                                          0.04       7.14 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_7/b_out (full_subtractor_57)
+                                                          0.00       7.14 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_8/b_in (full_subtractor_56)
+                                                          0.00       7.14 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_8/U8/ZN (OAI21_X1)
+                                                          0.04       7.18 r
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_8/U4/ZN (OAI21_X1)
+                                                          0.04       7.22 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_8/b_out (full_subtractor_56)
+                                                          0.00       7.22 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_9/b_in (full_subtractor_55)
+                                                          0.00       7.22 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_9/U7/ZN (OAI21_X1)
+                                                          0.04       7.26 r
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_9/U4/ZN (OAI21_X1)
+                                                          0.04       7.30 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_9/b_out (full_subtractor_55)
+                                                          0.00       7.30 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_10/b_in (full_subtractor_54)
+                                                          0.00       7.30 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_10/U7/ZN (OAI21_X1)
+                                                          0.04       7.34 r
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_10/U4/ZN (OAI21_X1)
+                                                          0.04       7.38 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/FSx_10/b_out (full_subtractor_54)
+                                                          0.00       7.38 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/RCS0/b_out (RCS_N11)
+                                                          0.00       7.38 f
+  S3/Special_Unit_instance/SR/stageX_11/subtractor/b_out (CSS_bits11_block_bits11)
+                                                          0.00       7.38 f
+  S3/Special_Unit_instance/SR/stageX_11/U5/ZN (NAND2_X1)
+                                                          0.04       7.42 r
+  S3/Special_Unit_instance/SR/stageX_11/mux/S (mux2to1_N14)
+                                                          0.00       7.42 r
+  S3/Special_Unit_instance/SR/stageX_11/mux/mux_x_0/S (mux2to1_comb_79)
+                                                          0.00       7.42 r
+  S3/Special_Unit_instance/SR/stageX_11/mux/mux_x_0/U1/Z (MUX2_X1)
+                                                          0.08       7.50 f
+  S3/Special_Unit_instance/SR/stageX_11/mux/mux_x_0/Y (mux2to1_comb_79)
+                                                          0.00       7.50 f
+  S3/Special_Unit_instance/SR/stageX_11/mux/Y[0] (mux2to1_N14)
+                                                          0.00       7.50 f
+  S3/Special_Unit_instance/SR/stageX_11/r_int_out[0] (square_root_stage_N14)
+                                                          0.00       7.50 f
+  S3/Special_Unit_instance/SR/stageX_12/r_int_in[2] (square_root_stage_N15)
+                                                          0.00       7.50 f
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/a[0] (CSS_bits12_block_bits12)
+                                                          0.00       7.50 f
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/x[0] (RCS_N12)
+                                                          0.00       7.50 f
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_0/x (full_subtractor_53)
+                                                          0.00       7.50 f
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_0/U8/ZN (INV_X1)
+                                                          0.03       7.53 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_0/U9/ZN (OAI21_X1)
+                                                          0.03       7.56 f
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_0/U4/ZN (NAND2_X1)
+                                                          0.04       7.60 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_0/b_out (full_subtractor_53)
+                                                          0.00       7.60 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_1/b_in (full_subtractor_52)
+                                                          0.00       7.60 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_1/U8/ZN (INV_X1)
+                                                          0.03       7.62 f
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_1/U4/ZN (OAI21_X1)
+                                                          0.05       7.67 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_1/b_out (full_subtractor_52)
+                                                          0.00       7.67 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_2/b_in (full_subtractor_51)
+                                                          0.00       7.67 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_2/U8/ZN (INV_X1)
+                                                          0.03       7.70 f
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_2/U3/ZN (OAI21_X1)
+                                                          0.05       7.75 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_2/b_out (full_subtractor_51)
+                                                          0.00       7.75 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_3/b_in (full_subtractor_50)
+                                                          0.00       7.75 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_3/U7/ZN (INV_X1)
+                                                          0.03       7.78 f
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_3/U3/ZN (OAI21_X1)
+                                                          0.05       7.83 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_3/b_out (full_subtractor_50)
+                                                          0.00       7.83 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_4/b_in (full_subtractor_49)
+                                                          0.00       7.83 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_4/U8/ZN (INV_X1)
+                                                          0.03       7.86 f
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_4/U4/ZN (OAI21_X1)
+                                                          0.05       7.91 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_4/b_out (full_subtractor_49)
+                                                          0.00       7.91 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_5/b_in (full_subtractor_48)
+                                                          0.00       7.91 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_5/U7/ZN (INV_X1)
+                                                          0.03       7.94 f
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_5/U3/ZN (OAI21_X1)
+                                                          0.05       7.99 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_5/b_out (full_subtractor_48)
+                                                          0.00       7.99 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_6/b_in (full_subtractor_47)
+                                                          0.00       7.99 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_6/U8/ZN (INV_X1)
+                                                          0.03       8.02 f
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_6/U3/ZN (OAI21_X1)
+                                                          0.05       8.07 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_6/b_out (full_subtractor_47)
+                                                          0.00       8.07 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_7/b_in (full_subtractor_46)
+                                                          0.00       8.07 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_7/U8/ZN (INV_X1)
+                                                          0.03       8.09 f
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_7/U4/ZN (OAI21_X1)
+                                                          0.05       8.15 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_7/b_out (full_subtractor_46)
+                                                          0.00       8.15 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_8/b_in (full_subtractor_45)
+                                                          0.00       8.15 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_8/U8/ZN (INV_X1)
+                                                          0.03       8.17 f
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_8/U4/ZN (OAI21_X1)
+                                                          0.05       8.23 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_8/b_out (full_subtractor_45)
+                                                          0.00       8.23 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_9/b_in (full_subtractor_44)
+                                                          0.00       8.23 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_9/U8/ZN (INV_X1)
+                                                          0.03       8.25 f
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_9/U4/ZN (OAI21_X1)
+                                                          0.05       8.30 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_9/b_out (full_subtractor_44)
+                                                          0.00       8.30 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_10/b_in (full_subtractor_43)
+                                                          0.00       8.30 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_10/U8/ZN (INV_X1)
+                                                          0.03       8.33 f
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_10/U3/ZN (OAI21_X1)
+                                                          0.05       8.38 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_10/b_out (full_subtractor_43)
+                                                          0.00       8.38 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_11/b_in (full_subtractor_42)
+                                                          0.00       8.38 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_11/U8/ZN (INV_X1)
+                                                          0.03       8.41 f
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_11/U3/ZN (OAI21_X1)
+                                                          0.05       8.46 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/FSx_11/b_out (full_subtractor_42)
+                                                          0.00       8.46 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/RCS0/b_out (RCS_N12)
+                                                          0.00       8.46 r
+  S3/Special_Unit_instance/SR/stageX_12/subtractor/b_out (CSS_bits12_block_bits12)
+                                                          0.00       8.46 r
+  S3/Special_Unit_instance/SR/stageX_12/U3/ZN (NAND2_X1)
+                                                          0.04       8.49 f
+  S3/Special_Unit_instance/SR/stageX_12/mux/S (mux2to1_N15)
+                                                          0.00       8.49 f
+  S3/Special_Unit_instance/SR/stageX_12/mux/mux_x_0/S (mux2to1_comb_65)
+                                                          0.00       8.49 f
+  S3/Special_Unit_instance/SR/stageX_12/mux/mux_x_0/U1/Z (MUX2_X1)
+                                                          0.08       8.57 r
+  S3/Special_Unit_instance/SR/stageX_12/mux/mux_x_0/Y (mux2to1_comb_65)
+                                                          0.00       8.57 r
+  S3/Special_Unit_instance/SR/stageX_12/mux/Y[0] (mux2to1_N15)
+                                                          0.00       8.57 r
+  S3/Special_Unit_instance/SR/stageX_12/r_int_out[0] (square_root_stage_N15)
+                                                          0.00       8.57 r
+  S3/Special_Unit_instance/SR/stageX_13/r_int_in[2] (square_root_stage_N16)
+                                                          0.00       8.57 r
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/a[0] (CSS_bits13_block_bits13)
+                                                          0.00       8.57 r
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/x[0] (RCS_N13)
+                                                          0.00       8.57 r
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_0/x (full_subtractor_41)
+                                                          0.00       8.57 r
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_0/U7/ZN (INV_X1)
+                                                          0.03       8.60 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_0/U8/ZN (OAI21_X1)
+                                                          0.04       8.64 r
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_0/U3/ZN (NAND2_X1)
+                                                          0.04       8.67 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_0/b_out (full_subtractor_41)
+                                                          0.00       8.67 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_1/b_in (full_subtractor_40)
+                                                          0.00       8.67 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_1/U7/ZN (OAI21_X1)
+                                                          0.04       8.72 r
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_1/U3/ZN (NAND2_X1)
+                                                          0.03       8.75 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_1/b_out (full_subtractor_40)
+                                                          0.00       8.75 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_2/b_in (full_subtractor_39)
+                                                          0.00       8.75 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_2/U7/ZN (OAI21_X1)
+                                                          0.04       8.79 r
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_2/U3/ZN (OAI21_X1)
+                                                          0.04       8.83 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_2/b_out (full_subtractor_39)
+                                                          0.00       8.83 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_3/b_in (full_subtractor_38)
+                                                          0.00       8.83 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_3/U8/ZN (OAI21_X1)
+                                                          0.04       8.87 r
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_3/U3/ZN (OAI21_X1)
+                                                          0.04       8.91 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_3/b_out (full_subtractor_38)
+                                                          0.00       8.91 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_4/b_in (full_subtractor_37)
+                                                          0.00       8.91 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_4/U7/ZN (OAI21_X1)
+                                                          0.04       8.95 r
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_4/U4/ZN (OAI21_X1)
+                                                          0.04       8.99 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_4/b_out (full_subtractor_37)
+                                                          0.00       8.99 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_5/b_in (full_subtractor_36)
+                                                          0.00       8.99 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_5/U7/ZN (OAI21_X1)
+                                                          0.04       9.03 r
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_5/U4/ZN (OAI21_X1)
+                                                          0.04       9.07 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_5/b_out (full_subtractor_36)
+                                                          0.00       9.07 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_6/b_in (full_subtractor_35)
+                                                          0.00       9.07 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_6/U8/ZN (OAI21_X1)
+                                                          0.04       9.12 r
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_6/U4/ZN (OAI21_X1)
+                                                          0.04       9.15 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_6/b_out (full_subtractor_35)
+                                                          0.00       9.15 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_7/b_in (full_subtractor_34)
+                                                          0.00       9.15 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_7/U7/ZN (OAI21_X1)
+                                                          0.04       9.20 r
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_7/U4/ZN (OAI21_X1)
+                                                          0.04       9.24 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_7/b_out (full_subtractor_34)
+                                                          0.00       9.24 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_8/b_in (full_subtractor_33)
+                                                          0.00       9.24 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_8/U8/ZN (OAI21_X1)
+                                                          0.04       9.28 r
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_8/U3/ZN (OAI21_X1)
+                                                          0.04       9.32 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_8/b_out (full_subtractor_33)
+                                                          0.00       9.32 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_9/b_in (full_subtractor_32)
+                                                          0.00       9.32 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_9/U8/ZN (OAI21_X1)
+                                                          0.04       9.36 r
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_9/U4/ZN (OAI21_X1)
+                                                          0.04       9.40 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_9/b_out (full_subtractor_32)
+                                                          0.00       9.40 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_10/b_in (full_subtractor_31)
+                                                          0.00       9.40 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_10/U8/ZN (OAI21_X1)
+                                                          0.04       9.44 r
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_10/U3/ZN (OAI21_X1)
+                                                          0.04       9.48 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_10/b_out (full_subtractor_31)
+                                                          0.00       9.48 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_11/b_in (full_subtractor_30)
+                                                          0.00       9.48 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_11/U8/ZN (OAI21_X1)
+                                                          0.04       9.53 r
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_11/U3/ZN (OAI21_X1)
+                                                          0.04       9.57 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_11/b_out (full_subtractor_30)
+                                                          0.00       9.57 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_12/b_in (full_subtractor_29)
+                                                          0.00       9.57 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_12/U7/ZN (OAI21_X1)
+                                                          0.04       9.61 r
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_12/U4/ZN (OAI21_X1)
+                                                          0.04       9.64 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/FSx_12/b_out (full_subtractor_29)
+                                                          0.00       9.64 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/RCS0/b_out (RCS_N13)
+                                                          0.00       9.64 f
+  S3/Special_Unit_instance/SR/stageX_13/subtractor/b_out (CSS_bits13_block_bits13)
+                                                          0.00       9.64 f
+  S3/Special_Unit_instance/SR/stageX_13/U3/ZN (NAND2_X1)
+                                                          0.04       9.69 r
+  S3/Special_Unit_instance/SR/stageX_13/mux/S (mux2to1_N16)
+                                                          0.00       9.69 r
+  S3/Special_Unit_instance/SR/stageX_13/mux/mux_x_0/S (mux2to1_comb_50)
+                                                          0.00       9.69 r
+  S3/Special_Unit_instance/SR/stageX_13/mux/mux_x_0/U1/Z (MUX2_X1)
+                                                          0.06       9.75 r
+  S3/Special_Unit_instance/SR/stageX_13/mux/mux_x_0/Y (mux2to1_comb_50)
+                                                          0.00       9.75 r
+  S3/Special_Unit_instance/SR/stageX_13/mux/Y[0] (mux2to1_N16)
+                                                          0.00       9.75 r
+  S3/Special_Unit_instance/SR/stageX_13/r_int_out[0] (square_root_stage_N16)
+                                                          0.00       9.75 r
+  S3/Special_Unit_instance/SR/stageX_14/r_int_in[2] (square_root_stage_N17)
+                                                          0.00       9.75 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/a[0] (CSS_bits14_block_bits14)
+                                                          0.00       9.75 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/x[0] (RCS_N14)
+                                                          0.00       9.75 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_0/x (full_subtractor_28)
+                                                          0.00       9.75 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_0/U8/ZN (INV_X1)
+                                                          0.03       9.78 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_0/U9/ZN (OAI21_X1)
+                                                          0.04       9.82 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_0/U4/ZN (NAND2_X1)
+                                                          0.03       9.85 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_0/b_out (full_subtractor_28)
+                                                          0.00       9.85 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_1/b_in (full_subtractor_27)
+                                                          0.00       9.85 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_1/U8/ZN (OAI21_X1)
+                                                          0.04       9.89 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_1/U4/ZN (OAI21_X1)
+                                                          0.04       9.93 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_1/b_out (full_subtractor_27)
+                                                          0.00       9.93 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_2/b_in (full_subtractor_26)
+                                                          0.00       9.93 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_2/U8/ZN (OAI21_X1)
+                                                          0.04       9.97 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_2/U2/ZN (OAI21_X1)
+                                                          0.04      10.01 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_2/b_out (full_subtractor_26)
+                                                          0.00      10.01 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_3/b_in (full_subtractor_25)
+                                                          0.00      10.01 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_3/U7/ZN (OAI21_X1)
+                                                          0.04      10.05 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_3/U4/ZN (OAI21_X1)
+                                                          0.04      10.09 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_3/b_out (full_subtractor_25)
+                                                          0.00      10.09 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_4/b_in (full_subtractor_24)
+                                                          0.00      10.09 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_4/U8/ZN (OAI21_X1)
+                                                          0.04      10.13 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_4/U4/ZN (OAI21_X1)
+                                                          0.04      10.17 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_4/b_out (full_subtractor_24)
+                                                          0.00      10.17 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_5/b_in (full_subtractor_23)
+                                                          0.00      10.17 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_5/U8/ZN (OAI21_X1)
+                                                          0.04      10.22 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_5/U4/ZN (OAI21_X1)
+                                                          0.04      10.25 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_5/b_out (full_subtractor_23)
+                                                          0.00      10.25 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_6/b_in (full_subtractor_22)
+                                                          0.00      10.25 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_6/U4/ZN (OAI21_X1)
+                                                          0.04      10.30 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_6/U2/ZN (OAI21_X1)
+                                                          0.04      10.33 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_6/b_out (full_subtractor_22)
+                                                          0.00      10.33 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_7/b_in (full_subtractor_21)
+                                                          0.00      10.33 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_7/U8/ZN (OAI21_X1)
+                                                          0.04      10.38 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_7/U4/ZN (OAI21_X1)
+                                                          0.04      10.42 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_7/b_out (full_subtractor_21)
+                                                          0.00      10.42 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_8/b_in (full_subtractor_20)
+                                                          0.00      10.42 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_8/U8/ZN (OAI21_X1)
+                                                          0.04      10.46 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_8/U3/ZN (OAI21_X1)
+                                                          0.04      10.50 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_8/b_out (full_subtractor_20)
+                                                          0.00      10.50 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_9/b_in (full_subtractor_19)
+                                                          0.00      10.50 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_9/U8/ZN (OAI21_X1)
+                                                          0.04      10.54 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_9/U3/ZN (OAI21_X1)
+                                                          0.04      10.58 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_9/b_out (full_subtractor_19)
+                                                          0.00      10.58 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_10/b_in (full_subtractor_18)
+                                                          0.00      10.58 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_10/U8/ZN (OAI21_X1)
+                                                          0.04      10.62 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_10/U2/ZN (OAI21_X1)
+                                                          0.04      10.66 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_10/b_out (full_subtractor_18)
+                                                          0.00      10.66 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_11/b_in (full_subtractor_17)
+                                                          0.00      10.66 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_11/U8/ZN (OAI21_X1)
+                                                          0.04      10.70 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_11/U4/ZN (OAI21_X1)
+                                                          0.04      10.74 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_11/b_out (full_subtractor_17)
+                                                          0.00      10.74 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_12/b_in (full_subtractor_16)
+                                                          0.00      10.74 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_12/U8/ZN (OAI21_X1)
+                                                          0.04      10.79 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_12/U4/ZN (OAI21_X1)
+                                                          0.04      10.83 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_12/b_out (full_subtractor_16)
+                                                          0.00      10.83 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_13/b_in (full_subtractor_15)
+                                                          0.00      10.83 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_13/U8/ZN (OAI21_X1)
+                                                          0.04      10.87 r
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_13/U4/ZN (OAI21_X1)
+                                                          0.04      10.91 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/FSx_13/b_out (full_subtractor_15)
+                                                          0.00      10.91 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/RCS0/b_out (RCS_N14)
+                                                          0.00      10.91 f
+  S3/Special_Unit_instance/SR/stageX_14/subtractor/b_out (CSS_bits14_block_bits14)
+                                                          0.00      10.91 f
+  S3/Special_Unit_instance/SR/stageX_14/U9/ZN (NAND2_X1)
+                                                          0.04      10.94 r
+  S3/Special_Unit_instance/SR/stageX_14/mux/S (mux2to1_N17_0)
+                                                          0.00      10.94 r
+  S3/Special_Unit_instance/SR/stageX_14/mux/mux_x_0/S (mux2to1_comb_34)
+                                                          0.00      10.94 r
+  S3/Special_Unit_instance/SR/stageX_14/mux/mux_x_0/U1/Z (MUX2_X1)
+                                                          0.06      11.00 r
+  S3/Special_Unit_instance/SR/stageX_14/mux/mux_x_0/Y (mux2to1_comb_34)
+                                                          0.00      11.00 r
+  S3/Special_Unit_instance/SR/stageX_14/mux/Y[0] (mux2to1_N17_0)
+                                                          0.00      11.00 r
+  S3/Special_Unit_instance/SR/stageX_14/r_int_out[0] (square_root_stage_N17)
+                                                          0.00      11.00 r
+  S3/Special_Unit_instance/SR/stageLSB_15/r_int_in[2] (square_root_stage_N18)
+                                                          0.00      11.00 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/a[0] (CSS_bits15_block_bits15)
+                                                          0.00      11.00 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/x[0] (RCS_N15)
+                                                          0.00      11.00 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_0/x (full_subtractor_14)
+                                                          0.00      11.00 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_0/U9/ZN (INV_X1)
+                                                          0.03      11.03 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_0/U8/ZN (OAI21_X1)
+                                                          0.04      11.07 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_0/U4/ZN (NAND2_X1)
+                                                          0.03      11.10 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_0/b_out (full_subtractor_14)
+                                                          0.00      11.10 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_1/b_in (full_subtractor_13)
+                                                          0.00      11.10 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_1/U7/ZN (OAI21_X1)
+                                                          0.04      11.14 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_1/U4/ZN (OAI21_X1)
+                                                          0.04      11.18 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_1/b_out (full_subtractor_13)
+                                                          0.00      11.18 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_2/b_in (full_subtractor_12)
+                                                          0.00      11.18 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_2/U7/ZN (OAI21_X1)
+                                                          0.04      11.23 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_2/U8/ZN (OAI21_X1)
+                                                          0.04      11.26 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_2/b_out (full_subtractor_12)
+                                                          0.00      11.26 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_3/b_in (full_subtractor_11)
+                                                          0.00      11.26 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_3/U7/ZN (OAI21_X1)
+                                                          0.04      11.31 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_3/U4/ZN (OAI21_X1)
+                                                          0.04      11.34 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_3/b_out (full_subtractor_11)
+                                                          0.00      11.34 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_4/b_in (full_subtractor_10)
+                                                          0.00      11.34 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_4/U7/ZN (OAI21_X1)
+                                                          0.04      11.39 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_4/U2/ZN (OAI21_X1)
+                                                          0.04      11.43 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_4/b_out (full_subtractor_10)
+                                                          0.00      11.43 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_5/b_in (full_subtractor_9)
+                                                          0.00      11.43 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_5/U4/ZN (OAI21_X1)
+                                                          0.04      11.47 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_5/U7/ZN (OAI21_X1)
+                                                          0.04      11.51 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_5/b_out (full_subtractor_9)
+                                                          0.00      11.51 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_6/b_in (full_subtractor_8)
+                                                          0.00      11.51 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_6/U8/ZN (OAI21_X1)
+                                                          0.04      11.55 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_6/U4/ZN (OAI21_X1)
+                                                          0.04      11.59 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_6/b_out (full_subtractor_8)
+                                                          0.00      11.59 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_7/b_in (full_subtractor_7)
+                                                          0.00      11.59 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_7/U4/ZN (OAI21_X1)
+                                                          0.04      11.63 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_7/U7/ZN (OAI21_X1)
+                                                          0.04      11.67 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_7/b_out (full_subtractor_7)
+                                                          0.00      11.67 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_8/b_in (full_subtractor_6)
+                                                          0.00      11.67 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_8/U4/ZN (OAI21_X1)
+                                                          0.04      11.71 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_8/U3/ZN (OAI21_X1)
+                                                          0.04      11.75 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_8/b_out (full_subtractor_6)
+                                                          0.00      11.75 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_9/b_in (full_subtractor_5)
+                                                          0.00      11.75 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_9/U7/ZN (OAI21_X1)
+                                                          0.04      11.79 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_9/U3/ZN (OAI21_X1)
+                                                          0.04      11.83 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_9/b_out (full_subtractor_5)
+                                                          0.00      11.83 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_10/b_in (full_subtractor_4)
+                                                          0.00      11.83 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_10/U8/ZN (OAI21_X1)
+                                                          0.04      11.87 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_10/U3/ZN (OAI21_X1)
+                                                          0.04      11.91 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_10/b_out (full_subtractor_4)
+                                                          0.00      11.91 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_11/b_in (full_subtractor_3)
+                                                          0.00      11.91 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_11/U7/ZN (OAI21_X1)
+                                                          0.04      11.96 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_11/U2/ZN (OAI21_X1)
+                                                          0.04      12.00 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_11/b_out (full_subtractor_3)
+                                                          0.00      12.00 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_12/b_in (full_subtractor_2)
+                                                          0.00      12.00 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_12/U7/ZN (OAI21_X1)
+                                                          0.04      12.04 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_12/U3/ZN (OAI21_X1)
+                                                          0.04      12.08 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_12/b_out (full_subtractor_2)
+                                                          0.00      12.08 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_13/b_in (full_subtractor_1)
+                                                          0.00      12.08 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_13/U7/ZN (OAI21_X1)
+                                                          0.04      12.12 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_13/U4/ZN (OAI21_X1)
+                                                          0.04      12.16 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_13/b_out (full_subtractor_1)
+                                                          0.00      12.16 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_14/b_in (full_subtractor_0)
+                                                          0.00      12.16 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_14/U8/ZN (OAI21_X1)
+                                                          0.04      12.20 r
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_14/U4/ZN (OAI21_X1)
+                                                          0.04      12.24 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/FSx_14/b_out (full_subtractor_0)
+                                                          0.00      12.24 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/RCS0/b_out (RCS_N15)
+                                                          0.00      12.24 f
+  S3/Special_Unit_instance/SR/stageLSB_15/subtractor/b_out (CSS_bits15_block_bits15)
+                                                          0.00      12.24 f
+  S3/Special_Unit_instance/SR/stageLSB_15/U9/ZN (NAND2_X1)
+                                                          0.04      12.28 r
+  S3/Special_Unit_instance/SR/stageLSB_15/mux/S (mux2to1_N18)
+                                                          0.00      12.28 r
+  S3/Special_Unit_instance/SR/stageLSB_15/mux/U1/Z (CLKBUF_X3)
+                                                          0.07      12.35 r
+  S3/Special_Unit_instance/SR/stageLSB_15/mux/mux_x_15/S (mux2to1_comb_2)
+                                                          0.00      12.35 r
+  S3/Special_Unit_instance/SR/stageLSB_15/mux/mux_x_15/U3/ZN (INV_X1)
+                                                          0.03      12.38 f
+  S3/Special_Unit_instance/SR/stageLSB_15/mux/mux_x_15/U2/ZN (AOI22_X1)
+                                                          0.04      12.42 r
+  S3/Special_Unit_instance/SR/stageLSB_15/mux/mux_x_15/U1/ZN (INV_X1)
+                                                          0.02      12.44 f
+  S3/Special_Unit_instance/SR/stageLSB_15/mux/mux_x_15/Y (mux2to1_comb_2)
+                                                          0.00      12.44 f
+  S3/Special_Unit_instance/SR/stageLSB_15/mux/Y[15] (mux2to1_N18)
+                                                          0.00      12.44 f
+  S3/Special_Unit_instance/SR/stageLSB_15/r_int_out[15] (square_root_stage_N18)
+                                                          0.00      12.44 f
+  S3/Special_Unit_instance/SR/r[15] (square_root_N32)     0.00      12.44 f
+  S3/Special_Unit_instance/mux/B[15] (mux2to1_N17_1)      0.00      12.44 f
+  S3/Special_Unit_instance/mux/mux_x_15/B (mux2to1_comb_166)
+                                                          0.00      12.44 f
+  S3/Special_Unit_instance/mux/mux_x_15/U1/Z (MUX2_X1)
+                                                          0.06      12.50 f
+  S3/Special_Unit_instance/mux/mux_x_15/Y (mux2to1_comb_166)
+                                                          0.00      12.50 f
+  S3/Special_Unit_instance/mux/Y[15] (mux2to1_N17_1)      0.00      12.50 f
+  S3/Special_Unit_instance/res[15] (Special_Unit)         0.00      12.50 f
+  S3/ALU_SPC_mux/B[15] (mux2to1_N32)                      0.00      12.50 f
+  S3/ALU_SPC_mux/mux_x_15/B (mux2to1_comb_202)            0.00      12.50 f
+  S3/ALU_SPC_mux/mux_x_15/U1/Z (MUX2_X1)                  0.07      12.57 f
+  S3/ALU_SPC_mux/mux_x_15/Y (mux2to1_comb_202)            0.00      12.57 f
+  S3/ALU_SPC_mux/Y[15] (mux2to1_N32)                      0.00      12.57 f
+  S3/Alu_result_regN/pin[15] (regN_N32_3)                 0.00      12.57 f
+  S3/Alu_result_regN/U24/ZN (NAND2_X1)                    0.03      12.60 r
+  S3/Alu_result_regN/U22/ZN (NAND2_X1)                    0.02      12.62 f
+  S3/Alu_result_regN/pout_reg[15]/D (DFFR_X1)             0.01      12.63 f
+  data arrival time                                                 12.63
+
+  clock MY_CLK (rise edge)                               12.74      12.74
+  clock network delay (ideal)                             0.00      12.74
+  clock uncertainty                                      -0.07      12.67
+  S3/Alu_result_regN/pout_reg[15]/CK (DFFR_X1)            0.00      12.67 r
+  library setup time                                     -0.04      12.63
+  data required time                                                12.63
+  --------------------------------------------------------------------------
+  data required time                                                12.63
+  data arrival time                                                -12.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

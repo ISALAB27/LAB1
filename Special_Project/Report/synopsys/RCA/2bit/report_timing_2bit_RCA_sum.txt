@@ -1,0 +1,43 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RCA
+Version: O-2018.06-SP4
+Date   : Sat Jan  8 19:00:08 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: a[0] (input port)
+  Endpoint: sum[1] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RCA                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  a[0] (in)                                0.00       0.00 f
+  FAx_0/x (full_adder_1)                   0.00       0.00 f
+  FAx_0/U2/ZN (OAI21_X1)                   0.04       0.04 r
+  FAx_0/U3/ZN (NAND2_X1)                   0.03       0.08 f
+  FAx_0/cout (full_adder_1)                0.00       0.08 f
+  FAx_1/cin (full_adder_0)                 0.00       0.08 f
+  FAx_1/U1/Z (CLKBUF_X1)                   0.04       0.12 f
+  FAx_1/U6/Z (XOR2_X1)                     0.07       0.19 f
+  FAx_1/sum (full_adder_0)                 0.00       0.19 f
+  sum[1] (out)                             0.02       0.21 f
+  data arrival time                                   0.21
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

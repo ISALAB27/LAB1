@@ -1,0 +1,99 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RCA
+Version: O-2018.06-SP4
+Date   : Sat Jan  8 18:42:55 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: b[0] (input port)
+  Endpoint: sum[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RCA                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  b[0] (in)                                0.00       0.00 f
+  FAx_0/y (full_adder_15)                  0.00       0.00 f
+  FAx_0/U4/Z (XOR2_X1)                     0.08       0.08 f
+  FAx_0/U3/ZN (AOI22_X1)                   0.06       0.13 r
+  FAx_0/U2/ZN (INV_X1)                     0.03       0.16 f
+  FAx_0/cout (full_adder_15)               0.00       0.16 f
+  FAx_1/cin (full_adder_14)                0.00       0.16 f
+  FAx_1/U3/ZN (AOI22_X1)                   0.06       0.22 r
+  FAx_1/U2/ZN (INV_X1)                     0.03       0.25 f
+  FAx_1/cout (full_adder_14)               0.00       0.25 f
+  FAx_2/cin (full_adder_13)                0.00       0.25 f
+  FAx_2/U3/ZN (AOI22_X1)                   0.06       0.31 r
+  FAx_2/U2/ZN (INV_X1)                     0.03       0.34 f
+  FAx_2/cout (full_adder_13)               0.00       0.34 f
+  FAx_3/cin (full_adder_12)                0.00       0.34 f
+  FAx_3/U3/ZN (AOI22_X1)                   0.06       0.40 r
+  FAx_3/U2/ZN (INV_X1)                     0.03       0.43 f
+  FAx_3/cout (full_adder_12)               0.00       0.43 f
+  FAx_4/cin (full_adder_11)                0.00       0.43 f
+  FAx_4/U3/ZN (AOI22_X1)                   0.06       0.49 r
+  FAx_4/U2/ZN (INV_X1)                     0.03       0.52 f
+  FAx_4/cout (full_adder_11)               0.00       0.52 f
+  FAx_5/cin (full_adder_10)                0.00       0.52 f
+  FAx_5/U3/ZN (AOI22_X1)                   0.06       0.58 r
+  FAx_5/U2/ZN (INV_X1)                     0.03       0.61 f
+  FAx_5/cout (full_adder_10)               0.00       0.61 f
+  FAx_6/cin (full_adder_9)                 0.00       0.61 f
+  FAx_6/U3/ZN (AOI22_X1)                   0.06       0.67 r
+  FAx_6/U2/ZN (INV_X1)                     0.03       0.70 f
+  FAx_6/cout (full_adder_9)                0.00       0.70 f
+  FAx_7/cin (full_adder_8)                 0.00       0.70 f
+  FAx_7/U3/ZN (AOI22_X1)                   0.06       0.76 r
+  FAx_7/U2/ZN (INV_X1)                     0.03       0.78 f
+  FAx_7/cout (full_adder_8)                0.00       0.78 f
+  FAx_8/cin (full_adder_7)                 0.00       0.78 f
+  FAx_8/U3/ZN (AOI22_X1)                   0.06       0.85 r
+  FAx_8/U2/ZN (INV_X1)                     0.03       0.87 f
+  FAx_8/cout (full_adder_7)                0.00       0.87 f
+  FAx_9/cin (full_adder_6)                 0.00       0.87 f
+  FAx_9/U3/ZN (AOI22_X1)                   0.06       0.93 r
+  FAx_9/U2/ZN (INV_X1)                     0.03       0.96 f
+  FAx_9/cout (full_adder_6)                0.00       0.96 f
+  FAx_10/cin (full_adder_5)                0.00       0.96 f
+  FAx_10/U3/ZN (AOI22_X1)                  0.06       1.02 r
+  FAx_10/U2/ZN (INV_X1)                    0.03       1.05 f
+  FAx_10/cout (full_adder_5)               0.00       1.05 f
+  FAx_11/cin (full_adder_4)                0.00       1.05 f
+  FAx_11/U3/ZN (AOI22_X1)                  0.06       1.11 r
+  FAx_11/U2/ZN (INV_X1)                    0.03       1.14 f
+  FAx_11/cout (full_adder_4)               0.00       1.14 f
+  FAx_12/cin (full_adder_3)                0.00       1.14 f
+  FAx_12/U3/ZN (AOI22_X1)                  0.06       1.20 r
+  FAx_12/U2/ZN (INV_X1)                    0.03       1.23 f
+  FAx_12/cout (full_adder_3)               0.00       1.23 f
+  FAx_13/cin (full_adder_2)                0.00       1.23 f
+  FAx_13/U3/ZN (AOI22_X1)                  0.06       1.29 r
+  FAx_13/U2/ZN (INV_X1)                    0.03       1.32 f
+  FAx_13/cout (full_adder_2)               0.00       1.32 f
+  FAx_14/cin (full_adder_1)                0.00       1.32 f
+  FAx_14/U3/ZN (AOI22_X1)                  0.06       1.38 r
+  FAx_14/U2/ZN (INV_X1)                    0.03       1.41 f
+  FAx_14/cout (full_adder_1)               0.00       1.41 f
+  FAx_15/cin (full_adder_0)                0.00       1.41 f
+  FAx_15/U1/Z (XOR2_X1)                    0.07       1.48 f
+  FAx_15/sum (full_adder_0)                0.00       1.48 f
+  sum[15] (out)                            0.02       1.50 f
+  data arrival time                                   1.50
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

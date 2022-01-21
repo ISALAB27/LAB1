@@ -1,0 +1,98 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RCA
+Version: O-2018.06-SP4
+Date   : Sat Jan  8 18:44:31 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: b[0] (input port)
+  Endpoint: carry_out (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RCA                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  b[0] (in)                                0.00       0.00 r
+  FAx_0/y (full_adder_15)                  0.00       0.00 r
+  FAx_0/U2/ZN (OAI21_X1)                   0.03       0.03 f
+  FAx_0/U3/ZN (NAND2_X1)                   0.03       0.06 r
+  FAx_0/cout (full_adder_15)               0.00       0.06 r
+  FAx_1/cin (full_adder_14)                0.00       0.06 r
+  FAx_1/U3/ZN (NOR2_X1)                    0.03       0.09 f
+  FAx_1/U1/ZN (NOR2_X2)                    0.05       0.15 r
+  FAx_1/cout (full_adder_14)               0.00       0.15 r
+  FAx_2/cin (full_adder_13)                0.00       0.15 r
+  FAx_2/U3/ZN (NOR2_X1)                    0.03       0.18 f
+  FAx_2/U1/ZN (NOR2_X2)                    0.05       0.23 r
+  FAx_2/cout (full_adder_13)               0.00       0.23 r
+  FAx_3/cin (full_adder_12)                0.00       0.23 r
+  FAx_3/U3/ZN (NOR2_X1)                    0.03       0.26 f
+  FAx_3/U1/ZN (NOR2_X2)                    0.05       0.32 r
+  FAx_3/cout (full_adder_12)               0.00       0.32 r
+  FAx_4/cin (full_adder_11)                0.00       0.32 r
+  FAx_4/U3/ZN (NOR2_X1)                    0.03       0.35 f
+  FAx_4/U1/ZN (NOR2_X2)                    0.05       0.40 r
+  FAx_4/cout (full_adder_11)               0.00       0.40 r
+  FAx_5/cin (full_adder_10)                0.00       0.40 r
+  FAx_5/U3/ZN (NOR2_X1)                    0.03       0.43 f
+  FAx_5/U1/ZN (NOR2_X2)                    0.05       0.49 r
+  FAx_5/cout (full_adder_10)               0.00       0.49 r
+  FAx_6/cin (full_adder_9)                 0.00       0.49 r
+  FAx_6/U4/ZN (NOR2_X1)                    0.03       0.52 f
+  FAx_6/U1/ZN (NOR2_X2)                    0.05       0.57 r
+  FAx_6/cout (full_adder_9)                0.00       0.57 r
+  FAx_7/cin (full_adder_8)                 0.00       0.57 r
+  FAx_7/U3/ZN (NOR2_X1)                    0.03       0.60 f
+  FAx_7/U1/ZN (NOR2_X2)                    0.05       0.66 r
+  FAx_7/cout (full_adder_8)                0.00       0.66 r
+  FAx_8/cin (full_adder_7)                 0.00       0.66 r
+  FAx_8/U3/ZN (NOR2_X1)                    0.03       0.69 f
+  FAx_8/U1/ZN (NOR2_X2)                    0.05       0.74 r
+  FAx_8/cout (full_adder_7)                0.00       0.74 r
+  FAx_9/cin (full_adder_6)                 0.00       0.74 r
+  FAx_9/U3/ZN (NOR2_X1)                    0.03       0.77 f
+  FAx_9/U1/ZN (NOR2_X2)                    0.05       0.83 r
+  FAx_9/cout (full_adder_6)                0.00       0.83 r
+  FAx_10/cin (full_adder_5)                0.00       0.83 r
+  FAx_10/U3/ZN (NOR2_X1)                   0.03       0.86 f
+  FAx_10/U1/ZN (NOR2_X2)                   0.05       0.91 r
+  FAx_10/cout (full_adder_5)               0.00       0.91 r
+  FAx_11/cin (full_adder_4)                0.00       0.91 r
+  FAx_11/U3/ZN (NOR2_X1)                   0.03       0.94 f
+  FAx_11/U1/ZN (NOR2_X2)                   0.05       0.99 r
+  FAx_11/cout (full_adder_4)               0.00       0.99 r
+  FAx_12/cin (full_adder_3)                0.00       0.99 r
+  FAx_12/U3/ZN (NOR2_X1)                   0.03       1.02 f
+  FAx_12/U1/ZN (NOR2_X2)                   0.05       1.08 r
+  FAx_12/cout (full_adder_3)               0.00       1.08 r
+  FAx_13/cin (full_adder_2)                0.00       1.08 r
+  FAx_13/U3/ZN (NOR2_X1)                   0.03       1.11 f
+  FAx_13/U1/ZN (NOR2_X2)                   0.05       1.16 r
+  FAx_13/cout (full_adder_2)               0.00       1.16 r
+  FAx_14/cin (full_adder_1)                0.00       1.16 r
+  FAx_14/U4/ZN (AOI21_X1)                  0.03       1.20 f
+  FAx_14/U1/ZN (NOR2_X1)                   0.05       1.25 r
+  FAx_14/cout (full_adder_1)               0.00       1.25 r
+  FAx_15/cin (full_adder_0)                0.00       1.25 r
+  FAx_15/U4/ZN (AOI21_X1)                  0.03       1.28 f
+  FAx_15/U2/ZN (NOR2_X1)                   0.05       1.33 r
+  FAx_15/cout (full_adder_0)               0.00       1.33 r
+  carry_out (out)                          0.02       1.35 r
+  data arrival time                                   1.35
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

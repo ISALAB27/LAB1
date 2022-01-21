@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : RISC_V_lite
+Version: O-2018.06-SP4
+Date   : Sun Jan 16 22:08:36 2022
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+Number of ports:                         4775
+Number of nets:                         13732
+Number of cells:                         9034
+Number of combinational cells:           7298
+Number of sequential cells:              1455
+Number of macros/black boxes:               0
+Number of buf/inv:                       1540
+Number of references:                       9
+
+Combinational area:               7771.456020
+Buf/Inv area:                     1060.275984
+Noncombinational area:            7740.600250
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 15512.056270
+Total area:                 undefined
+1

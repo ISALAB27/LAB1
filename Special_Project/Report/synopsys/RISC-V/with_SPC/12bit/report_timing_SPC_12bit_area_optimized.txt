@@ -1,0 +1,139 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RISC_V_lite' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISC_V_lite
+Version: O-2018.06-SP4
+Date   : Sun Jan 16 23:54:59 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: data_read[0]
+              (input port clocked by MY_CLK)
+  Endpoint: S3/Alu_result_regN/pout_reg[31]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISC_V_lite        5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  data_read[0] (in)                                       0.00       0.50 f
+  S4/ReadData_in[0] (stage4)                              0.00       0.50 f
+  S4/U3/ZN (NAND2_X1)                                     0.02       0.52 r
+  S4/U2/ZN (NAND2_X1)                                     0.03       0.55 f
+  S4/ALURes_MEM[0] (stage4)                               0.00       0.55 f
+  S3/ALURes_MEM[0] (stage3)                               0.00       0.55 f
+  S3/fu_mux2/B[0] (mux3to1_N32_0)                         0.00       0.55 f
+  S3/fu_mux2/U2/ZN (AOI222_X1)                            0.09       0.64 r
+  S3/fu_mux2/U1/ZN (INV_X1)                               0.03       0.67 f
+  S3/fu_mux2/Y[0] (mux3to1_N32_0)                         0.00       0.67 f
+  S3/U6/ZN (AOI22_X1)                                     0.06       0.73 r
+  S3/U4/ZN (INV_X1)                                       0.03       0.76 f
+  S3/ALU_instance/b[0] (ALU)                              0.00       0.76 f
+  S3/ALU_instance/add_48/B[0] (ALU_DW01_add_0)            0.00       0.76 f
+  S3/ALU_instance/add_48/U30/ZN (NAND2_X1)                0.04       0.80 r
+  S3/ALU_instance/add_48/U2/ZN (NAND3_X1)                 0.03       0.84 f
+  S3/ALU_instance/add_48/U29/ZN (NAND2_X1)                0.04       0.88 r
+  S3/ALU_instance/add_48/U23/ZN (NAND3_X1)                0.04       0.92 f
+  S3/ALU_instance/add_48/U24/ZN (NAND2_X1)                0.03       0.94 r
+  S3/ALU_instance/add_48/U18/ZN (NAND3_X1)                0.04       0.99 f
+  S3/ALU_instance/add_48/U19/ZN (NAND2_X1)                0.03       1.02 r
+  S3/ALU_instance/add_48/U16/ZN (NAND3_X1)                0.04       1.06 f
+  S3/ALU_instance/add_48/U1_4/CO (FA_X1)                  0.10       1.15 f
+  S3/ALU_instance/add_48/U12/ZN (NAND2_X1)                0.04       1.19 r
+  S3/ALU_instance/add_48/U9/ZN (NAND3_X1)                 0.04       1.23 f
+  S3/ALU_instance/add_48/U8/ZN (NAND2_X1)                 0.03       1.26 r
+  S3/ALU_instance/add_48/U10/ZN (NAND3_X1)                0.03       1.30 f
+  S3/ALU_instance/add_48/U1_7/CO (FA_X1)                  0.09       1.39 f
+  S3/ALU_instance/add_48/U1_8/CO (FA_X1)                  0.10       1.48 f
+  S3/ALU_instance/add_48/U56/ZN (NAND2_X1)                0.04       1.52 r
+  S3/ALU_instance/add_48/U53/ZN (NAND3_X1)                0.04       1.56 f
+  S3/ALU_instance/add_48/U50/ZN (NAND2_X1)                0.04       1.60 r
+  S3/ALU_instance/add_48/U47/ZN (NAND3_X1)                0.04       1.63 f
+  S3/ALU_instance/add_48/U43/ZN (NAND2_X1)                0.04       1.67 r
+  S3/ALU_instance/add_48/U41/ZN (NAND3_X1)                0.04       1.71 f
+  S3/ALU_instance/add_48/U37/ZN (NAND2_X1)                0.04       1.74 r
+  S3/ALU_instance/add_48/U34/ZN (NAND3_X1)                0.04       1.78 f
+  S3/ALU_instance/add_48/U33/ZN (NAND2_X1)                0.04       1.81 r
+  S3/ALU_instance/add_48/U35/ZN (NAND3_X1)                0.04       1.85 f
+  S3/ALU_instance/add_48/U110/ZN (NAND2_X1)               0.04       1.89 r
+  S3/ALU_instance/add_48/U107/ZN (NAND3_X1)               0.04       1.92 f
+  S3/ALU_instance/add_48/U103/ZN (NAND2_X1)               0.04       1.96 r
+  S3/ALU_instance/add_48/U102/ZN (NAND3_X1)               0.04       2.00 f
+  S3/ALU_instance/add_48/U99/ZN (NAND2_X1)                0.03       2.03 r
+  S3/ALU_instance/add_48/U95/ZN (NAND3_X1)                0.04       2.07 f
+  S3/ALU_instance/add_48/U91/ZN (NAND2_X1)                0.04       2.11 r
+  S3/ALU_instance/add_48/U90/ZN (NAND3_X1)                0.04       2.14 f
+  S3/ALU_instance/add_48/U87/ZN (NAND2_X1)                0.03       2.18 r
+  S3/ALU_instance/add_48/U84/ZN (NAND3_X1)                0.04       2.22 f
+  S3/ALU_instance/add_48/U80/ZN (NAND2_X1)                0.04       2.25 r
+  S3/ALU_instance/add_48/U78/ZN (NAND3_X1)                0.04       2.29 f
+  S3/ALU_instance/add_48/U74/ZN (NAND2_X1)                0.04       2.32 r
+  S3/ALU_instance/add_48/U72/ZN (NAND3_X1)                0.04       2.36 f
+  S3/ALU_instance/add_48/U67/ZN (NAND2_X1)                0.04       2.40 r
+  S3/ALU_instance/add_48/U64/ZN (NAND3_X1)                0.04       2.44 f
+  S3/ALU_instance/add_48/U63/ZN (NAND2_X1)                0.04       2.48 r
+  S3/ALU_instance/add_48/U65/ZN (NAND3_X1)                0.03       2.51 f
+  S3/ALU_instance/add_48/U160/ZN (NAND2_X1)               0.03       2.54 r
+  S3/ALU_instance/add_48/U155/ZN (NAND3_X1)               0.04       2.58 f
+  S3/ALU_instance/add_48/U170/ZN (NAND2_X1)               0.04       2.62 r
+  S3/ALU_instance/add_48/U164/ZN (NAND3_X1)               0.03       2.66 f
+  S3/ALU_instance/add_48/U149/ZN (NAND2_X1)               0.03       2.69 r
+  S3/ALU_instance/add_48/U147/ZN (NAND3_X1)               0.04       2.72 f
+  S3/ALU_instance/add_48/U142/ZN (NAND2_X1)               0.04       2.76 r
+  S3/ALU_instance/add_48/U140/ZN (NAND3_X1)               0.04       2.80 f
+  S3/ALU_instance/add_48/U136/ZN (NAND2_X1)               0.04       2.84 r
+  S3/ALU_instance/add_48/U135/ZN (NAND3_X1)               0.03       2.87 f
+  S3/ALU_instance/add_48/U131/ZN (NAND2_X1)               0.03       2.91 r
+  S3/ALU_instance/add_48/U129/ZN (NAND3_X1)               0.04       2.94 f
+  S3/ALU_instance/add_48/U122/ZN (NAND2_X1)               0.04       2.98 r
+  S3/ALU_instance/add_48/U126/ZN (NAND3_X1)               0.04       3.02 f
+  S3/ALU_instance/add_48/U125/ZN (NAND2_X1)               0.03       3.05 r
+  S3/ALU_instance/add_48/U119/ZN (AND3_X1)                0.05       3.10 r
+  S3/ALU_instance/add_48/U118/Z (XOR2_X1)                 0.03       3.13 f
+  S3/ALU_instance/add_48/SUM[31] (ALU_DW01_add_0)         0.00       3.13 f
+  S3/ALU_instance/mux/E[31] (mux8to1_N32)                 0.00       3.13 f
+  S3/ALU_instance/mux/U2/ZN (AOI22_X1)                    0.05       3.18 r
+  S3/ALU_instance/mux/U1/ZN (NAND2_X1)                    0.03       3.20 f
+  S3/ALU_instance/mux/Y[31] (mux8to1_N32)                 0.00       3.20 f
+  S3/ALU_instance/res[31] (ALU)                           0.00       3.20 f
+  S3/ALU_SPC_mux/A[31] (mux2to1_N32)                      0.00       3.20 f
+  S3/ALU_SPC_mux/mux_x_31/A (mux2to1_comb_41)             0.00       3.20 f
+  S3/ALU_SPC_mux/mux_x_31/U1/Z (MUX2_X1)                  0.07       3.27 f
+  S3/ALU_SPC_mux/mux_x_31/Y (mux2to1_comb_41)             0.00       3.27 f
+  S3/ALU_SPC_mux/Y[31] (mux2to1_N32)                      0.00       3.27 f
+  S3/Alu_result_regN/pin[31] (regN_N32_3)                 0.00       3.27 f
+  S3/Alu_result_regN/U3/ZN (NAND2_X1)                     0.03       3.30 r
+  S3/Alu_result_regN/U2/ZN (NAND2_X1)                     0.02       3.32 f
+  S3/Alu_result_regN/pout_reg[31]/D (DFFR_X1)             0.01       3.33 f
+  data arrival time                                                  3.33
+
+  clock MY_CLK (rise edge)                                3.44       3.44
+  clock network delay (ideal)                             0.00       3.44
+  clock uncertainty                                      -0.07       3.37
+  S3/Alu_result_regN/pout_reg[31]/CK (DFFR_X1)            0.00       3.37 r
+  library setup time                                     -0.04       3.33
+  data required time                                                 3.33
+  --------------------------------------------------------------------------
+  data required time                                                 3.33
+  data arrival time                                                 -3.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
