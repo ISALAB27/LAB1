@@ -1,0 +1,352 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : square_root
+Version: O-2018.06-SP4
+Date   : Wed Jan 12 22:58:29 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: rad[15] (input port)
+  Endpoint: r[8] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  square_root        5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  rad[15] (in)                                            0.00       0.00 f
+  U12/ZN (INV_X1)                                         0.03       0.03 r
+  U9/ZN (NOR2_X2)                                         0.04       0.06 f
+  stageX_1/r_int_in[2] (square_root_stage_N4)             0.00       0.06 f
+  stageX_1/subtractor/a[2] (CSA_bits4_block_bits2)        0.00       0.06 f
+  stageX_1/subtractor/RCA_carry0x_1/a[0] (RCA_N2_21)      0.00       0.06 f
+  stageX_1/subtractor/RCA_carry0x_1/FAx_0/x (full_adder_79)
+                                                          0.00       0.06 f
+  stageX_1/subtractor/RCA_carry0x_1/FAx_0/U3/ZN (XNOR2_X1)
+                                                          0.06       0.13 f
+  stageX_1/subtractor/RCA_carry0x_1/FAx_0/U2/ZN (AOI21_X1)
+                                                          0.05       0.17 r
+  stageX_1/subtractor/RCA_carry0x_1/FAx_0/U6/ZN (INV_X1)
+                                                          0.03       0.20 f
+  stageX_1/subtractor/RCA_carry0x_1/FAx_0/cout (full_adder_79)
+                                                          0.00       0.20 f
+  stageX_1/subtractor/RCA_carry0x_1/FAx_1/cin (full_adder_78)
+                                                          0.00       0.20 f
+  stageX_1/subtractor/RCA_carry0x_1/FAx_1/U6/Z (XOR2_X1)
+                                                          0.07       0.27 f
+  stageX_1/subtractor/RCA_carry0x_1/FAx_1/U1/ZN (AOI22_X2)
+                                                          0.06       0.33 r
+  stageX_1/subtractor/RCA_carry0x_1/FAx_1/U4/ZN (INV_X1)
+                                                          0.02       0.36 f
+  stageX_1/subtractor/RCA_carry0x_1/FAx_1/cout (full_adder_78)
+                                                          0.00       0.36 f
+  stageX_1/subtractor/RCA_carry0x_1/carry_out (RCA_N2_21)
+                                                          0.00       0.36 f
+  stageX_1/subtractor/mux2to1carryx_1/A (mux2to1_comb_97)
+                                                          0.00       0.36 f
+  stageX_1/subtractor/mux2to1carryx_1/U1/Z (MUX2_X2)      0.07       0.42 f
+  stageX_1/subtractor/mux2to1carryx_1/Y (mux2to1_comb_97)
+                                                          0.00       0.42 f
+  stageX_1/subtractor/carry_out (CSA_bits4_block_bits2)
+                                                          0.00       0.42 f
+  stageX_1/mux/S (mux2to1_N4)                             0.00       0.42 f
+  stageX_1/mux/mux_x_0/S (mux2to1_comb_96)                0.00       0.42 f
+  stageX_1/mux/mux_x_0/U1/Z (MUX2_X1)                     0.09       0.51 r
+  stageX_1/mux/mux_x_0/Y (mux2to1_comb_96)                0.00       0.51 r
+  stageX_1/mux/Y[0] (mux2to1_N4)                          0.00       0.51 r
+  stageX_1/r_int_out[0] (square_root_stage_N4)            0.00       0.51 r
+  stageX_2/r_int_in[2] (square_root_stage_N5)             0.00       0.51 r
+  stageX_2/subtractor/a[2] (CSA_bits5_block_bits2)        0.00       0.51 r
+  stageX_2/subtractor/RCA_carry1x_1/a[0] (RCA_N2_17)      0.00       0.51 r
+  stageX_2/subtractor/RCA_carry1x_1/FAx_0/x (full_adder_71)
+                                                          0.00       0.51 r
+  stageX_2/subtractor/RCA_carry1x_1/FAx_0/U1/ZN (XNOR2_X1)
+                                                          0.07       0.58 r
+  stageX_2/subtractor/RCA_carry1x_1/FAx_0/U6/ZN (OAI22_X1)
+                                                          0.03       0.61 f
+  stageX_2/subtractor/RCA_carry1x_1/FAx_0/cout (full_adder_71)
+                                                          0.00       0.61 f
+  stageX_2/subtractor/RCA_carry1x_1/FAx_1/cin (full_adder_70)
+                                                          0.00       0.61 f
+  stageX_2/subtractor/RCA_carry1x_1/FAx_1/U3/ZN (OAI21_X1)
+                                                          0.04       0.66 r
+  stageX_2/subtractor/RCA_carry1x_1/FAx_1/U2/ZN (NAND2_X1)
+                                                          0.03       0.68 f
+  stageX_2/subtractor/RCA_carry1x_1/FAx_1/cout (full_adder_70)
+                                                          0.00       0.68 f
+  stageX_2/subtractor/RCA_carry1x_1/carry_out (RCA_N2_17)
+                                                          0.00       0.68 f
+  stageX_2/subtractor/mux2to1carryx_1/B (mux2to1_comb_92)
+                                                          0.00       0.68 f
+  stageX_2/subtractor/mux2to1carryx_1/U1/Z (MUX2_X1)      0.07       0.75 f
+  stageX_2/subtractor/mux2to1carryx_1/Y (mux2to1_comb_92)
+                                                          0.00       0.75 f
+  stageX_2/subtractor/last_mux2to1carry/S (mux2to1_comb_91)
+                                                          0.00       0.75 f
+  stageX_2/subtractor/last_mux2to1carry/U1/Z (MUX2_X1)
+                                                          0.08       0.84 r
+  stageX_2/subtractor/last_mux2to1carry/Y (mux2to1_comb_91)
+                                                          0.00       0.84 r
+  stageX_2/subtractor/carry_out (CSA_bits5_block_bits2)
+                                                          0.00       0.84 r
+  stageX_2/U2/Z (CLKBUF_X1)                               0.08       0.91 r
+  stageX_2/q_out (square_root_stage_N5)                   0.00       0.91 r
+  stageX_3/q_int[2] (square_root_stage_N6)                0.00       0.91 r
+  stageX_3/U9/ZN (INV_X1)                                 0.05       0.96 f
+  stageX_3/subtractor/b[2] (CSA_bits6_block_bits2)        0.00       0.96 f
+  stageX_3/subtractor/RCA_carry0x_1/b[0] (RCA_N2_15)      0.00       0.96 f
+  stageX_3/subtractor/RCA_carry0x_1/FAx_0/y (full_adder_65)
+                                                          0.00       0.96 f
+  stageX_3/subtractor/RCA_carry0x_1/FAx_0/U1/ZN (AOI22_X2)
+                                                          0.08       1.03 r
+  stageX_3/subtractor/RCA_carry0x_1/FAx_0/U7/ZN (INV_X1)
+                                                          0.03       1.06 f
+  stageX_3/subtractor/RCA_carry0x_1/FAx_0/cout (full_adder_65)
+                                                          0.00       1.06 f
+  stageX_3/subtractor/RCA_carry0x_1/FAx_1/cin (full_adder_64)
+                                                          0.00       1.06 f
+  stageX_3/subtractor/RCA_carry0x_1/FAx_1/U4/ZN (OAI21_X1)
+                                                          0.04       1.11 r
+  stageX_3/subtractor/RCA_carry0x_1/FAx_1/U3/ZN (NAND2_X1)
+                                                          0.03       1.13 f
+  stageX_3/subtractor/RCA_carry0x_1/FAx_1/cout (full_adder_64)
+                                                          0.00       1.13 f
+  stageX_3/subtractor/RCA_carry0x_1/carry_out (RCA_N2_15)
+                                                          0.00       1.13 f
+  stageX_3/subtractor/mux2to1carryx_1/A (mux2to1_comb_85)
+                                                          0.00       1.13 f
+  stageX_3/subtractor/mux2to1carryx_1/U2/Z (MUX2_X2)      0.07       1.20 f
+  stageX_3/subtractor/mux2to1carryx_1/Y (mux2to1_comb_85)
+                                                          0.00       1.20 f
+  stageX_3/subtractor/mux2to1carryx_2/S (mux2to1_comb_84)
+                                                          0.00       1.20 f
+  stageX_3/subtractor/mux2to1carryx_2/U1/Z (MUX2_X1)      0.09       1.29 r
+  stageX_3/subtractor/mux2to1carryx_2/Y (mux2to1_comb_84)
+                                                          0.00       1.29 r
+  stageX_3/subtractor/carry_out (CSA_bits6_block_bits2)
+                                                          0.00       1.29 r
+  stageX_3/mux/S (mux2to1_N6)                             0.00       1.29 r
+  stageX_3/mux/mux_x_0/S (mux2to1_comb_83)                0.00       1.29 r
+  stageX_3/mux/mux_x_0/U4/ZN (INV_X1)                     0.03       1.31 f
+  stageX_3/mux/mux_x_0/U2/ZN (OAI22_X1)                   0.07       1.38 r
+  stageX_3/mux/mux_x_0/Y (mux2to1_comb_83)                0.00       1.38 r
+  stageX_3/mux/Y[0] (mux2to1_N6)                          0.00       1.38 r
+  stageX_3/r_int_out[0] (square_root_stage_N6)            0.00       1.38 r
+  stageX_4/r_int_in[2] (square_root_stage_N7)             0.00       1.38 r
+  stageX_4/subtractor/a[2] (CSA_bits7_block_bits2)        0.00       1.38 r
+  stageX_4/subtractor/RCA_carry0x_1/a[0] (RCA_N2_10)      0.00       1.38 r
+  stageX_4/subtractor/RCA_carry0x_1/FAx_0/x (full_adder_55)
+                                                          0.00       1.38 r
+  stageX_4/subtractor/RCA_carry0x_1/FAx_0/U5/ZN (XNOR2_X1)
+                                                          0.08       1.46 r
+  stageX_4/subtractor/RCA_carry0x_1/FAx_0/U1/ZN (AOI22_X2)
+                                                          0.04       1.50 f
+  stageX_4/subtractor/RCA_carry0x_1/FAx_0/U6/ZN (INV_X1)
+                                                          0.03       1.54 r
+  stageX_4/subtractor/RCA_carry0x_1/FAx_0/cout (full_adder_55)
+                                                          0.00       1.54 r
+  stageX_4/subtractor/RCA_carry0x_1/FAx_1/cin (full_adder_54)
+                                                          0.00       1.54 r
+  stageX_4/subtractor/RCA_carry0x_1/FAx_1/U4/ZN (OAI21_X1)
+                                                          0.03       1.57 f
+  stageX_4/subtractor/RCA_carry0x_1/FAx_1/U3/ZN (NAND2_X1)
+                                                          0.03       1.60 r
+  stageX_4/subtractor/RCA_carry0x_1/FAx_1/cout (full_adder_54)
+                                                          0.00       1.60 r
+  stageX_4/subtractor/RCA_carry0x_1/carry_out (RCA_N2_10)
+                                                          0.00       1.60 r
+  stageX_4/subtractor/mux2to1carryx_1/A (mux2to1_comb_77)
+                                                          0.00       1.60 r
+  stageX_4/subtractor/mux2to1carryx_1/U1/Z (MUX2_X1)      0.05       1.64 r
+  stageX_4/subtractor/mux2to1carryx_1/Y (mux2to1_comb_77)
+                                                          0.00       1.64 r
+  stageX_4/subtractor/mux2to1carryx_2/S (mux2to1_comb_76)
+                                                          0.00       1.64 r
+  stageX_4/subtractor/mux2to1carryx_2/U1/Z (MUX2_X1)      0.08       1.72 f
+  stageX_4/subtractor/mux2to1carryx_2/Y (mux2to1_comb_76)
+                                                          0.00       1.72 f
+  stageX_4/subtractor/last_mux2to1carry/S (mux2to1_comb_75)
+                                                          0.00       1.72 f
+  stageX_4/subtractor/last_mux2to1carry/U1/Z (MUX2_X1)
+                                                          0.09       1.81 r
+  stageX_4/subtractor/last_mux2to1carry/Y (mux2to1_comb_75)
+                                                          0.00       1.81 r
+  stageX_4/subtractor/carry_out (CSA_bits7_block_bits2)
+                                                          0.00       1.81 r
+  stageX_4/mux/S (mux2to1_N7)                             0.00       1.81 r
+  stageX_4/mux/mux_x_0/S (mux2to1_comb_74)                0.00       1.81 r
+  stageX_4/mux/mux_x_0/U4/ZN (INV_X1)                     0.03       1.84 f
+  stageX_4/mux/mux_x_0/U2/ZN (OAI22_X1)                   0.07       1.90 r
+  stageX_4/mux/mux_x_0/Y (mux2to1_comb_74)                0.00       1.90 r
+  stageX_4/mux/Y[0] (mux2to1_N7)                          0.00       1.90 r
+  stageX_4/r_int_out[0] (square_root_stage_N7)            0.00       1.90 r
+  stageX_5/r_int_in[2] (square_root_stage_N8)             0.00       1.90 r
+  stageX_5/subtractor/a[2] (CSA_bits8_block_bits2)        0.00       1.90 r
+  stageX_5/subtractor/RCA_carry0x_1/a[0] (RCA_N2_5)       0.00       1.90 r
+  stageX_5/subtractor/RCA_carry0x_1/FAx_0/x (full_adder_43)
+                                                          0.00       1.90 r
+  stageX_5/subtractor/RCA_carry0x_1/FAx_0/U4/ZN (XNOR2_X1)
+                                                          0.08       1.98 r
+  stageX_5/subtractor/RCA_carry0x_1/FAx_0/U3/ZN (AOI21_X1)
+                                                          0.03       2.01 f
+  stageX_5/subtractor/RCA_carry0x_1/FAx_0/U6/ZN (INV_X1)
+                                                          0.03       2.05 r
+  stageX_5/subtractor/RCA_carry0x_1/FAx_0/cout (full_adder_43)
+                                                          0.00       2.05 r
+  stageX_5/subtractor/RCA_carry0x_1/FAx_1/cin (full_adder_42)
+                                                          0.00       2.05 r
+  stageX_5/subtractor/RCA_carry0x_1/FAx_1/U2/ZN (OAI21_X1)
+                                                          0.03       2.08 f
+  stageX_5/subtractor/RCA_carry0x_1/FAx_1/U3/ZN (NAND2_X1)
+                                                          0.03       2.11 r
+  stageX_5/subtractor/RCA_carry0x_1/FAx_1/cout (full_adder_42)
+                                                          0.00       2.11 r
+  stageX_5/subtractor/RCA_carry0x_1/carry_out (RCA_N2_5)
+                                                          0.00       2.11 r
+  stageX_5/subtractor/mux2to1carryx_1/A (mux2to1_comb_67)
+                                                          0.00       2.11 r
+  stageX_5/subtractor/mux2to1carryx_1/U1/Z (MUX2_X2)      0.05       2.16 r
+  stageX_5/subtractor/mux2to1carryx_1/Y (mux2to1_comb_67)
+                                                          0.00       2.16 r
+  stageX_5/subtractor/mux2to1carryx_2/S (mux2to1_comb_66)
+                                                          0.00       2.16 r
+  stageX_5/subtractor/mux2to1carryx_2/U2/ZN (INV_X1)      0.02       2.18 f
+  stageX_5/subtractor/mux2to1carryx_2/U3/ZN (AOI22_X1)
+                                                          0.05       2.23 r
+  stageX_5/subtractor/mux2to1carryx_2/U1/ZN (INV_X1)      0.03       2.26 f
+  stageX_5/subtractor/mux2to1carryx_2/Y (mux2to1_comb_66)
+                                                          0.00       2.26 f
+  stageX_5/subtractor/mux2to1carryx_3/S (mux2to1_comb_65)
+                                                          0.00       2.26 f
+  stageX_5/subtractor/mux2to1carryx_3/U1/Z (MUX2_X1)      0.08       2.34 r
+  stageX_5/subtractor/mux2to1carryx_3/Y (mux2to1_comb_65)
+                                                          0.00       2.34 r
+  stageX_5/subtractor/carry_out (CSA_bits8_block_bits2)
+                                                          0.00       2.34 r
+  stageX_5/mux/S (mux2to1_N8)                             0.00       2.34 r
+  stageX_5/mux/mux_x_4/S (mux2to1_comb_60)                0.00       2.34 r
+  stageX_5/mux/mux_x_4/U1/Z (MUX2_X1)                     0.10       2.44 f
+  stageX_5/mux/mux_x_4/Y (mux2to1_comb_60)                0.00       2.44 f
+  stageX_5/mux/Y[4] (mux2to1_N8)                          0.00       2.44 f
+  stageX_5/r_int_out[4] (square_root_stage_N8)            0.00       2.44 f
+  stageX_6/r_int_in[6] (square_root_stage_N9)             0.00       2.44 f
+  stageX_6/subtractor/a[6] (CSA_bits9_block_bits3)        0.00       2.44 f
+  stageX_6/subtractor/RCA_carry0x_2/a[0] (RCA_N3_6)       0.00       2.44 f
+  stageX_6/subtractor/RCA_carry0x_2/FAx_0/x (full_adder_22)
+                                                          0.00       2.44 f
+  stageX_6/subtractor/RCA_carry0x_2/FAx_0/U5/ZN (XNOR2_X1)
+                                                          0.07       2.51 f
+  stageX_6/subtractor/RCA_carry0x_2/FAx_0/U1/ZN (AOI22_X2)
+                                                          0.06       2.57 r
+  stageX_6/subtractor/RCA_carry0x_2/FAx_0/U6/ZN (INV_X1)
+                                                          0.03       2.60 f
+  stageX_6/subtractor/RCA_carry0x_2/FAx_0/cout (full_adder_22)
+                                                          0.00       2.60 f
+  stageX_6/subtractor/RCA_carry0x_2/FAx_1/cin (full_adder_21)
+                                                          0.00       2.60 f
+  stageX_6/subtractor/RCA_carry0x_2/FAx_1/U2/ZN (XNOR2_X1)
+                                                          0.05       2.65 f
+  stageX_6/subtractor/RCA_carry0x_2/FAx_1/U3/ZN (OAI22_X1)
+                                                          0.05       2.70 r
+  stageX_6/subtractor/RCA_carry0x_2/FAx_1/cout (full_adder_21)
+                                                          0.00       2.70 r
+  stageX_6/subtractor/RCA_carry0x_2/FAx_2/cin (full_adder_20)
+                                                          0.00       2.70 r
+  stageX_6/subtractor/RCA_carry0x_2/FAx_2/U5/ZN (XNOR2_X1)
+                                                          0.07       2.78 r
+  stageX_6/subtractor/RCA_carry0x_2/FAx_2/U1/ZN (AOI22_X2)
+                                                          0.05       2.82 f
+  stageX_6/subtractor/RCA_carry0x_2/FAx_2/U6/ZN (INV_X1)
+                                                          0.03       2.85 r
+  stageX_6/subtractor/RCA_carry0x_2/FAx_2/cout (full_adder_20)
+                                                          0.00       2.85 r
+  stageX_6/subtractor/RCA_carry0x_2/carry_out (RCA_N3_6)
+                                                          0.00       2.85 r
+  stageX_6/subtractor/mux2to1carryx_2/A (mux2to1_comb_55)
+                                                          0.00       2.85 r
+  stageX_6/subtractor/mux2to1carryx_2/U1/Z (MUX2_X2)      0.05       2.91 r
+  stageX_6/subtractor/mux2to1carryx_2/Y (mux2to1_comb_55)
+                                                          0.00       2.91 r
+  stageX_6/subtractor/carry_out (CSA_bits9_block_bits3)
+                                                          0.00       2.91 r
+  stageX_6/mux/S (mux2to1_N9)                             0.00       2.91 r
+  stageX_6/mux/mux_x_1/S (mux2to1_comb_53)                0.00       2.91 r
+  stageX_6/mux/mux_x_1/U1/Z (MUX2_X1)                     0.09       3.00 f
+  stageX_6/mux/mux_x_1/Y (mux2to1_comb_53)                0.00       3.00 f
+  stageX_6/mux/Y[1] (mux2to1_N9)                          0.00       3.00 f
+  stageX_6/r_int_out[1] (square_root_stage_N9)            0.00       3.00 f
+  stageLSB_7/r_int_in[3] (square_root_stage_N10)          0.00       3.00 f
+  stageLSB_7/subtractor/a[3] (CSA_bits10_block_bits3)     0.00       3.00 f
+  stageLSB_7/subtractor/RCA_carry0x_1/a[0] (RCA_N3_3)     0.00       3.00 f
+  stageLSB_7/subtractor/RCA_carry0x_1/FAx_0/x (full_adder_13)
+                                                          0.00       3.00 f
+  stageLSB_7/subtractor/RCA_carry0x_1/FAx_0/U1/ZN (XNOR2_X1)
+                                                          0.07       3.07 r
+  stageLSB_7/subtractor/RCA_carry0x_1/FAx_0/U4/ZN (OAI21_X1)
+                                                          0.05       3.12 f
+  stageLSB_7/subtractor/RCA_carry0x_1/FAx_0/cout (full_adder_13)
+                                                          0.00       3.12 f
+  stageLSB_7/subtractor/RCA_carry0x_1/FAx_1/cin (full_adder_12)
+                                                          0.00       3.12 f
+  stageLSB_7/subtractor/RCA_carry0x_1/FAx_1/U3/ZN (OAI21_X1)
+                                                          0.05       3.16 r
+  stageLSB_7/subtractor/RCA_carry0x_1/FAx_1/U2/ZN (NAND2_X1)
+                                                          0.04       3.20 f
+  stageLSB_7/subtractor/RCA_carry0x_1/FAx_1/cout (full_adder_12)
+                                                          0.00       3.20 f
+  stageLSB_7/subtractor/RCA_carry0x_1/FAx_2/cin (full_adder_11)
+                                                          0.00       3.20 f
+  stageLSB_7/subtractor/RCA_carry0x_1/FAx_2/U3/ZN (OAI21_X1)
+                                                          0.04       3.24 r
+  stageLSB_7/subtractor/RCA_carry0x_1/FAx_2/U2/ZN (NAND2_X1)
+                                                          0.03       3.27 f
+  stageLSB_7/subtractor/RCA_carry0x_1/FAx_2/cout (full_adder_11)
+                                                          0.00       3.27 f
+  stageLSB_7/subtractor/RCA_carry0x_1/carry_out (RCA_N3_3)
+                                                          0.00       3.27 f
+  stageLSB_7/subtractor/mux2to1carryx_1/A (mux2to1_comb_45)
+                                                          0.00       3.27 f
+  stageLSB_7/subtractor/mux2to1carryx_1/U1/Z (MUX2_X1)
+                                                          0.07       3.34 f
+  stageLSB_7/subtractor/mux2to1carryx_1/Y (mux2to1_comb_45)
+                                                          0.00       3.34 f
+  stageLSB_7/subtractor/mux2to1carryx_2/S (mux2to1_comb_44)
+                                                          0.00       3.34 f
+  stageLSB_7/subtractor/mux2to1carryx_2/U1/Z (MUX2_X1)
+                                                          0.07       3.41 r
+  stageLSB_7/subtractor/mux2to1carryx_2/Y (mux2to1_comb_44)
+                                                          0.00       3.41 r
+  stageLSB_7/subtractor/last_mux2to1carry/S (mux2to1_comb_43)
+                                                          0.00       3.41 r
+  stageLSB_7/subtractor/last_mux2to1carry/U1/Z (MUX2_X1)
+                                                          0.08       3.49 f
+  stageLSB_7/subtractor/last_mux2to1carry/Y (mux2to1_comb_43)
+                                                          0.00       3.49 f
+  stageLSB_7/subtractor/carry_out (CSA_bits10_block_bits3)
+                                                          0.00       3.49 f
+  stageLSB_7/U8/Z (CLKBUF_X1)                             0.15       3.64 f
+  stageLSB_7/mux/S (mux2to1_N10)                          0.00       3.64 f
+  stageLSB_7/mux/mux_x_8/S (mux2to1_comb_34)              0.00       3.64 f
+  stageLSB_7/mux/mux_x_8/U3/ZN (INV_X1)                   0.07       3.71 r
+  stageLSB_7/mux/mux_x_8/U2/ZN (AOI22_X1)                 0.03       3.74 f
+  stageLSB_7/mux/mux_x_8/U1/ZN (INV_X1)                   0.04       3.78 r
+  stageLSB_7/mux/mux_x_8/Y (mux2to1_comb_34)              0.00       3.78 r
+  stageLSB_7/mux/Y[8] (mux2to1_N10)                       0.00       3.78 r
+  stageLSB_7/r_int_out[8] (square_root_stage_N10)         0.00       3.78 r
+  r[8] (out)                                              0.02       3.80 r
+  data arrival time                                                  3.80
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

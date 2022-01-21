@@ -1,0 +1,135 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : square_root
+Version: O-2018.06-SP4
+Date   : Wed Jan 12 23:11:23 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: rad[12] (input port)
+  Endpoint: r[8] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  square_root        5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  rad[12] (in)                                            0.00       0.00 f
+  stageX_1/r_int_in[0] (square_root_stage_N4)             0.00       0.00 f
+  stageX_1/U2/ZN (INV_X1)                                 0.02       0.02 r
+  stageX_1/U1/ZN (NAND2_X1)                               0.03       0.05 f
+  stageX_1/sub_144/U2_1/CO (FA_X1)                        0.08       0.13 f
+  stageX_1/sub_144/U2_2/CO (FA_X1)                        0.09       0.22 f
+  stageX_1/sub_144/U2_3/CO (FA_X1)                        0.09       0.31 f
+  stageX_1/sub_144/U2_4/S (FA_X1)                         0.16       0.47 r
+  stageX_1/U11/ZN (INV_X2)                                0.07       0.54 f
+  stageX_1/U6/ZN (AOI22_X2)                               0.08       0.63 r
+  stageX_1/U10/ZN (INV_X2)                                0.03       0.66 f
+  stageX_1/r_int_out[0] (square_root_stage_N4)            0.00       0.66 f
+  stageX_2/r_int_in[2] (square_root_stage_N5)             0.00       0.66 f
+  stageX_2/sub_144/A[2] (square_root_stage_N5_DW01_sub_0)
+                                                          0.00       0.66 f
+  stageX_2/sub_144/U2_2/CO (FA_X1)                        0.10       0.76 f
+  stageX_2/sub_144/U2_3/CO (FA_X1)                        0.09       0.85 f
+  stageX_2/sub_144/U2_4/CO (FA_X1)                        0.09       0.94 f
+  stageX_2/sub_144/U2_5/S (FA_X1)                         0.17       1.11 r
+  stageX_2/sub_144/DIFF[5] (square_root_stage_N5_DW01_sub_0)
+                                                          0.00       1.11 r
+  stageX_2/U13/ZN (INV_X2)                                0.07       1.18 f
+  stageX_2/U7/ZN (AOI22_X2)                               0.09       1.27 r
+  stageX_2/U12/ZN (INV_X2)                                0.03       1.30 f
+  stageX_2/r_int_out[0] (square_root_stage_N5)            0.00       1.30 f
+  stageX_3/r_int_in[2] (square_root_stage_N6)             0.00       1.30 f
+  stageX_3/sub_144/A[2] (square_root_stage_N6_DW01_sub_0)
+                                                          0.00       1.30 f
+  stageX_3/sub_144/U2_2/CO (FA_X1)                        0.10       1.41 f
+  stageX_3/sub_144/U2_3/CO (FA_X1)                        0.09       1.50 f
+  stageX_3/sub_144/U2_4/CO (FA_X1)                        0.09       1.59 f
+  stageX_3/sub_144/U2_5/CO (FA_X1)                        0.09       1.68 f
+  stageX_3/sub_144/U2_6/S (FA_X1)                         0.18       1.86 r
+  stageX_3/sub_144/DIFF[6] (square_root_stage_N6_DW01_sub_0)
+                                                          0.00       1.86 r
+  stageX_3/U15/ZN (INV_X2)                                0.08       1.94 f
+  stageX_3/U8/ZN (AOI22_X2)                               0.09       2.02 r
+  stageX_3/U14/ZN (INV_X2)                                0.04       2.06 f
+  stageX_3/r_int_out[0] (square_root_stage_N6)            0.00       2.06 f
+  stageX_4/r_int_in[2] (square_root_stage_N7)             0.00       2.06 f
+  stageX_4/sub_144/A[2] (square_root_stage_N7_DW01_sub_0)
+                                                          0.00       2.06 f
+  stageX_4/sub_144/U2_2/CO (FA_X1)                        0.10       2.16 f
+  stageX_4/sub_144/U2_3/CO (FA_X1)                        0.09       2.25 f
+  stageX_4/sub_144/U2_4/CO (FA_X1)                        0.09       2.35 f
+  stageX_4/sub_144/U2_5/CO (FA_X1)                        0.09       2.44 f
+  stageX_4/sub_144/U2_6/CO (FA_X1)                        0.09       2.52 f
+  stageX_4/sub_144/U2_7/S (FA_X1)                         0.19       2.71 r
+  stageX_4/sub_144/DIFF[7] (square_root_stage_N7_DW01_sub_0)
+                                                          0.00       2.71 r
+  stageX_4/U17/ZN (INV_X2)                                0.09       2.80 f
+  stageX_4/U9/ZN (AOI22_X2)                               0.09       2.89 r
+  stageX_4/U16/ZN (INV_X2)                                0.03       2.92 f
+  stageX_4/r_int_out[0] (square_root_stage_N7)            0.00       2.92 f
+  stageX_5/r_int_in[2] (square_root_stage_N8)             0.00       2.92 f
+  stageX_5/sub_144/A[2] (square_root_stage_N8_DW01_sub_0)
+                                                          0.00       2.92 f
+  stageX_5/sub_144/U2_2/CO (FA_X1)                        0.10       3.03 f
+  stageX_5/sub_144/U2_3/CO (FA_X1)                        0.09       3.12 f
+  stageX_5/sub_144/U2_4/CO (FA_X1)                        0.09       3.21 f
+  stageX_5/sub_144/U2_5/CO (FA_X1)                        0.09       3.30 f
+  stageX_5/sub_144/U2_6/CO (FA_X1)                        0.09       3.39 f
+  stageX_5/sub_144/U2_7/CO (FA_X1)                        0.09       3.47 f
+  stageX_5/sub_144/U2_8/S (FA_X1)                         0.20       3.67 r
+  stageX_5/sub_144/DIFF[8] (square_root_stage_N8_DW01_sub_0)
+                                                          0.00       3.67 r
+  stageX_5/U19/ZN (INV_X2)                                0.09       3.76 f
+  stageX_5/U10/ZN (AOI22_X2)                              0.09       3.85 r
+  stageX_5/U18/ZN (INV_X2)                                0.03       3.89 f
+  stageX_5/r_int_out[0] (square_root_stage_N8)            0.00       3.89 f
+  stageX_6/r_int_in[2] (square_root_stage_N9)             0.00       3.89 f
+  stageX_6/sub_144/A[2] (square_root_stage_N9_DW01_sub_0)
+                                                          0.00       3.89 f
+  stageX_6/sub_144/U2_2/CO (FA_X1)                        0.10       3.99 f
+  stageX_6/sub_144/U2_3/CO (FA_X1)                        0.09       4.08 f
+  stageX_6/sub_144/U2_4/CO (FA_X1)                        0.09       4.17 f
+  stageX_6/sub_144/U2_5/CO (FA_X1)                        0.09       4.26 f
+  stageX_6/sub_144/U2_6/CO (FA_X1)                        0.09       4.35 f
+  stageX_6/sub_144/U2_7/CO (FA_X1)                        0.09       4.44 f
+  stageX_6/sub_144/U2_8/CO (FA_X1)                        0.09       4.53 f
+  stageX_6/sub_144/U2_9/S (FA_X1)                         0.21       4.74 r
+  stageX_6/sub_144/DIFF[9] (square_root_stage_N9_DW01_sub_0)
+                                                          0.00       4.74 r
+  stageX_6/U21/ZN (INV_X2)                                0.09       4.83 f
+  stageX_6/U9/ZN (AOI22_X2)                               0.09       4.91 r
+  stageX_6/U15/ZN (INV_X1)                                0.03       4.95 f
+  stageX_6/r_int_out[2] (square_root_stage_N9)            0.00       4.95 f
+  stageLSB_7/r_int_in[4] (square_root_stage_N10)          0.00       4.95 f
+  stageLSB_7/sub_144/A[4] (square_root_stage_N10_DW01_sub_1)
+                                                          0.00       4.95 f
+  stageLSB_7/sub_144/U161/ZN (NAND2_X1)                   0.04       4.98 r
+  stageLSB_7/sub_144/U162/ZN (OAI21_X1)                   0.04       5.02 f
+  stageLSB_7/sub_144/U149/ZN (AOI21_X1)                   0.06       5.08 r
+  stageLSB_7/sub_144/U148/ZN (OAI21_X1)                   0.03       5.11 f
+  stageLSB_7/sub_144/U164/ZN (AOI21_X1)                   0.04       5.15 r
+  stageLSB_7/sub_144/DIFF[10] (square_root_stage_N10_DW01_sub_1)
+                                                          0.00       5.15 r
+  stageLSB_7/U15/ZN (INV_X1)                              0.03       5.18 f
+  stageLSB_7/U3/Z (CLKBUF_X1)                             0.04       5.21 f
+  stageLSB_7/U4/ZN (INV_X1)                               0.08       5.29 r
+  stageLSB_7/U13/Z (MUX2_X1)                              0.09       5.38 f
+  stageLSB_7/r_int_out[8] (square_root_stage_N10)         0.00       5.38 f
+  r[8] (out)                                              0.02       5.41 f
+  data arrival time                                                  5.41
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

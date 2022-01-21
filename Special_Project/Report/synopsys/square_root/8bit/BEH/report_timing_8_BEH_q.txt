@@ -1,0 +1,78 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : square_root
+Version: O-2018.06-SP4
+Date   : Wed Jan 12 22:42:38 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: rad[4] (input port)
+  Endpoint: q[0] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  square_root        5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  rad[4] (in)                                             0.00       0.00 f
+  stageX_1/r_int_in[0] (square_root_stage_N4)             0.00       0.00 f
+  stageX_1/U13/ZN (INV_X1)                                0.02       0.02 r
+  stageX_1/U16/ZN (NAND2_X1)                              0.03       0.05 f
+  stageX_1/sub_144/U2_1/CO (FA_X1)                        0.08       0.13 f
+  stageX_1/sub_144/U2_2/CO (FA_X1)                        0.09       0.22 f
+  stageX_1/sub_144/U2_3/CO (FA_X1)                        0.09       0.31 f
+  stageX_1/sub_144/U2_4/S (FA_X1)                         0.16       0.47 r
+  stageX_1/U11/ZN (INV_X2)                                0.06       0.53 f
+  stageX_1/U6/ZN (AOI22_X2)                               0.09       0.62 r
+  stageX_1/U10/ZN (INV_X2)                                0.03       0.65 f
+  stageX_1/r_int_out[0] (square_root_stage_N4)            0.00       0.65 f
+  stageX_2/r_int_in[2] (square_root_stage_N5)             0.00       0.65 f
+  stageX_2/sub_144/A[2] (square_root_stage_N5_DW01_sub_0)
+                                                          0.00       0.65 f
+  stageX_2/sub_144/U2_2/CO (FA_X1)                        0.10       0.76 f
+  stageX_2/sub_144/U2_3/CO (FA_X1)                        0.09       0.85 f
+  stageX_2/sub_144/U2_4/CO (FA_X1)                        0.09       0.93 f
+  stageX_2/sub_144/U2_5/S (FA_X1)                         0.17       1.11 r
+  stageX_2/sub_144/DIFF[5] (square_root_stage_N5_DW01_sub_0)
+                                                          0.00       1.11 r
+  stageX_2/U13/ZN (INV_X2)                                0.07       1.17 f
+  stageX_2/U5/ZN (AOI22_X2)                               0.08       1.26 r
+  stageX_2/U11/ZN (INV_X1)                                0.03       1.29 f
+  stageX_2/r_int_out[2] (square_root_stage_N5)            0.00       1.29 f
+  stageLSB_3/r_int_in[4] (square_root_stage_N6)           0.00       1.29 f
+  stageLSB_3/sub_144/A[4] (square_root_stage_N6_DW01_sub_1)
+                                                          0.00       1.29 f
+  stageLSB_3/sub_144/U77/ZN (NAND2_X1)                    0.04       1.32 r
+  stageLSB_3/sub_144/U86/ZN (OAI21_X1)                    0.04       1.36 f
+  stageLSB_3/sub_144/U50/ZN (AOI21_X1)                    0.06       1.42 r
+  stageLSB_3/sub_144/U79/ZN (OAI21_X1)                    0.03       1.45 f
+  stageLSB_3/sub_144/U75/ZN (INV_X1)                      0.03       1.47 r
+  stageLSB_3/sub_144/DIFF[6] (square_root_stage_N6_DW01_sub_1)
+                                                          0.00       1.47 r
+  stageLSB_3/U10/ZN (INV_X1)                              0.03       1.50 f
+  stageLSB_3/q_out (square_root_stage_N6)                 0.00       1.50 f
+  q[0] (out)                                              0.02       1.52 f
+  data arrival time                                                  1.52
+
+  max_delay                                               0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -1.52
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.52
+
+
+1

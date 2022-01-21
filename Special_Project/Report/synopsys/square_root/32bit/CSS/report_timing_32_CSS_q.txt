@@ -1,0 +1,659 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : square_root
+Version: O-2018.06-SP4
+Date   : Wed Jan 12 20:47:15 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: rad[31] (input port)
+  Endpoint: q[0] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  square_root        5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  rad[31] (in)                                            0.00       0.00 f
+  U22/ZN (INV_X1)                                         0.02       0.02 r
+  U39/ZN (NOR2_X1)                                        0.02       0.05 f
+  stageX_1/r_int_in[2] (square_root_stage_N4)             0.00       0.05 f
+  stageX_1/subtractor/a[0] (CSS_bits2_block_bits2)        0.00       0.05 f
+  stageX_1/subtractor/RCS0/x[0] (RCS_N2_17)               0.00       0.05 f
+  stageX_1/subtractor/RCS0/FSx_0/x (full_subtractor_225)
+                                                          0.00       0.05 f
+  stageX_1/subtractor/RCS0/FSx_0/U6/ZN (INV_X1)           0.03       0.08 r
+  stageX_1/subtractor/RCS0/FSx_0/U4/ZN (NOR2_X1)          0.02       0.10 f
+  stageX_1/subtractor/RCS0/FSx_0/U7/ZN (NOR2_X1)          0.04       0.14 r
+  stageX_1/subtractor/RCS0/FSx_0/b_out (full_subtractor_225)
+                                                          0.00       0.14 r
+  stageX_1/subtractor/RCS0/FSx_1/b_in (full_subtractor_224)
+                                                          0.00       0.14 r
+  stageX_1/subtractor/RCS0/FSx_1/U7/ZN (INV_X1)           0.03       0.17 f
+  stageX_1/subtractor/RCS0/FSx_1/U1/ZN (OAI21_X2)         0.07       0.24 r
+  stageX_1/subtractor/RCS0/FSx_1/b_out (full_subtractor_224)
+                                                          0.00       0.24 r
+  stageX_1/subtractor/RCS0/b_out (RCS_N2_17)              0.00       0.24 r
+  stageX_1/subtractor/b_out (CSS_bits2_block_bits2)       0.00       0.24 r
+  stageX_1/mux/S (mux2to1_N4_7)                           0.00       0.24 r
+  stageX_1/mux/mux_x_0/S (mux2to1_comb_288)               0.00       0.24 r
+  stageX_1/mux/mux_x_0/U1/Z (MUX2_X1)                     0.09       0.33 f
+  stageX_1/mux/mux_x_0/Y (mux2to1_comb_288)               0.00       0.33 f
+  stageX_1/mux/Y[0] (mux2to1_N4_7)                        0.00       0.33 f
+  stageX_1/r_int_out[0] (square_root_stage_N4)            0.00       0.33 f
+  stageX_2/r_int_in[2] (square_root_stage_N5)             0.00       0.33 f
+  stageX_2/subtractor/a[0] (CSS_bits3_block_bits3)        0.00       0.33 f
+  stageX_2/subtractor/RCS0/x[0] (RCS_N3_37)               0.00       0.33 f
+  stageX_2/subtractor/RCS0/FSx_0/x (full_subtractor_223)
+                                                          0.00       0.33 f
+  stageX_2/subtractor/RCS0/FSx_0/U4/ZN (AOI21_X1)         0.04       0.37 r
+  stageX_2/subtractor/RCS0/FSx_0/b_out (full_subtractor_223)
+                                                          0.00       0.37 r
+  stageX_2/subtractor/RCS0/FSx_1/b_in (full_subtractor_222)
+                                                          0.00       0.37 r
+  stageX_2/subtractor/RCS0/FSx_1/U8/ZN (INV_X1)           0.02       0.39 f
+  stageX_2/subtractor/RCS0/FSx_1/U1/ZN (AOI22_X1)         0.05       0.44 r
+  stageX_2/subtractor/RCS0/FSx_1/b_out (full_subtractor_222)
+                                                          0.00       0.44 r
+  stageX_2/subtractor/RCS0/FSx_2/b_in (full_subtractor_221)
+                                                          0.00       0.44 r
+  stageX_2/subtractor/RCS0/FSx_2/U7/ZN (INV_X1)           0.03       0.47 f
+  stageX_2/subtractor/RCS0/FSx_2/U1/ZN (OAI21_X2)         0.08       0.55 r
+  stageX_2/subtractor/RCS0/FSx_2/b_out (full_subtractor_221)
+                                                          0.00       0.55 r
+  stageX_2/subtractor/RCS0/b_out (RCS_N3_37)              0.00       0.55 r
+  stageX_2/subtractor/b_out (CSS_bits3_block_bits3)       0.00       0.55 r
+  stageX_2/mux/S (mux2to1_N5)                             0.00       0.55 r
+  stageX_2/mux/mux_x_2/S (mux2to1_comb_282)               0.00       0.55 r
+  stageX_2/mux/mux_x_2/U1/Z (MUX2_X1)                     0.10       0.65 f
+  stageX_2/mux/mux_x_2/Y (mux2to1_comb_282)               0.00       0.65 f
+  stageX_2/mux/Y[2] (mux2to1_N5)                          0.00       0.65 f
+  stageX_2/r_int_out[2] (square_root_stage_N5)            0.00       0.65 f
+  stageX_3/r_int_in[4] (square_root_stage_N6)             0.00       0.65 f
+  stageX_3/subtractor/a[2] (CSS_bits4_block_bits2)        0.00       0.65 f
+  stageX_3/subtractor/RCS_b0x_1/x[0] (RCS_N2_15)          0.00       0.65 f
+  stageX_3/subtractor/RCS_b0x_1/FSx_0/x (full_subtractor_218)
+                                                          0.00       0.65 f
+  stageX_3/subtractor/RCS_b0x_1/FSx_0/U6/ZN (INV_X1)      0.04       0.69 r
+  stageX_3/subtractor/RCS_b0x_1/FSx_0/U5/ZN (NAND2_X1)
+                                                          0.02       0.71 f
+  stageX_3/subtractor/RCS_b0x_1/FSx_0/U4/ZN (NAND2_X1)
+                                                          0.03       0.74 r
+  stageX_3/subtractor/RCS_b0x_1/FSx_0/b_out (full_subtractor_218)
+                                                          0.00       0.74 r
+  stageX_3/subtractor/RCS_b0x_1/FSx_1/b_in (full_subtractor_217)
+                                                          0.00       0.74 r
+  stageX_3/subtractor/RCS_b0x_1/FSx_1/U7/ZN (INV_X1)      0.03       0.77 f
+  stageX_3/subtractor/RCS_b0x_1/FSx_1/U1/ZN (OAI21_X2)
+                                                          0.05       0.82 r
+  stageX_3/subtractor/RCS_b0x_1/FSx_1/b_out (full_subtractor_217)
+                                                          0.00       0.82 r
+  stageX_3/subtractor/RCS_b0x_1/b_out (RCS_N2_15)         0.00       0.82 r
+  stageX_3/subtractor/mux2to1bx_1/A (mux2to1_comb_279)
+                                                          0.00       0.82 r
+  stageX_3/subtractor/mux2to1bx_1/U1/Z (MUX2_X2)          0.07       0.89 r
+  stageX_3/subtractor/mux2to1bx_1/Y (mux2to1_comb_279)
+                                                          0.00       0.89 r
+  stageX_3/subtractor/b_out (CSS_bits4_block_bits2)       0.00       0.89 r
+  stageX_3/mux/S (mux2to1_N6)                             0.00       0.89 r
+  stageX_3/mux/mux_x_0/S (mux2to1_comb_278)               0.00       0.89 r
+  stageX_3/mux/mux_x_0/U1/ZN (INV_X1)                     0.03       0.91 f
+  stageX_3/mux/mux_x_0/U2/ZN (AOI22_X1)                   0.04       0.96 r
+  stageX_3/mux/mux_x_0/U3/ZN (INV_X1)                     0.03       0.99 f
+  stageX_3/mux/mux_x_0/Y (mux2to1_comb_278)               0.00       0.99 f
+  stageX_3/mux/Y[0] (mux2to1_N6)                          0.00       0.99 f
+  stageX_3/r_int_out[0] (square_root_stage_N6)            0.00       0.99 f
+  stageX_4/r_int_in[2] (square_root_stage_N7)             0.00       0.99 f
+  stageX_4/subtractor/a[0] (CSS_bits5_block_bits2)        0.00       0.99 f
+  stageX_4/subtractor/RCS0/x[0] (RCS_N2_13)               0.00       0.99 f
+  stageX_4/subtractor/RCS0/FSx_0/x (full_subtractor_214)
+                                                          0.00       0.99 f
+  stageX_4/subtractor/RCS0/FSx_0/U6/ZN (OAI222_X1)        0.07       1.05 r
+  stageX_4/subtractor/RCS0/FSx_0/b_out (full_subtractor_214)
+                                                          0.00       1.05 r
+  stageX_4/subtractor/RCS0/FSx_1/b_in (full_subtractor_213)
+                                                          0.00       1.05 r
+  stageX_4/subtractor/RCS0/FSx_1/U2/ZN (OAI22_X1)         0.04       1.09 f
+  stageX_4/subtractor/RCS0/FSx_1/U4/ZN (INV_X1)           0.03       1.13 r
+  stageX_4/subtractor/RCS0/FSx_1/b_out (full_subtractor_213)
+                                                          0.00       1.13 r
+  stageX_4/subtractor/RCS0/b_out (RCS_N2_13)              0.00       1.13 r
+  stageX_4/subtractor/mux2to1bx_1/S (mux2to1_comb_272)
+                                                          0.00       1.13 r
+  stageX_4/subtractor/mux2to1bx_1/U1/Z (MUX2_X1)          0.08       1.21 f
+  stageX_4/subtractor/mux2to1bx_1/Y (mux2to1_comb_272)
+                                                          0.00       1.21 f
+  stageX_4/subtractor/last_mux2to1b/S (mux2to1_comb_271)
+                                                          0.00       1.21 f
+  stageX_4/subtractor/last_mux2to1b/U1/ZN (AOI22_X2)      0.06       1.27 r
+  stageX_4/subtractor/last_mux2to1b/U2/ZN (INV_X1)        0.04       1.31 f
+  stageX_4/subtractor/last_mux2to1b/Y (mux2to1_comb_271)
+                                                          0.00       1.31 f
+  stageX_4/subtractor/b_out (CSS_bits5_block_bits2)       0.00       1.31 f
+  stageX_4/mux/S (mux2to1_N7)                             0.00       1.31 f
+  stageX_4/mux/mux_x_2/S (mux2to1_comb_268)               0.00       1.31 f
+  stageX_4/mux/mux_x_2/U1/Z (MUX2_X1)                     0.08       1.39 f
+  stageX_4/mux/mux_x_2/Y (mux2to1_comb_268)               0.00       1.39 f
+  stageX_4/mux/Y[2] (mux2to1_N7)                          0.00       1.39 f
+  stageX_4/r_int_out[2] (square_root_stage_N7)            0.00       1.39 f
+  stageX_5/r_int_in[4] (square_root_stage_N8)             0.00       1.39 f
+  stageX_5/subtractor/a[2] (CSS_bits6_block_bits2)        0.00       1.39 f
+  stageX_5/subtractor/RCS_b0x_1/x[0] (RCS_N2_9)           0.00       1.39 f
+  stageX_5/subtractor/RCS_b0x_1/FSx_0/x (full_subtractor_204)
+                                                          0.00       1.39 f
+  stageX_5/subtractor/RCS_b0x_1/FSx_0/U2/ZN (INV_X1)      0.03       1.42 r
+  stageX_5/subtractor/RCS_b0x_1/FSx_0/U5/ZN (NAND2_X1)
+                                                          0.02       1.45 f
+  stageX_5/subtractor/RCS_b0x_1/FSx_0/U3/ZN (NAND2_X1)
+                                                          0.03       1.48 r
+  stageX_5/subtractor/RCS_b0x_1/FSx_0/b_out (full_subtractor_204)
+                                                          0.00       1.48 r
+  stageX_5/subtractor/RCS_b0x_1/FSx_1/b_in (full_subtractor_203)
+                                                          0.00       1.48 r
+  stageX_5/subtractor/RCS_b0x_1/FSx_1/U5/ZN (NAND2_X1)
+                                                          0.03       1.51 f
+  stageX_5/subtractor/RCS_b0x_1/FSx_1/U6/ZN (NAND2_X1)
+                                                          0.02       1.53 r
+  stageX_5/subtractor/RCS_b0x_1/FSx_1/b_out (full_subtractor_203)
+                                                          0.00       1.53 r
+  stageX_5/subtractor/RCS_b0x_1/b_out (RCS_N2_9)          0.00       1.53 r
+  stageX_5/subtractor/mux2to1bx_1/A (mux2to1_comb_263)
+                                                          0.00       1.53 r
+  stageX_5/subtractor/mux2to1bx_1/U1/Z (MUX2_X1)          0.05       1.58 r
+  stageX_5/subtractor/mux2to1bx_1/Y (mux2to1_comb_263)
+                                                          0.00       1.58 r
+  stageX_5/subtractor/mux2to1bx_2/S (mux2to1_comb_262)
+                                                          0.00       1.58 r
+  stageX_5/subtractor/mux2to1bx_2/U1/Z (MUX2_X2)          0.11       1.69 f
+  stageX_5/subtractor/mux2to1bx_2/Y (mux2to1_comb_262)
+                                                          0.00       1.69 f
+  stageX_5/subtractor/b_out (CSS_bits6_block_bits2)       0.00       1.69 f
+  stageX_5/mux/S (mux2to1_N8)                             0.00       1.69 f
+  stageX_5/mux/mux_x_0/S (mux2to1_comb_261)               0.00       1.69 f
+  stageX_5/mux/mux_x_0/U4/ZN (INV_X1)                     0.04       1.73 r
+  stageX_5/mux/mux_x_0/U3/ZN (OAI22_X1)                   0.04       1.76 f
+  stageX_5/mux/mux_x_0/Y (mux2to1_comb_261)               0.00       1.76 f
+  stageX_5/mux/Y[0] (mux2to1_N8)                          0.00       1.76 f
+  stageX_5/r_int_out[0] (square_root_stage_N8)            0.00       1.76 f
+  stageX_6/r_int_in[2] (square_root_stage_N9)             0.00       1.76 f
+  stageX_6/subtractor/a[0] (CSS_bits7_block_bits3)        0.00       1.76 f
+  stageX_6/subtractor/RCS0/x[0] (RCS_N3_36)               0.00       1.76 f
+  stageX_6/subtractor/RCS0/FSx_0/x (full_subtractor_196)
+                                                          0.00       1.76 f
+  stageX_6/subtractor/RCS0/FSx_0/U5/ZN (OAI222_X1)        0.07       1.84 r
+  stageX_6/subtractor/RCS0/FSx_0/b_out (full_subtractor_196)
+                                                          0.00       1.84 r
+  stageX_6/subtractor/RCS0/FSx_1/b_in (full_subtractor_195)
+                                                          0.00       1.84 r
+  stageX_6/subtractor/RCS0/FSx_1/U8/ZN (INV_X1)           0.03       1.86 f
+  stageX_6/subtractor/RCS0/FSx_1/U9/ZN (AOI22_X1)         0.05       1.91 r
+  stageX_6/subtractor/RCS0/FSx_1/b_out (full_subtractor_195)
+                                                          0.00       1.91 r
+  stageX_6/subtractor/RCS0/FSx_2/b_in (full_subtractor_194)
+                                                          0.00       1.91 r
+  stageX_6/subtractor/RCS0/FSx_2/U8/ZN (INV_X1)           0.02       1.93 f
+  stageX_6/subtractor/RCS0/FSx_2/U2/ZN (AOI22_X1)         0.05       1.99 r
+  stageX_6/subtractor/RCS0/FSx_2/b_out (full_subtractor_194)
+                                                          0.00       1.99 r
+  stageX_6/subtractor/RCS0/b_out (RCS_N3_36)              0.00       1.99 r
+  stageX_6/subtractor/mux2to1bx_1/S (mux2to1_comb_253)
+                                                          0.00       1.99 r
+  stageX_6/subtractor/mux2to1bx_1/U1/Z (MUX2_X1)          0.09       2.07 f
+  stageX_6/subtractor/mux2to1bx_1/Y (mux2to1_comb_253)
+                                                          0.00       2.07 f
+  stageX_6/subtractor/last_mux2to1b/S (mux2to1_comb_252)
+                                                          0.00       2.07 f
+  stageX_6/subtractor/last_mux2to1b/U1/ZN (AOI22_X2)      0.06       2.14 r
+  stageX_6/subtractor/last_mux2to1b/U3/ZN (INV_X2)        0.05       2.19 f
+  stageX_6/subtractor/last_mux2to1b/Y (mux2to1_comb_252)
+                                                          0.00       2.19 f
+  stageX_6/subtractor/b_out (CSS_bits7_block_bits3)       0.00       2.19 f
+  stageX_6/mux/S (mux2to1_N9)                             0.00       2.19 f
+  stageX_6/mux/mux_x_0/S (mux2to1_comb_251)               0.00       2.19 f
+  stageX_6/mux/mux_x_0/U4/ZN (INV_X1)                     0.03       2.22 r
+  stageX_6/mux/mux_x_0/U3/ZN (OAI22_X1)                   0.04       2.26 f
+  stageX_6/mux/mux_x_0/Y (mux2to1_comb_251)               0.00       2.26 f
+  stageX_6/mux/Y[0] (mux2to1_N9)                          0.00       2.26 f
+  stageX_6/r_int_out[0] (square_root_stage_N9)            0.00       2.26 f
+  stageX_7/r_int_in[2] (square_root_stage_N10)            0.00       2.26 f
+  stageX_7/subtractor/a[0] (CSS_bits8_block_bits3)        0.00       2.26 f
+  stageX_7/subtractor/RCS0/x[0] (RCS_N3_33)               0.00       2.26 f
+  stageX_7/subtractor/RCS0/FSx_0/x (full_subtractor_185)
+                                                          0.00       2.26 f
+  stageX_7/subtractor/RCS0/FSx_0/U4/ZN (OAI222_X1)        0.08       2.34 r
+  stageX_7/subtractor/RCS0/FSx_0/b_out (full_subtractor_185)
+                                                          0.00       2.34 r
+  stageX_7/subtractor/RCS0/FSx_1/b_in (full_subtractor_184)
+                                                          0.00       2.34 r
+  stageX_7/subtractor/RCS0/FSx_1/U6/ZN (INV_X1)           0.02       2.36 f
+  stageX_7/subtractor/RCS0/FSx_1/U7/ZN (AOI22_X1)         0.05       2.41 r
+  stageX_7/subtractor/RCS0/FSx_1/b_out (full_subtractor_184)
+                                                          0.00       2.41 r
+  stageX_7/subtractor/RCS0/FSx_2/b_in (full_subtractor_183)
+                                                          0.00       2.41 r
+  stageX_7/subtractor/RCS0/FSx_2/U3/ZN (OAI22_X1)         0.04       2.45 f
+  stageX_7/subtractor/RCS0/FSx_2/U4/ZN (INV_X1)           0.03       2.48 r
+  stageX_7/subtractor/RCS0/FSx_2/b_out (full_subtractor_183)
+                                                          0.00       2.48 r
+  stageX_7/subtractor/RCS0/b_out (RCS_N3_33)              0.00       2.48 r
+  stageX_7/subtractor/mux2to1bx_1/S (mux2to1_comb_242)
+                                                          0.00       2.48 r
+  stageX_7/subtractor/mux2to1bx_1/U1/Z (MUX2_X1)          0.08       2.56 f
+  stageX_7/subtractor/mux2to1bx_1/Y (mux2to1_comb_242)
+                                                          0.00       2.56 f
+  stageX_7/subtractor/last_mux2to1b/S (mux2to1_comb_241)
+                                                          0.00       2.56 f
+  stageX_7/subtractor/last_mux2to1b/U1/Z (MUX2_X2)        0.09       2.65 r
+  stageX_7/subtractor/last_mux2to1b/Y (mux2to1_comb_241)
+                                                          0.00       2.65 r
+  stageX_7/subtractor/b_out (CSS_bits8_block_bits3)       0.00       2.65 r
+  stageX_7/mux/S (mux2to1_N10)                            0.00       2.65 r
+  stageX_7/mux/mux_x_3/S (mux2to1_comb_237)               0.00       2.65 r
+  stageX_7/mux/mux_x_3/U1/Z (MUX2_X1)                     0.10       2.76 f
+  stageX_7/mux/mux_x_3/Y (mux2to1_comb_237)               0.00       2.76 f
+  stageX_7/mux/Y[3] (mux2to1_N10)                         0.00       2.76 f
+  stageX_7/r_int_out[3] (square_root_stage_N10)           0.00       2.76 f
+  stageX_8/r_int_in[5] (square_root_stage_N11)            0.00       2.76 f
+  stageX_8/subtractor/a[3] (CSS_bits9_block_bits3)        0.00       2.76 f
+  stageX_8/subtractor/RCS_b0x_1/x[0] (RCS_N3_29)          0.00       2.76 f
+  stageX_8/subtractor/RCS_b0x_1/FSx_0/x (full_subtractor_169)
+                                                          0.00       2.76 f
+  stageX_8/subtractor/RCS_b0x_1/FSx_0/U2/ZN (INV_X1)      0.04       2.79 r
+  stageX_8/subtractor/RCS_b0x_1/FSx_0/U6/ZN (NAND2_X1)
+                                                          0.02       2.82 f
+  stageX_8/subtractor/RCS_b0x_1/FSx_0/U3/ZN (NAND2_X1)
+                                                          0.03       2.85 r
+  stageX_8/subtractor/RCS_b0x_1/FSx_0/b_out (full_subtractor_169)
+                                                          0.00       2.85 r
+  stageX_8/subtractor/RCS_b0x_1/FSx_1/b_in (full_subtractor_168)
+                                                          0.00       2.85 r
+  stageX_8/subtractor/RCS_b0x_1/FSx_1/U5/ZN (INV_X1)      0.02       2.87 f
+  stageX_8/subtractor/RCS_b0x_1/FSx_1/U3/ZN (AOI22_X1)
+                                                          0.04       2.91 r
+  stageX_8/subtractor/RCS_b0x_1/FSx_1/b_out (full_subtractor_168)
+                                                          0.00       2.91 r
+  stageX_8/subtractor/RCS_b0x_1/FSx_2/b_in (full_subtractor_167)
+                                                          0.00       2.91 r
+  stageX_8/subtractor/RCS_b0x_1/FSx_2/U3/ZN (INV_X1)      0.02       2.94 f
+  stageX_8/subtractor/RCS_b0x_1/FSx_2/U6/ZN (AOI22_X1)
+                                                          0.04       2.98 r
+  stageX_8/subtractor/RCS_b0x_1/FSx_2/b_out (full_subtractor_167)
+                                                          0.00       2.98 r
+  stageX_8/subtractor/RCS_b0x_1/b_out (RCS_N3_29)         0.00       2.98 r
+  stageX_8/subtractor/mux2to1bx_1/A (mux2to1_comb_230)
+                                                          0.00       2.98 r
+  stageX_8/subtractor/mux2to1bx_1/U1/Z (MUX2_X1)          0.05       3.03 r
+  stageX_8/subtractor/mux2to1bx_1/Y (mux2to1_comb_230)
+                                                          0.00       3.03 r
+  stageX_8/subtractor/mux2to1bx_2/S (mux2to1_comb_229)
+                                                          0.00       3.03 r
+  stageX_8/subtractor/mux2to1bx_2/U1/Z (MUX2_X1)          0.09       3.12 f
+  stageX_8/subtractor/mux2to1bx_2/Y (mux2to1_comb_229)
+                                                          0.00       3.12 f
+  stageX_8/subtractor/b_out (CSS_bits9_block_bits3)       0.00       3.12 f
+  stageX_8/U1/Z (BUF_X1)                                  0.04       3.17 f
+  stageX_8/U4/ZN (INV_X1)                                 0.03       3.20 r
+  stageX_8/q_out (square_root_stage_N11)                  0.00       3.20 r
+  stageX_9/q_int[2] (square_root_stage_N12)               0.00       3.20 r
+  stageX_9/subtractor/b[0] (CSS_bits10_block_bits3)       0.00       3.20 r
+  stageX_9/subtractor/RCS0/y[0] (RCS_N3_25)               0.00       3.20 r
+  stageX_9/subtractor/RCS0/FSx_0/y (full_subtractor_157)
+                                                          0.00       3.20 r
+  stageX_9/subtractor/RCS0/FSx_0/U4/ZN (INV_X1)           0.03       3.23 f
+  stageX_9/subtractor/RCS0/FSx_0/U6/ZN (OAI222_X1)        0.05       3.28 r
+  stageX_9/subtractor/RCS0/FSx_0/b_out (full_subtractor_157)
+                                                          0.00       3.28 r
+  stageX_9/subtractor/RCS0/FSx_1/b_in (full_subtractor_156)
+                                                          0.00       3.28 r
+  stageX_9/subtractor/RCS0/FSx_1/U8/ZN (INV_X1)           0.03       3.30 f
+  stageX_9/subtractor/RCS0/FSx_1/U9/ZN (AOI22_X1)         0.05       3.36 r
+  stageX_9/subtractor/RCS0/FSx_1/b_out (full_subtractor_156)
+                                                          0.00       3.36 r
+  stageX_9/subtractor/RCS0/FSx_2/b_in (full_subtractor_155)
+                                                          0.00       3.36 r
+  stageX_9/subtractor/RCS0/FSx_2/U2/ZN (NOR2_X1)          0.03       3.38 f
+  stageX_9/subtractor/RCS0/FSx_2/U1/ZN (NOR2_X1)          0.04       3.42 r
+  stageX_9/subtractor/RCS0/FSx_2/b_out (full_subtractor_155)
+                                                          0.00       3.42 r
+  stageX_9/subtractor/RCS0/b_out (RCS_N3_25)              0.00       3.42 r
+  stageX_9/subtractor/mux2to1bx_1/S (mux2to1_comb_217)
+                                                          0.00       3.42 r
+  stageX_9/subtractor/mux2to1bx_1/U1/Z (MUX2_X1)          0.08       3.50 f
+  stageX_9/subtractor/mux2to1bx_1/Y (mux2to1_comb_217)
+                                                          0.00       3.50 f
+  stageX_9/subtractor/mux2to1bx_2/S (mux2to1_comb_216)
+                                                          0.00       3.50 f
+  stageX_9/subtractor/mux2to1bx_2/U1/Z (MUX2_X1)          0.08       3.58 r
+  stageX_9/subtractor/mux2to1bx_2/Y (mux2to1_comb_216)
+                                                          0.00       3.58 r
+  stageX_9/subtractor/last_mux2to1b/S (mux2to1_comb_215)
+                                                          0.00       3.58 r
+  stageX_9/subtractor/last_mux2to1b/U1/ZN (AOI22_X2)      0.05       3.63 f
+  stageX_9/subtractor/last_mux2to1b/U2/ZN (INV_X1)        0.04       3.67 r
+  stageX_9/subtractor/last_mux2to1b/Y (mux2to1_comb_215)
+                                                          0.00       3.67 r
+  stageX_9/subtractor/b_out (CSS_bits10_block_bits3)      0.00       3.67 r
+  stageX_9/mux/S (mux2to1_N12)                            0.00       3.67 r
+  stageX_9/mux/U1/Z (CLKBUF_X3)                           0.06       3.73 r
+  stageX_9/mux/mux_x_1/S (mux2to1_comb_213)               0.00       3.73 r
+  stageX_9/mux/mux_x_1/U1/Z (MUX2_X1)                     0.09       3.82 f
+  stageX_9/mux/mux_x_1/Y (mux2to1_comb_213)               0.00       3.82 f
+  stageX_9/mux/Y[1] (mux2to1_N12)                         0.00       3.82 f
+  stageX_9/r_int_out[1] (square_root_stage_N12)           0.00       3.82 f
+  stageX_10/r_int_in[3] (square_root_stage_N13)           0.00       3.82 f
+  stageX_10/subtractor/a[1] (CSS_bits11_block_bits3)      0.00       3.82 f
+  stageX_10/subtractor/RCS0/x[1] (RCS_N3_20)              0.00       3.82 f
+  stageX_10/subtractor/RCS0/FSx_1/x (full_subtractor_139)
+                                                          0.00       3.82 f
+  stageX_10/subtractor/RCS0/FSx_1/U6/ZN (INV_X1)          0.03       3.85 r
+  stageX_10/subtractor/RCS0/FSx_1/U7/ZN (NAND2_X1)        0.02       3.87 f
+  stageX_10/subtractor/RCS0/FSx_1/U9/ZN (AOI22_X1)        0.05       3.93 r
+  stageX_10/subtractor/RCS0/FSx_1/b_out (full_subtractor_139)
+                                                          0.00       3.93 r
+  stageX_10/subtractor/RCS0/FSx_2/b_in (full_subtractor_138)
+                                                          0.00       3.93 r
+  stageX_10/subtractor/RCS0/FSx_2/U3/ZN (OAI22_X1)        0.04       3.96 f
+  stageX_10/subtractor/RCS0/FSx_2/U4/ZN (INV_X1)          0.03       3.99 r
+  stageX_10/subtractor/RCS0/FSx_2/b_out (full_subtractor_138)
+                                                          0.00       3.99 r
+  stageX_10/subtractor/RCS0/b_out (RCS_N3_20)             0.00       3.99 r
+  stageX_10/subtractor/mux2to1bx_1/S (mux2to1_comb_202)
+                                                          0.00       3.99 r
+  stageX_10/subtractor/mux2to1bx_1/U1/Z (MUX2_X1)         0.08       4.07 f
+  stageX_10/subtractor/mux2to1bx_1/Y (mux2to1_comb_202)
+                                                          0.00       4.07 f
+  stageX_10/subtractor/mux2to1bx_2/S (mux2to1_comb_201)
+                                                          0.00       4.07 f
+  stageX_10/subtractor/mux2to1bx_2/U1/Z (MUX2_X1)         0.07       4.14 f
+  stageX_10/subtractor/mux2to1bx_2/Y (mux2to1_comb_201)
+                                                          0.00       4.14 f
+  stageX_10/subtractor/last_mux2to1b/S (mux2to1_comb_200)
+                                                          0.00       4.14 f
+  stageX_10/subtractor/last_mux2to1b/U1/Z (MUX2_X1)       0.09       4.23 r
+  stageX_10/subtractor/last_mux2to1b/Y (mux2to1_comb_200)
+                                                          0.00       4.23 r
+  stageX_10/subtractor/b_out (CSS_bits11_block_bits3)     0.00       4.23 r
+  stageX_10/mux/S (mux2to1_N13)                           0.00       4.23 r
+  stageX_10/mux/U3/Z (CLKBUF_X1)                          0.05       4.27 r
+  stageX_10/mux/mux_x_0/S (mux2to1_comb_199)              0.00       4.27 r
+  stageX_10/mux/mux_x_0/U1/Z (MUX2_X1)                    0.08       4.35 f
+  stageX_10/mux/mux_x_0/Y (mux2to1_comb_199)              0.00       4.35 f
+  stageX_10/mux/Y[0] (mux2to1_N13)                        0.00       4.35 f
+  stageX_10/r_int_out[0] (square_root_stage_N13)          0.00       4.35 f
+  stageX_11/r_int_in[2] (square_root_stage_N14)           0.00       4.35 f
+  stageX_11/subtractor/a[0] (CSS_bits12_block_bits3)      0.00       4.35 f
+  stageX_11/subtractor/RCS0/x[0] (RCS_N3_15)              0.00       4.35 f
+  stageX_11/subtractor/RCS0/FSx_0/x (full_subtractor_121)
+                                                          0.00       4.35 f
+  stageX_11/subtractor/RCS0/FSx_0/U3/ZN (AOI21_X1)        0.04       4.39 r
+  stageX_11/subtractor/RCS0/FSx_0/b_out (full_subtractor_121)
+                                                          0.00       4.39 r
+  stageX_11/subtractor/RCS0/FSx_1/b_in (full_subtractor_120)
+                                                          0.00       4.39 r
+  stageX_11/subtractor/RCS0/FSx_1/U8/ZN (INV_X1)          0.02       4.42 f
+  stageX_11/subtractor/RCS0/FSx_1/U9/ZN (AOI22_X1)        0.05       4.47 r
+  stageX_11/subtractor/RCS0/FSx_1/b_out (full_subtractor_120)
+                                                          0.00       4.47 r
+  stageX_11/subtractor/RCS0/FSx_2/b_in (full_subtractor_119)
+                                                          0.00       4.47 r
+  stageX_11/subtractor/RCS0/FSx_2/U3/ZN (OAI22_X1)        0.04       4.51 f
+  stageX_11/subtractor/RCS0/FSx_2/U4/ZN (INV_X1)          0.03       4.54 r
+  stageX_11/subtractor/RCS0/FSx_2/b_out (full_subtractor_119)
+                                                          0.00       4.54 r
+  stageX_11/subtractor/RCS0/b_out (RCS_N3_15)             0.00       4.54 r
+  stageX_11/subtractor/mux2to1bx_1/S (mux2to1_comb_186)
+                                                          0.00       4.54 r
+  stageX_11/subtractor/mux2to1bx_1/U1/Z (MUX2_X1)         0.08       4.61 f
+  stageX_11/subtractor/mux2to1bx_1/Y (mux2to1_comb_186)
+                                                          0.00       4.61 f
+  stageX_11/subtractor/mux2to1bx_2/S (mux2to1_comb_185)
+                                                          0.00       4.61 f
+  stageX_11/subtractor/mux2to1bx_2/U1/Z (MUX2_X1)         0.07       4.69 r
+  stageX_11/subtractor/mux2to1bx_2/Y (mux2to1_comb_185)
+                                                          0.00       4.69 r
+  stageX_11/subtractor/mux2to1bx_3/S (mux2to1_comb_184)
+                                                          0.00       4.69 r
+  stageX_11/subtractor/mux2to1bx_3/U1/Z (MUX2_X1)         0.09       4.77 f
+  stageX_11/subtractor/mux2to1bx_3/Y (mux2to1_comb_184)
+                                                          0.00       4.77 f
+  stageX_11/subtractor/b_out (CSS_bits12_block_bits3)     0.00       4.77 f
+  stageX_11/mux/S (mux2to1_N14)                           0.00       4.77 f
+  stageX_11/mux/U1/Z (BUF_X1)                             0.05       4.82 f
+  stageX_11/mux/mux_x_0/S (mux2to1_comb_183)              0.00       4.82 f
+  stageX_11/mux/mux_x_0/U4/ZN (INV_X1)                    0.03       4.85 r
+  stageX_11/mux/mux_x_0/U3/ZN (OAI22_X1)                  0.03       4.88 f
+  stageX_11/mux/mux_x_0/Y (mux2to1_comb_183)              0.00       4.88 f
+  stageX_11/mux/Y[0] (mux2to1_N14)                        0.00       4.88 f
+  stageX_11/r_int_out[0] (square_root_stage_N14)          0.00       4.88 f
+  stageX_12/r_int_in[2] (square_root_stage_N15)           0.00       4.88 f
+  stageX_12/subtractor/a[0] (CSS_bits13_block_bits4)      0.00       4.88 f
+  stageX_12/subtractor/RCS0/x[0] (RCS_N4_16)              0.00       4.88 f
+  stageX_12/subtractor/RCS0/FSx_0/x (full_subtractor_100)
+                                                          0.00       4.88 f
+  stageX_12/subtractor/RCS0/FSx_0/U2/ZN (AOI21_X1)        0.04       4.93 r
+  stageX_12/subtractor/RCS0/FSx_0/b_out (full_subtractor_100)
+                                                          0.00       4.93 r
+  stageX_12/subtractor/RCS0/FSx_1/b_in (full_subtractor_99)
+                                                          0.00       4.93 r
+  stageX_12/subtractor/RCS0/FSx_1/U7/ZN (INV_X1)          0.02       4.95 f
+  stageX_12/subtractor/RCS0/FSx_1/U4/ZN (AOI22_X1)        0.05       5.00 r
+  stageX_12/subtractor/RCS0/FSx_1/b_out (full_subtractor_99)
+                                                          0.00       5.00 r
+  stageX_12/subtractor/RCS0/FSx_2/b_in (full_subtractor_98)
+                                                          0.00       5.00 r
+  stageX_12/subtractor/RCS0/FSx_2/U4/ZN (OAI21_X1)        0.04       5.04 f
+  stageX_12/subtractor/RCS0/FSx_2/U5/ZN (NAND2_X1)        0.03       5.07 r
+  stageX_12/subtractor/RCS0/FSx_2/b_out (full_subtractor_98)
+                                                          0.00       5.07 r
+  stageX_12/subtractor/RCS0/FSx_3/b_in (full_subtractor_97)
+                                                          0.00       5.07 r
+  stageX_12/subtractor/RCS0/FSx_3/U2/ZN (NOR2_X1)         0.02       5.10 f
+  stageX_12/subtractor/RCS0/FSx_3/U1/ZN (NOR2_X1)         0.04       5.14 r
+  stageX_12/subtractor/RCS0/FSx_3/b_out (full_subtractor_97)
+                                                          0.00       5.14 r
+  stageX_12/subtractor/RCS0/b_out (RCS_N4_16)             0.00       5.14 r
+  stageX_12/subtractor/mux2to1bx_1/S (mux2to1_comb_169)
+                                                          0.00       5.14 r
+  stageX_12/subtractor/mux2to1bx_1/U1/Z (MUX2_X1)         0.08       5.22 f
+  stageX_12/subtractor/mux2to1bx_1/Y (mux2to1_comb_169)
+                                                          0.00       5.22 f
+  stageX_12/subtractor/mux2to1bx_2/S (mux2to1_comb_168)
+                                                          0.00       5.22 f
+  stageX_12/subtractor/mux2to1bx_2/U1/Z (MUX2_X1)         0.08       5.30 r
+  stageX_12/subtractor/mux2to1bx_2/Y (mux2to1_comb_168)
+                                                          0.00       5.30 r
+  stageX_12/subtractor/last_mux2to1b/S (mux2to1_comb_167)
+                                                          0.00       5.30 r
+  stageX_12/subtractor/last_mux2to1b/U1/ZN (AOI22_X2)     0.05       5.35 f
+  stageX_12/subtractor/last_mux2to1b/U2/ZN (INV_X2)       0.05       5.40 r
+  stageX_12/subtractor/last_mux2to1b/Y (mux2to1_comb_167)
+                                                          0.00       5.40 r
+  stageX_12/subtractor/b_out (CSS_bits13_block_bits4)     0.00       5.40 r
+  stageX_12/mux/S (mux2to1_N15)                           0.00       5.40 r
+  stageX_12/mux/mux_x_4/S (mux2to1_comb_162)              0.00       5.40 r
+  stageX_12/mux/mux_x_4/U1/Z (MUX2_X1)                    0.10       5.50 f
+  stageX_12/mux/mux_x_4/Y (mux2to1_comb_162)              0.00       5.50 f
+  stageX_12/mux/Y[4] (mux2to1_N15)                        0.00       5.50 f
+  stageX_12/r_int_out[4] (square_root_stage_N15)          0.00       5.50 f
+  stageX_13/r_int_in[6] (square_root_stage_N16)           0.00       5.50 f
+  stageX_13/subtractor/a[4] (CSS_bits14_block_bits4)      0.00       5.50 f
+  stageX_13/subtractor/RCS_b0x_1/x[0] (RCS_N4_10)         0.00       5.50 f
+  stageX_13/subtractor/RCS_b0x_1/FSx_0/x (full_subtractor_74)
+                                                          0.00       5.50 f
+  stageX_13/subtractor/RCS_b0x_1/FSx_0/U2/ZN (INV_X1)     0.03       5.53 r
+  stageX_13/subtractor/RCS_b0x_1/FSx_0/U5/ZN (NAND2_X1)
+                                                          0.02       5.56 f
+  stageX_13/subtractor/RCS_b0x_1/FSx_0/U6/ZN (NAND2_X1)
+                                                          0.03       5.59 r
+  stageX_13/subtractor/RCS_b0x_1/FSx_0/b_out (full_subtractor_74)
+                                                          0.00       5.59 r
+  stageX_13/subtractor/RCS_b0x_1/FSx_1/b_in (full_subtractor_73)
+                                                          0.00       5.59 r
+  stageX_13/subtractor/RCS_b0x_1/FSx_1/U7/ZN (INV_X1)     0.02       5.61 f
+  stageX_13/subtractor/RCS_b0x_1/FSx_1/U1/ZN (AOI22_X1)
+                                                          0.04       5.65 r
+  stageX_13/subtractor/RCS_b0x_1/FSx_1/b_out (full_subtractor_73)
+                                                          0.00       5.65 r
+  stageX_13/subtractor/RCS_b0x_1/FSx_2/b_in (full_subtractor_72)
+                                                          0.00       5.65 r
+  stageX_13/subtractor/RCS_b0x_1/FSx_2/U8/ZN (INV_X1)     0.02       5.68 f
+  stageX_13/subtractor/RCS_b0x_1/FSx_2/U5/ZN (AOI22_X1)
+                                                          0.05       5.73 r
+  stageX_13/subtractor/RCS_b0x_1/FSx_2/b_out (full_subtractor_72)
+                                                          0.00       5.73 r
+  stageX_13/subtractor/RCS_b0x_1/FSx_3/b_in (full_subtractor_71)
+                                                          0.00       5.73 r
+  stageX_13/subtractor/RCS_b0x_1/FSx_3/U8/ZN (INV_X1)     0.02       5.75 f
+  stageX_13/subtractor/RCS_b0x_1/FSx_3/U7/ZN (AOI22_X1)
+                                                          0.04       5.79 r
+  stageX_13/subtractor/RCS_b0x_1/FSx_3/b_out (full_subtractor_71)
+                                                          0.00       5.79 r
+  stageX_13/subtractor/RCS_b0x_1/b_out (RCS_N4_10)        0.00       5.79 r
+  stageX_13/subtractor/mux2to1bx_1/A (mux2to1_comb_151)
+                                                          0.00       5.79 r
+  stageX_13/subtractor/mux2to1bx_1/U1/Z (MUX2_X1)         0.05       5.84 r
+  stageX_13/subtractor/mux2to1bx_1/Y (mux2to1_comb_151)
+                                                          0.00       5.84 r
+  stageX_13/subtractor/mux2to1bx_2/S (mux2to1_comb_150)
+                                                          0.00       5.84 r
+  stageX_13/subtractor/mux2to1bx_2/U1/Z (MUX2_X1)         0.08       5.92 f
+  stageX_13/subtractor/mux2to1bx_2/Y (mux2to1_comb_150)
+                                                          0.00       5.92 f
+  stageX_13/subtractor/last_mux2to1b/S (mux2to1_comb_149)
+                                                          0.00       5.92 f
+  stageX_13/subtractor/last_mux2to1b/U1/Z (MUX2_X1)       0.09       6.01 r
+  stageX_13/subtractor/last_mux2to1b/Y (mux2to1_comb_149)
+                                                          0.00       6.01 r
+  stageX_13/subtractor/b_out (CSS_bits14_block_bits4)     0.00       6.01 r
+  stageX_13/mux/S (mux2to1_N16)                           0.00       6.01 r
+  stageX_13/mux/U2/Z (BUF_X1)                             0.05       6.06 r
+  stageX_13/mux/mux_x_1/S (mux2to1_comb_147)              0.00       6.06 r
+  stageX_13/mux/mux_x_1/U1/ZN (INV_X1)                    0.02       6.08 f
+  stageX_13/mux/mux_x_1/U2/ZN (AOI22_X1)                  0.04       6.13 r
+  stageX_13/mux/mux_x_1/U3/ZN (INV_X1)                    0.03       6.15 f
+  stageX_13/mux/mux_x_1/Y (mux2to1_comb_147)              0.00       6.15 f
+  stageX_13/mux/Y[1] (mux2to1_N16)                        0.00       6.15 f
+  stageX_13/r_int_out[1] (square_root_stage_N16)          0.00       6.15 f
+  stageX_14/r_int_in[3] (square_root_stage_N17)           0.00       6.15 f
+  stageX_14/subtractor/a[1] (CSS_bits15_block_bits3)      0.00       6.15 f
+  stageX_14/subtractor/RCS0/x[1] (RCS_N3_8)               0.00       6.15 f
+  stageX_14/subtractor/RCS0/FSx_1/x (full_subtractor_53)
+                                                          0.00       6.15 f
+  stageX_14/subtractor/RCS0/FSx_1/U2/Z (BUF_X1)           0.04       6.20 f
+  stageX_14/subtractor/RCS0/FSx_1/U7/ZN (AOI22_X1)        0.06       6.26 r
+  stageX_14/subtractor/RCS0/FSx_1/b_out (full_subtractor_53)
+                                                          0.00       6.26 r
+  stageX_14/subtractor/RCS0/FSx_2/b_in (full_subtractor_52)
+                                                          0.00       6.26 r
+  stageX_14/subtractor/RCS0/FSx_2/U4/ZN (OAI21_X1)        0.04       6.30 f
+  stageX_14/subtractor/RCS0/FSx_2/U2/ZN (NAND2_X1)        0.03       6.33 r
+  stageX_14/subtractor/RCS0/FSx_2/b_out (full_subtractor_52)
+                                                          0.00       6.33 r
+  stageX_14/subtractor/RCS0/b_out (RCS_N3_8)              0.00       6.33 r
+  stageX_14/subtractor/mux2to1bx_1/S (mux2to1_comb_132)
+                                                          0.00       6.33 r
+  stageX_14/subtractor/mux2to1bx_1/U1/Z (MUX2_X1)         0.08       6.41 f
+  stageX_14/subtractor/mux2to1bx_1/Y (mux2to1_comb_132)
+                                                          0.00       6.41 f
+  stageX_14/subtractor/mux2to1bx_2/S (mux2to1_comb_131)
+                                                          0.00       6.41 f
+  stageX_14/subtractor/mux2to1bx_2/U1/Z (MUX2_X1)         0.07       6.48 r
+  stageX_14/subtractor/mux2to1bx_2/Y (mux2to1_comb_131)
+                                                          0.00       6.48 r
+  stageX_14/subtractor/mux2to1bx_3/S (mux2to1_comb_130)
+                                                          0.00       6.48 r
+  stageX_14/subtractor/mux2to1bx_3/U1/Z (MUX2_X1)         0.08       6.56 f
+  stageX_14/subtractor/mux2to1bx_3/Y (mux2to1_comb_130)
+                                                          0.00       6.56 f
+  stageX_14/subtractor/mux2to1bx_4/S (mux2to1_comb_129)
+                                                          0.00       6.56 f
+  stageX_14/subtractor/mux2to1bx_4/U1/Z (MUX2_X1)         0.07       6.63 r
+  stageX_14/subtractor/mux2to1bx_4/Y (mux2to1_comb_129)
+                                                          0.00       6.63 r
+  stageX_14/subtractor/b_out (CSS_bits15_block_bits3)     0.00       6.63 r
+  stageX_14/mux/S (mux2to1_N17)                           0.00       6.63 r
+  stageX_14/mux/U4/Z (BUF_X1)                             0.04       6.67 r
+  stageX_14/mux/mux_x_4/S (mux2to1_comb_124)              0.00       6.67 r
+  stageX_14/mux/mux_x_4/U1/Z (MUX2_X1)                    0.10       6.76 f
+  stageX_14/mux/mux_x_4/Y (mux2to1_comb_124)              0.00       6.76 f
+  stageX_14/mux/Y[4] (mux2to1_N17)                        0.00       6.76 f
+  stageX_14/r_int_out[4] (square_root_stage_N17)          0.00       6.76 f
+  stageLSB_15/r_int_in[6] (square_root_stage_N18)         0.00       6.76 f
+  stageLSB_15/subtractor/a[4] (CSS_bits16_block_bits4)
+                                                          0.00       6.76 f
+  stageLSB_15/subtractor/RCS_b1x_1/x[0] (RCS_N4_4)        0.00       6.76 f
+  stageLSB_15/subtractor/RCS_b1x_1/FSx_0/x (full_subtractor_19)
+                                                          0.00       6.76 f
+  stageLSB_15/subtractor/RCS_b1x_1/FSx_0/U4/ZN (OAI222_X1)
+                                                          0.07       6.83 r
+  stageLSB_15/subtractor/RCS_b1x_1/FSx_0/b_out (full_subtractor_19)
+                                                          0.00       6.83 r
+  stageLSB_15/subtractor/RCS_b1x_1/FSx_1/b_in (full_subtractor_18)
+                                                          0.00       6.83 r
+  stageLSB_15/subtractor/RCS_b1x_1/FSx_1/U9/ZN (INV_X1)
+                                                          0.03       6.86 f
+  stageLSB_15/subtractor/RCS_b1x_1/FSx_1/U10/ZN (AOI22_X1)
+                                                          0.06       6.91 r
+  stageLSB_15/subtractor/RCS_b1x_1/FSx_1/b_out (full_subtractor_18)
+                                                          0.00       6.91 r
+  stageLSB_15/subtractor/RCS_b1x_1/FSx_2/b_in (full_subtractor_17)
+                                                          0.00       6.91 r
+  stageLSB_15/subtractor/RCS_b1x_1/FSx_2/U9/ZN (INV_X1)
+                                                          0.03       6.94 f
+  stageLSB_15/subtractor/RCS_b1x_1/FSx_2/U10/ZN (AOI22_X1)
+                                                          0.06       7.00 r
+  stageLSB_15/subtractor/RCS_b1x_1/FSx_2/b_out (full_subtractor_17)
+                                                          0.00       7.00 r
+  stageLSB_15/subtractor/RCS_b1x_1/FSx_3/b_in (full_subtractor_16)
+                                                          0.00       7.00 r
+  stageLSB_15/subtractor/RCS_b1x_1/FSx_3/U9/ZN (INV_X1)
+                                                          0.03       7.02 f
+  stageLSB_15/subtractor/RCS_b1x_1/FSx_3/U10/ZN (AOI22_X1)
+                                                          0.05       7.07 r
+  stageLSB_15/subtractor/RCS_b1x_1/FSx_3/b_out (full_subtractor_16)
+                                                          0.00       7.07 r
+  stageLSB_15/subtractor/RCS_b1x_1/b_out (RCS_N4_4)       0.00       7.07 r
+  stageLSB_15/subtractor/mux2to1bx_1/B (mux2to1_comb_111)
+                                                          0.00       7.07 r
+  stageLSB_15/subtractor/mux2to1bx_1/U1/Z (MUX2_X1)       0.05       7.12 r
+  stageLSB_15/subtractor/mux2to1bx_1/Y (mux2to1_comb_111)
+                                                          0.00       7.12 r
+  stageLSB_15/subtractor/mux2to1bx_2/S (mux2to1_comb_110)
+                                                          0.00       7.12 r
+  stageLSB_15/subtractor/mux2to1bx_2/U1/Z (MUX2_X1)       0.08       7.20 f
+  stageLSB_15/subtractor/mux2to1bx_2/Y (mux2to1_comb_110)
+                                                          0.00       7.20 f
+  stageLSB_15/subtractor/mux2to1bx_3/S (mux2to1_comb_109)
+                                                          0.00       7.20 f
+  stageLSB_15/subtractor/mux2to1bx_3/U1/Z (MUX2_X1)       0.07       7.27 f
+  stageLSB_15/subtractor/mux2to1bx_3/Y (mux2to1_comb_109)
+                                                          0.00       7.27 f
+  stageLSB_15/subtractor/b_out (CSS_bits16_block_bits4)
+                                                          0.00       7.27 f
+  stageLSB_15/U6/ZN (INV_X1)                              0.03       7.30 r
+  stageLSB_15/q_out (square_root_stage_N18)               0.00       7.30 r
+  q[0] (out)                                              0.02       7.32 r
+  data arrival time                                                  7.32
+
+  max_delay                                               0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -7.32
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -7.32
+
+
+1
