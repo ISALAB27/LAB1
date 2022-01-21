@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : mux2to1
+Version: O-2018.06-SP4
+Date   : Sun Jan  9 18:08:19 2022
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+Number of ports:                            8
+Number of nets:                             8
+Number of cells:                            2
+Number of combinational cells:              1
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       1
+
+Combinational area:                  1.862000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                     1.862000
+Total area:                 undefined
+1

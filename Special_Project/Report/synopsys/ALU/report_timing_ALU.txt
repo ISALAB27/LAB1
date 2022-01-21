@@ -1,0 +1,78 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ALU
+Version: O-2018.06-SP4
+Date   : Fri Jan 21 00:15:48 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: a[0] (input port)
+  Endpoint: zero (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ALU                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  a[0] (in)                                0.00       0.00 f
+  r300/A[0] (ALU_DW01_sub_0)               0.00       0.00 f
+  r300/U35/ZN (INV_X1)                     0.03       0.03 r
+  r300/U3/ZN (NAND2_X1)                    0.03       0.06 f
+  r300/U2_1/CO (FA_X1)                     0.09       0.14 f
+  r300/U2_2/CO (FA_X1)                     0.09       0.24 f
+  r300/U2_3/CO (FA_X1)                     0.09       0.33 f
+  r300/U2_4/CO (FA_X1)                     0.09       0.42 f
+  r300/U2_5/CO (FA_X1)                     0.09       0.51 f
+  r300/U2_6/CO (FA_X1)                     0.09       0.60 f
+  r300/U2_7/CO (FA_X1)                     0.09       0.69 f
+  r300/U2_8/CO (FA_X1)                     0.09       0.78 f
+  r300/U2_9/CO (FA_X1)                     0.09       0.87 f
+  r300/U2_10/CO (FA_X1)                    0.09       0.96 f
+  r300/U2_11/CO (FA_X1)                    0.09       1.05 f
+  r300/U2_12/CO (FA_X1)                    0.09       1.14 f
+  r300/U2_13/CO (FA_X1)                    0.09       1.23 f
+  r300/U2_14/CO (FA_X1)                    0.09       1.32 f
+  r300/U2_15/CO (FA_X1)                    0.09       1.41 f
+  r300/U2_16/CO (FA_X1)                    0.09       1.50 f
+  r300/U2_17/CO (FA_X1)                    0.09       1.59 f
+  r300/U2_18/CO (FA_X1)                    0.09       1.69 f
+  r300/U2_19/CO (FA_X1)                    0.09       1.78 f
+  r300/U2_20/CO (FA_X1)                    0.09       1.87 f
+  r300/U2_21/CO (FA_X1)                    0.09       1.96 f
+  r300/U2_22/CO (FA_X1)                    0.09       2.05 f
+  r300/U2_23/CO (FA_X1)                    0.09       2.14 f
+  r300/U2_24/CO (FA_X1)                    0.09       2.23 f
+  r300/U2_25/CO (FA_X1)                    0.09       2.32 f
+  r300/U2_26/CO (FA_X1)                    0.09       2.41 f
+  r300/U2_27/CO (FA_X1)                    0.09       2.50 f
+  r300/U2_28/CO (FA_X1)                    0.09       2.59 f
+  r300/U2_29/CO (FA_X1)                    0.09       2.68 f
+  r300/U2_30/CO (FA_X1)                    0.09       2.77 f
+  r300/U2_31/CO (FA_X1)                    0.09       2.86 f
+  r300/U2_32/S (FA_X1)                     0.11       2.97 f
+  r300/DIFF[32] (ALU_DW01_sub_0)           0.00       2.97 f
+  mux/B[0] (mux8to1_N32)                   0.00       2.97 f
+  mux/U173/ZN (AOI22_X1)                   0.05       3.02 r
+  mux/U172/ZN (NAND4_X1)                   0.06       3.08 f
+  mux/Y[0] (mux8to1_N32)                   0.00       3.08 f
+  U86/ZN (NOR3_X1)                         0.06       3.14 r
+  U82/ZN (NAND4_X1)                        0.04       3.18 f
+  U81/ZN (NOR2_X1)                         0.05       3.23 r
+  zero (out)                               0.02       3.26 r
+  data arrival time                                   3.26
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

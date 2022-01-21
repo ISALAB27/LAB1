@@ -1,0 +1,38 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : full_subtractor
+Version: O-2018.06-SP4
+Date   : Sat Jan  8 20:52:34 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: x (input port)
+  Endpoint: b_out (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_subtractor    5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  x (in)                                   0.00       0.00 r
+  U10/ZN (INV_X1)                          0.02       0.02 f
+  U7/ZN (AND2_X1)                          0.04       0.06 f
+  U8/ZN (OAI22_X1)                         0.04       0.10 r
+  U9/ZN (INV_X1)                           0.03       0.13 f
+  b_out (out)                              0.02       0.15 f
+  data arrival time                                   0.15
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,37 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : full_adder
+Version: O-2018.06-SP4
+Date   : Sat Jan  8 21:09:16 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: x (input port)
+  Endpoint: sum (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_adder         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  x (in)                                   0.00       0.00 f
+  U8/Z (XOR2_X1)                           0.08       0.08 f
+  U5/Z (XOR2_X1)                           0.08       0.16 f
+  sum (out)                                0.02       0.18 f
+  data arrival time                                   0.18
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

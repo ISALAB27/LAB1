@@ -1,0 +1,38 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mux2to1
+Version: O-2018.06-SP4
+Date   : Sun Jan  9 18:18:21 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: B[31] (input port)
+  Endpoint: Y[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mux2to1            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  B[31] (in)                               0.00       0.00 f
+  mux_x_31/B (mux2to1_comb_0)              0.00       0.00 f
+  mux_x_31/U1/Z (MUX2_X1)                  0.07       0.07 f
+  mux_x_31/Y (mux2to1_comb_0)              0.00       0.07 f
+  Y[31] (out)                              0.02       0.09 f
+  data arrival time                                   0.09
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
